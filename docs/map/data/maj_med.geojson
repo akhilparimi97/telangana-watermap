@@ -1,0 +1,2238 @@
+{
+  "type": "FeatureCollection",
+  "name": "maj_med",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Ali Sagar LIS",
+        "Project": "ALI SAGAR LIS",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": "77.96222222",
+        "Lat": "18.8325",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Ali Sagar LIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Alisagar LIS",
+        "lift_pumps": 12,
+        "lift_max_water_tmc": 4.347,
+        "meta": "Alisagar LIS supplements the Nizamsagar command by lifting about 4.347 TMC of Godavari water (2.847 TMC for irrigation plus 1.5 TMC for drinking).  It operates in three stages; each stage uses four pumps (4 × 1838 Cum/hr, 4 × 1838 Cum/hr and 4 × 1162 Cum/hr respectively), giving 12 pumps in total【818879874356842†L60-L99】.  The total static head across stages is roughly 74.7 m【818879874356842†L60-L99】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.9494323840297,
+          18.828883599197113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Alimineti Madhava Reddy (SLBC) Project",
+        "Project": "ALIMINETI MADHAVA REDDY (SLBC) PROJECT",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "79.10138889",
+        "Lat": "16.68611111",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Alimineti Madhava Reddy (SLBC) Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Alimineti Madhava Reddy (Srisailam Left Bank Canal) LIS",
+        "lift_pumps": 9,
+        "lift_max_water_tmc": 30,
+        "meta": "AMRP provides irrigation and drinking water to drought‑prone areas of Nalgonda district by lifting about 30 TMC from the foreshore of the Nagarjuna Sagar reservoir.  The high‑level canal lift uses four vertical‑shaft pumps of 18 MW each【885920885053475†L329-L337】; the low‑level canal lift uses three 4‑MW pumps【885920885053475†L640-L651】; and an additional pumping station for Brahmanavellemula balancing reservoir employs two pumps【885920885053475†L1613-L1616】—making a total of nine pumps across the scheme."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.10138889,
+          16.68611111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Argula Rajaram Guthpa LIS",
+        "Project": "ARGULA RAJARAM GUTHPA LIS",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": "78.10638889",
+        "Lat": "18.93861111",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Argula Rajaram Guthpa LIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Arugula Rajarama Guthpa LIS",
+        "lift_pumps": 8,
+        "lift_max_water_tmc": 2.952,
+        "meta": "To supplement tail‑end ayacuts of Nizamsagar, this scheme lifts 2.952 TMC of water from the Godavari in two stages.  Eight pumps (4 × 2550 kW, 3 × 1725 kW and 1 × 1725 kW) deliver a total discharge of 540 cusecs over a 69.32‑m lift【311898986945898†L35-L66】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.10638889,
+          18.93861111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Asif Nahar Project",
+        "Project": "ASIF NAHAR PROJECT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "78.98333333",
+        "Lat": "17.33194444",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Asif Nahar Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Asif Nahar (Diversion)",
+        "frl": "+309.98 m",
+        "frl_m": 309.98,
+        "storage_tmc": "1.62 TMC",
+        "storage_tmc_value": 1.62,
+        "meta": "The Asif Nahar project is a diversion scheme across the Musi river (a tributary of the Krishna) near Nemali Kalva in Valigonda mandal of Yadadri Bhongir district.  Constructed between 1903 and 1906, it consists of a 434‑m‑long anicut with eight gates that diverts water into a network of canals feeding numerous medium irrigation tanks.  The project data list a gross storage of 45.82 M cum (≈1.62 TMC) and a full reservoir level (anicut crest) of about +309.980 m【137177048213093†L12-L31】.  As a diversion rather than a storage dam, Asif Nahar conveys about 2.540 TMC of water annually to irrigate roughly 15,245 acres across Valigonda, Ramannapet, Narketpally and Kattangur mandals【137177048213093†L34-L41】【137177048213093†L156-L164】.  The scheme underscores early 20th‑century engineering, linking the Musi river to a network of tanks that support agriculture in Nalgonda and Yadadri districts."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.03211554359258,
+          17.293461796369062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Baktha Ramadasu LIS",
+        "Project": "BAKTHA RAMADASU LIS",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "79.86944444",
+        "Lat": "17.25472222",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Baktha Ramadasu LIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Bhaktha Ramadasu LIS",
+        "lift_pumps": 2,
+        "lift_max_water_tmc": 5.5,
+        "meta": "The Bhaktha Ramadasu Lift Irrigation Scheme lifts 5.5 TMC of water from the Palair balancing reservoir.  Two pumps, each rated for 275 cusecs, raise the water about 57 m from elevation 128 ft to 185 ft to irrigate upland areas in Khammam district【879771134768880†L15-L26】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.90209716832103,
+          17.231893970706018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Bayyaram Tank",
+        "Project": "LT BAYYARAM",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "80.13833333",
+        "Lat": "17.6",
+        "Data": "Available",
+        "OLD_DAM_NA": "Bayyaram Tank",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Bayyaram Tank",
+        "frl": "+195.38 m",
+        "frl_m": 195.38,
+        "storage_tmc": "0.397 TMC",
+        "storage_tmc_value": 0.397,
+        "meta": "Bayyaram Tank is an ancient irrigation tank believed to have been built during the Kakatiya dynasty about 700 years ago at Bayyaram village in Mahabubabad district.  It has a registered ayacut of about 7,200 acres and continues to supply water through a network of canals.  The full tank level (FTL), which serves as the full reservoir level, is +195.38 m, with a maximum water level of +198.62 m and a top bund level of +200.56 m【657593757119670†L32-L46】.  The tank’s gross storage capacity is 397.034 Mcft (≈0.397 TMC) with a net storage of 383.826 Mcft and dead storage of 13.208 Mcft【657593757119670†L32-L37】.  Three surplus weirs and several canals distribute water to thousands of acres, preserving the engineering heritage of the Kakatiyas."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.16359216226978,
+          17.590380258057206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Boggulavagu Project",
+        "Project": "BOGGULAVAGU",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "79.84611111",
+        "Lat": "18.54944444",
+        "Data": "Available",
+        "OLD_DAM_NA": "Boggulavagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Boggulavagu",
+        "frl": "+160.7 m",
+        "frl_m": 160.7,
+        "storage_tmc": "0.365 TMC",
+        "storage_tmc_value": 0.365,
+        "meta": "Boggulavagu is a medium irrigation reservoir on the Boggulavagu stream, a tributary of the Manair river, near Rudraram village in Jayashankar Bhupalapally district.  The project comprises a 1,660‑m earth dam with a 140‑m spillway and a head regulator.  It is intended to irrigate about 5,150 acres of wet and irrigated‑dry crops.  The salient features list a gross storage of 10.3383 M cum (≈0.365 TMC) and dead storage of 1.1759 M cum【298226010358427†L69-L77】.  The maximum water level (used as the full reservoir level) is +160.70 m, while the crest level of the spillway is +162.61 m【298226010358427†L79-L83】.  This reservoir helps stabilise agriculture in a backward tribal area and also provides flood protection for downstream villages."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.85987804860432,
+          18.555859569566824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Chelmelavagu Project (NTR Sagar)",
+        "Project": "CHELMELAVAGU (NTR SAGAR)",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "79.25611111",
+        "Lat": "19.15972222",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Chelmelavagu Project (NTR Sagar)",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "NTR Sagar (Chelimalavagu)",
+        "frl": "+326.3 m",
+        "frl_m": 326.3,
+        "storage_tmc": "0.37 TMC",
+        "storage_tmc_value": 0.37,
+        "meta": "The NTR Sagar, also called the Chelimalavagu project, is a medium irrigation scheme completed in 1998 across the Chelemala Vagu stream near Irkapally in Tiryani mandal, Asifabad district.  It is designed to irrigate about 6,000 acres and benefits fourteen villages.  The reservoir has a full reservoir level of +326.300 m and a gross storage of 10.495 M cum (≈0.37 TMC) with a dead storage of 1.727 M cum【362375997531666†L24-L29】.  The earth bund and gated spillway supply water to right‑ and left‑flank canals; the project is part of efforts to develop irrigation infrastructure in the tribal belt of northern Telangana【362375997531666†L31-L44】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.2480609509856,
+          19.150919251681582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Choutpally Hanumanth Reddy LIS",
+        "Project": "CHOUTPALLY HANUMANTH REDDY LIS",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "78.4375",
+        "Lat": "18.87666667",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Choutpally Hanumanth Reddy LIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Choutpally Hanumanth Reddy LIS",
+        "lift_pumps": 6,
+        "lift_max_water_tmc": 1,
+        "meta": "Located near Shetpally tank, this scheme uses six vertical turbine pumps to lift 180 cusecs through three stages (heights of 72.9 m, 29.15 m and 47.55 m).  The project lifts about 1 TMC of water to irrigate roughly 11,625 acres【758866503358898†L25-L54】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.42479766575809,
+          18.868814699873127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Sri R Vidya Sagar Rao Dindi LIS",
+        "Project": "SRVR_DINDI LIS",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "78.68277778",
+        "Lat": "16.5725",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Sri R VidyaSagar Rao_Dindi LIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Sri Ramaraju Vidyasagar Rao (Dindi) LIS",
+        "lift_pumps": null,
+        "lift_max_water_tmc": 30,
+        "meta": "The Dindi lift project plans to draw 30 TMC of flood water from the foreshore of the Srisailam reservoir, pumping 0.50 TMC per day for 60 days to feed several offline and online reservoirs."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.65767343718971,
+          16.564164612467188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Dindi Project",
+        "Project": "DINDI PROJECT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "78.67138889",
+        "Lat": "16.54527778",
+        "Data": "Available",
+        "OLD_DAM_NA": "Dindi Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Dindi",
+        "frl": "+396.545 m",
+        "frl_m": 396.545,
+        "storage_tmc": "2.44 TMC",
+        "storage_tmc_value": 2.44,
+        "meta": "The Dindi reservoir is an upgraded irrigation project across the Dindi river (a tributary of the Krishna) near Dindi village in Nalgonda district.  After a devastating flood, the dam was reconstructed in the 1960s with nine additional floodgates, raising the full reservoir level from +212.10 m to +396.545 m and increasing storage capacity to 69.125 M cum (≈2.44 TMC)【91718334315470†L31-L60】.  The scheme now irrigates about 12,835 acres through left‑ and right‑bank canals and is supplemented via the Saraswathi canal from the Sriramsagar project to stabilise the ayacut【91718334315470†L31-L72】.  Its strategic location on the Hyderabad–Srisailam highway also allows it to serve as a picnic spot while providing flood moderation and drinking water to nearby villages."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.67809735584532,
+          16.544746547455713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Dr.BR Ambedkar Pranahita Project",
+        "Project": "DR.BR AMBEDKAR PRANAHITA PROJECT",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "79.76472222",
+        "Lat": "19.59777778",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Dr.BR Ambedkar Pranahita Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "frl": "+148.00 m",
+        "frl_m": 148,
+        "storage_tmc": "1.85 TMC",
+        "storage_tmc_value": 1.85,
+        "meta": "Dr.BR Ambedkar Pranahita Project begins at the proposed Tummidihetti Barrage across the Pranahita near the confluence of the Wardha and Wainganga rivers. It emerged from the earlier Pranahita-Chevella Sujala Sravanthi scheme of undivided Andhra Pradesh, which was planned to use Godavari waters for large-scale irrigation in drought-prone Telangana. After state reorganisation and review of the old scheme, Link-I was retained as the separate Dr.BR Ambedkar Pranahita Project, focused on bringing irrigation to the former Adilabad region. Its history is closely tied to interstate negotiations with Maharashtra: the earlier barrage proposal at FRL +152.00 m faced objections over submergence, so the project was reworked with the barrage FRL reduced to +148.00 m and storage limited to about 1.85 TMC. In its revised form, the project was designed to divert about 20 TMC for irrigation to roughly 2 lakh acres in drought-prone East Adilabad."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.79470614560434,
+          19.593271393543045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Gaddena Vagu (Suddavagu) Project",
+        "Project": "GADDENA-SUDDAVAGU",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "77.93555556",
+        "Lat": "19.11666667",
+        "Data": "Available",
+        "OLD_DAM_NA": "Gaddena Vagu (Suddavagu) Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Gaddena‑Suddavagu",
+        "frl": "+358.7 m",
+        "frl_m": 358.7,
+        "storage_tmc": "1.83 TMC",
+        "storage_tmc_value": 1.83,
+        "meta": "The Gaddena‑Suddavagu project (also spelled Gaddennavagu) is a medium irrigation scheme across the Suddavagu stream (a tributary of the Godavari) near Bhainsa town in Nirmal district. Started in 2000 and completed in 2006, it comprises a 4.2 km earth dam with a gated spillway and five vertical gates.  The full reservoir level and maximum water level are both +358.70 m【191515728601472†L46-L52】, while the top bund level is +362.70 m【191515728601472†L46-L53】.  Although the PDF does not specify a storage capacity, the project irrigates about 14,000 acres and supplies drinking water to Bhainsa and 237 villages in Lokeshwaram, Bhainsa and Mudhole mandals【191515728601472†L59-L70】.  It has become a lifeline for farmers in this semi‑arid region."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.94660994502341,
+          19.116804466136166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Ghanpur Anicut",
+        "Project": "GHANPUR ANICUT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "78.15638889",
+        "Lat": "17.98972222",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Ghanpur Anicut",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Ghanpur Anicut",
+        "frl": "+358.7 m",
+        "frl_m": 358.7,
+        "storage_tmc": "0.14 TMC",
+        "storage_tmc_value": 0.14,
+        "meta": "The Ghanpur anicut is a century‑old diversion structure across the Manjeera River near Chinna Ghanpur village in Kulcharam mandal, Medak district.  Constructed between 1902 and 1905 and supplemented in 1925 with the Fathe Naher canal, it diverts water into two main canals — the Mahaboob Naher on the right flank and the Fathe Naher on the left.  The structure’s full reservoir level is +358.70 m and its crest level was raised from 1515 ft in 1905 to 1518.3 ft in 1985.【357651150131114†L48-L63】 As an anicut it provides little storage but raises the river level to irrigate more than 20,000 acres through a network of canals, continuing to sustain agriculture in Medak district."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.17639761856475,
+          17.99796120120336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Gollavagu Project",
+        "Project": "GOLLAVAGU",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "79.67361111",
+        "Lat": "18.86638889",
+        "Data": "Available",
+        "OLD_DAM_NA": "Gollavagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Gollavagu",
+        "frl": "+155.5 m",
+        "frl_m": 155.5,
+        "storage_tmc": "0.5675 TMC",
+        "storage_tmc_value": 0.5675,
+        "meta": "The Gollavagu project is a medium irrigation scheme constructed across the Gollavagu stream near Bheemaram village in Mancherial district.  The main objective is to irrigate 9,500 acres of ayacut in Bheemaram and Chennur mandals.  Project documents list a gross storage capacity of 0.5675 TMC, dead storage 0.0223 TMC and live storage 0.545 TMC, with a full reservoir level of +155.50 m and maximum water level +157.50 m【649653101337728†L46-L58】.  The earthen dam and ogee weir are designed to handle a maximum flood discharge of 903 cumecs and feature a right‑bank canal 26 km long【649653101337728†L66-L100】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.68349880531117,
+          18.876103890274322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Gundlavagu Project",
+        "Project": "GUNDLAVAGU",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "80.57416667",
+        "Lat": "18.39138889",
+        "Data": "Available",
+        "OLD_DAM_NA": "Gundlavagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Gundlavagu",
+        "frl": "+116.7 m",
+        "frl_m": 116.7,
+        "storage_tmc": "0.088 TMC",
+        "storage_tmc_value": 0.088,
+        "meta": "Gundlavagu is a minor irrigation reservoir on the Gundlavagu stream, a left‑bank tributary of the Godavari, near Pragallapally village in Wazeedu mandal of Khammam district.  It was designed to irrigate 2,580 acres across five tribal villages.  The reservoir’s full reservoir level and maximum water level are +116.70 m and the gross storage is 2.491 M cum (≈0.088 TMC) with live storage 2.292 M cum (≈0.081 TMC)【591599910007115†L50-L63】.  An earthen dam and simple canal system make the project economical while improving food security in remote areas."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.55258291032372,
+          18.397422472662086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Indiramma Flood Flow Canal",
+        "Project": "INDIRAMMA FLOOD FLOW CANAL FROM SRSP",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "78.33833333",
+        "Lat": "18.90888889",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Indiramma Flood Flow Canal from SRSP",
+        "auxiliary_": 78.35801100684904,
+        "auxiliar_1": 18.907040156629392,
+        "metadata_project": "Flood Flow Canal (includes Mid Manair, Gouravelly, Gandipally)",
+        "frl": "+318.0 m (Mid Manair), +415.0 m (Gouravelly), +440.300 m (Gandipally)",
+        "storage_tmc": "25.873 TMC (Mid Manair), 8.23 TMC (Gouravelly), 0.1584 TMC originally (later enhanced to 1.00 TMC)",
+        "meta": "The Flood Flow Canal (FFC) diverts surplus water from the Sri Ram Sagar reservoir during monsoon floods to irrigate new ayacuts in Karimnagar and Warangal districts.  As part of its re‑engineering, the canal is supported by three key reservoirs: Mid Manair, with an FRL of +318.00 m and a storage capacity of 25.873 TMC; Gouravelly, with FRL +415.00 m and 8.23 TMC; and Gandipally, with FRL +440.300 m and an original storage of 0.1584 TMC (later enhanced to 1 TMC)【232852074695871†L152-L170】.  Mid Manair acts as the main balancing reservoir and includes 25 radial gates.  Gouravelly and Gandipally balance flows before water is lifted into the Devadula Lift Scheme.  The FFC has helped protect crops from submergence during floods while supplying water for a second and third crop in SRSP command areas.  Its development showcases how harnessing flood waters through a network of reservoirs can increase agricultural productivity without major new dams."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3427236442923,
+          18.914100138610138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Jawahar Nettempadu LIS",
+        "Project": "JAWAHAR NETTEMPADU LIS",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "77.65388889",
+        "Lat": "16.285",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Jawahar Nettempadu LIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Jawahar Nettempadu LIS",
+        "lift_pumps": 7,
+        "lift_max_water_tmc": 21.425,
+        "meta": "The Jawahar Nettempadu scheme lifts 21.425 TMC of water from the foreshore of the Priyadarshini Jurala Project.  Stage I employs four 17‑MW pumps and Stage II uses three 17‑MW pumps to lift the water through heights of 63.5 m and 76 m respectively【873003515746408†L33-L44】【873003515746408†L104-L110】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.66660423422397,
+          16.288458765707748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "JCR DLIS",
+        "Project": "JCR GODAVARI LIFT",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "80.34888889",
+        "Lat": "18.58666667",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "JCR Godavari Lift irrigation Scheme",
+        "auxiliary_": 80.31056877823643,
+        "auxiliar_1": 18.603271972403736,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "J. Chokka Rao Devadula LIS",
+        "lift_pumps": 49,
+        "lift_max_water_tmc": 60,
+        "meta": "Devadula is executed in three phases.  Phase I uses four pump houses, each with two pumps (eight total)【755259387330998†L350-L370】; Phase II has seven pump houses with two pumps each (fourteen total)【755259387330998†L439-L456】【755259387330998†L506-L519】; and Phase III contains nine pump houses where the number of pumps per house is 6, 6, 3, 2, 2, 2, 2, 2 and 2 respectively, giving twenty‑seven pumps【755259387330998†L670-L691】.  The project plans to lift about 60 TMC of water from the Godavari River to irrigate 6.21 lakh acres【755259387330998†L66-L75】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.35075270267127,
+          18.590160577296636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Kaddam Narayan Reddy",
+        "Project": "KADDAM",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": "78.78416667",
+        "Lat": "19.08027778",
+        "Data": "Available",
+        "OLD_DAM_NA": "Kaddam Narayan Reddy Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Kaddam Narayana Reddy Project (Kadam)",
+        "frl": "+213.30 m",
+        "storage_tmc": "7.603 TMC gross, 4.822 TMC net",
+        "meta": "The Kadam Project, renamed Kaddam Narayana Reddy Project, is a masonry dam across the Kaddam River (Godavari tributary) in Adilabad district.  Started in 1949 as part of the Godavari Valley Scheme, it was completed in 1958.  Catastrophic floods on 31 Aug 1958 breached the dam; reconstruction in 1969 added nine flood gates, increased spillway capacity and raised the FRL from +212.10 m to +213.30 m【379179158983544†L20-L23】.  The reconstructed reservoir has a gross storage of 7.603 TMC and a net storage of 4.822 TMC【379179158983544†L73-L119】.  Water is diverted through the Saraswathi canal of SRSP to irrigate lands on the north flank of the Godavari.  The project also supplies drinking water to several villages.  It is surrounded by the Kadam reserved forest and offers picturesque views of hills and waterfalls.  The story of its breach and subsequent rebuilding makes Kadam a testament to resilience and the need for proper flood‑handling structures."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.78963385383571,
+          19.108301483262167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Muktheswara (China Kaleswaram ) LIS",
+        "Project": "Mukteshwar LIS _Chinna Kaleshwaram",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "79.90527778",
+        "Lat": "18.81555556",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Mukteshwar LIS _Chinna Kaleshwaram",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Mukteshwar (Chinna Kaleshwaram) LIS",
+        "lift_pumps": 7,
+        "lift_max_water_tmc": 4.8,
+        "meta": "The Mukteshwar (Chinna Kaleshwaram) scheme uses two pump houses (Beersagar and Kataram).  Stage I at Beersagar has one pump for Lift 1.1 and two pumps for Lifts 1.2 & 1.3; Stage II at Kataram has four lifts, each with one pump【980341659899934†L61-L128】.  Altogether seven pumps convey 4.5 TMC for irrigation and 0.3 TMC for drinking water to 63 villages【980341659899934†L13-L29】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.90527778,
+          18.81555556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Kinnerasani Project",
+        "Project": "KINNERASANI",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "80.65722222",
+        "Lat": "17.68833333",
+        "Data": "Available",
+        "OLD_DAM_NA": "Kinnerasani Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Kinnerasani",
+        "frl": "+124.08 m",
+        "frl_m": 124.08,
+        "storage_tmc": "8.4 TMC",
+        "storage_tmc_value": 8.4,
+        "meta": "The Kinnerasani project is a major medium scheme across the Kinnerasani river near Yanambail village in Palwancha mandal, Kothagudem district.  It aims to irrigate about 10,000 acres and was modernised in the early 2000s.  The full reservoir level and maximum water level are both +407 ft (+124.08 m), with a top bund level of +415 ft (+126.52 m)【687925606385208†L71-L77】.  The gross storage capacity at FRL is 8.400 TMC【687925606385208†L97-L99】.  The project features a composite earthen and gravity dam, eleven large radial gates, and canals that serve villages in Palwancha and Burgampadu mandals."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.65722222,
+          17.68833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Koil Sagar LIS",
+        "Project": "KOILSAGAR (KOILSAGAR LIS)",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "77.785",
+        "Lat": "16.70833333",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Koil Sagar LIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Koilsagar LIS",
+        "lift_pumps": 4,
+        "lift_max_water_tmc": 4.69,
+        "meta": "The Koilsagar project raises 3.90 TMC for irrigation and supplies 0.79 TMC of drinking water (0.20 TMC to en‑route villages and 0.59 TMC to Mahabubnagar).  Water is lifted in two stages, each using two pumps (four pumps total) with lift heights of about 58.5 m and 60 m【754221458848451†L2-L29】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.785,
+          16.70833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Kotepally Project",
+        "Project": "KOTEPALLY",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "77.73444444",
+        "Lat": "17.38555556",
+        "Data": "Available",
+        "OLD_DAM_NA": "Kotepally Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Kotipally Vagu",
+        "frl": "+514.8 m",
+        "frl_m": 514.8,
+        "storage_tmc": "1.573 TMC",
+        "storage_tmc_value": 1.573,
+        "meta": "The Kotipally Vagu project (also spelled Kotepally) is a medium irrigation scheme across the Kotipally Vagu stream, a tributary of the Bhima river, near Vikarabad in Rangareddy district.  Completed in 1968, it comprises a 2,189‑m earthen dam and a long spillway.  Although the project document does not list storage, the Krishna River Management Board notes a full reservoir level of +1,689 ft (≈514.8 m) and a gross capacity of 1,572.92 Mcft (≈1.573 TMC)【278610909160770†L23-L29】.  The diversion irrigates about 9,200 acres of irrigated dry crops in Peddemul and Dharur mandals, benefiting 18 villages."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7472426203427,
+          17.358359719009318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Koulasnala Project",
+        "Project": "KOULAS NALA",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "77.64111111",
+        "Lat": "18.30138889",
+        "Data": "Available",
+        "OLD_DAM_NA": "Koulasnala Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Koulasnala",
+        "frl": "+458 m",
+        "frl_m": 458,
+        "storage_tmc": "1.237 TMC",
+        "storage_tmc_value": 1.237,
+        "meta": "The Koulasnala project is a medium irrigation scheme across the Koulasnala river near Sawargaon village in Jukkal mandal, Kamareddy district.  Commissioned in 1999, it was designed to irrigate 9,000 acres across Jukkal and Bichkunda mandals.  The full reservoir level and maximum water level are both +458.00 m, and the gross storage is 35.04 M cum (≈1.237 TMC)【586342622145274†L55-L68】.  A gated ogee spillway with nine radial gates regulates flood flows【586342622145274†L57-L64】.  The project’s canals supply water to 19 villages, improving irrigation and drinking supplies."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.64620553130146,
+          18.309921781658602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Lakhnavaram Lake",
+        "Project": "LAKNAVARAM LAKE",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "80.10666667",
+        "Lat": "18.17944444",
+        "Data": "Available",
+        "OLD_DAM_NA": "Lakhnavaram Lake",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Laknavaram Lake",
+        "frl": "+185 m",
+        "frl_m": 185,
+        "storage_tmc": "2.135 TMC",
+        "storage_tmc_value": 2.135,
+        "meta": "Lakhnavaram Lake is a historic Kakatiya-era irrigation lake situated about 70 km from Warangal. Historical accounts state that it was constructed in 1213 AD by the kings of the Kakatiya dynasty. The lake was formed by closing three narrow valleys, each with a short bund, while a hill served as a natural bund, creating a total bund length of about 610 m and a water spread of roughly 2,250 hectares. One of its most distinctive features is that it has only a single sluice, known as the Tower Sluice. Water released from this sluice flows through a natural valley for about one kilometre up to a pick-up earthen dam called Saddimadugu, from where the irrigation channels begin. The original ayacut under the source was about 2,572 hectares (6,353 acres), later increased to 3,522 hectares (8,700 acres), and the present actual irrigation is reported to be around 4,130 hectares (10,200 acres)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.08446659018226,
+          18.15504536998604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Lankasagar Project",
+        "Project": "LANKASAGAR",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "80.71555556",
+        "Lat": "17.17583333",
+        "Data": "Available",
+        "OLD_DAM_NA": "Lankasagar Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Lankasagar",
+        "frl": "+118.26 m",
+        "frl_m": 118.26,
+        "storage_tmc": "0.665 TMC",
+        "storage_tmc_value": 0.665,
+        "meta": "Lankasagar is a medium irrigation project across the Katlair river, a tributary of the Krishna, near Adavimallela village in Penuballi mandal of Khammam district.  Built in 1968 and later raised by 1.22 m in 1971–72, it provides water for about 2,976 ha (7,350 acres) across Penuballi and Vemsoor mandals.  According to the Krishna River Management Board, the full reservoir level is +118.260 m and the gross storage capacity is about 664.88 Mcft (≈0.665 TMC) with net capacity 610.10 Mcft【771877881742860†L24-L31】.  The project features left and right canals totalling 30.7 km and benefits multiple villages along the Hyderabad–Rajamundry highway."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.71555556,
+          17.17583333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Lendi Project",
+        "Project": "LENDI PROJECT",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "77.40944444",
+        "Lat": "18.48027778",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Lendi Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Lendi (Inter‑state)",
+        "frl": null,
+        "frl_m": null,
+        "storage_tmc": "6.36 TMC",
+        "storage_tmc_value": 6.36,
+        "meta": "The Lendi project is an inter‑state major irrigation scheme jointly undertaken by Maharashtra and Telangana on the Lendi river. It was conceived as a joint venture in 2003 to irrigate 49,000 acres—22,000 acres in Telangana and 27,000 acres in Maharashtra. Although the PDF does not specify a full reservoir level, the inter‑state agreement allocates a total of 6.36 TMC of water, of which 2.43 TMC is Telangana’s share and 3.93 TMC Maharashtra’s share【692261166728756†L21-L67】. The project involves a common carrier canal and separate right‑bank canals for each state; progress has been hampered by land‑acquisition and funding issues. Once completed, it will enhance irrigation and strengthen cooperation between the two states."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.42102078759154,
+          18.521028199326636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Lower Penganga Project",
+        "Project": "LOWER PENGANGA PROJECT",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "78.21666667",
+        "Lat": "19.90388889",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Lower Penganga Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Lower Penganga Project (Chanaka–Korata Barrage)",
+        "frl": "Not explicitly given (TBL 221.5 m)",
+        "storage_tmc": "≈0.83 TMC (gross storage of Chanaka‑Korata)",
+        "meta": "The Lower Penganga Project is a joint venture of Telangana and Maharashtra on the Penganga River, a tributary of the Wardha.  Its principal component is the Chanaka–Korata barrage located on the interstate border.  According to the project documentation, the barrage has a total length of 3 681 m with a top‑of‑barrage level (TBL) of 221.5 m, but the full reservoir level is not explicitly stated【938240709757599†L210-L221】.  The gross storage capacity of the pond is 23.50 million cubic metres (≈0.83 TMC)【938240709757599†L210-L221】.  Maharashtra is allocated 37.55 TMC of water, while Telangana’s share is 5.12 TMC.  The scheme envisages raising a series of small barrages and barraging structures upstream to irrigate the drought‑prone tribal areas of Adilabad and Nirmal districts and to provide drinking water.  Its complexity lies in coordinating interstate water sharing, rehabilitating submerged villages and building long feeder canals through undulating terrain."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.21324968010269,
+          19.905952906909885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "M Baga Reddy Singur Project",
+        "Project": "SINGUR",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "77.94333333",
+        "Lat": "17.72138889",
+        "Data": "Available",
+        "OLD_DAM_NA": "M Baga Reddy Singur Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Singur Project (M. Baga Reddy Singur Reservoir)",
+        "frl": "+523.60 m",
+        "storage_tmc": "29.91 TMC gross",
+        "meta": "The Singur Project, officially known as the M. Baga Reddy Singur Reservoir, is an earthen and masonry dam built across the Manjeera River near Singur in Medak district.  Completed in 1989, it has an FRL and maximum water level of +523.60 m and a crest level of +510.60 m【130991633499440†L21-L33】.  The reservoir stores 29.91 TMC and supplies 4 TMC of drinking water annually to Hyderabad and Secunderabad while irrigating about 40 000 acres【130991633499440†L44-L52】.  A 15 MW hydropower station utilises releases.  The project also stabilises downstream riparian rights of the Nizam Sagar.  During construction, workers uncovered megalithic burial sites, leading to archaeological excavations.  The scenic reservoir has become a popular weekend destination for Hyderabad residents, known for its crocodile sanctuary and migratory birds."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.92676610625543,
+          17.750108120338464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "MGKLIS",
+        "Project": "MAHATMA GANDHI KALWAKURTHY LIS",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "78.38333333",
+        "Lat": "16.11027778",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "M G KLIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Mahatma Gandhi Kalwakurthy LIS",
+        "lift_pumps": 15,
+        "lift_max_water_tmc": 25,
+        "meta": "Kalwakurthy lifts 25 TMC of water from the Srisailam reservoir in three stages, raising it from elevation 244.4 m to 502 m.  Each stage has five pump houses, and a total of fifteen pumps (30‑MW units) deliver discharges of 800 cumecs in the first two stages and 650 cumecs in the third【933261315061486†L23-L29】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.39108146897101,
+          16.121509200925573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Malluruvagu Project",
+        "Project": "MALLURUVAGU",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "80.50388889",
+        "Lat": "18.21166667",
+        "Data": "Available",
+        "OLD_DAM_NA": "Malluruvagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Malluruvagu",
+        "frl": "+116.75 m",
+        "frl_m": 116.75,
+        "storage_tmc": "0.343 TMC",
+        "storage_tmc_value": 0.343,
+        "meta": "Malluruvagu is a medium project constructed in 1986 across the Malluruvagu stream near Narsimhasagar village in Mangapet mandal of Bhupalpally district.  It irrigates about 7,500 acres across 17 villages.  The available data lists a maximum water level +116.75 m and top bund level +118.25 m with a gross storage around 342.71 Mcft (≈0.343 TMC), though the PDF does not clearly specify an FRL【213566917059188†L36-L56】.  Left and right bank canals (7.08 km and 14.15 km) carry water to the command area【213566917059188†L63-L79】.  Despite incomplete data, the project plays a crucial role in irrigating tribal areas in Bhupalpally district."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.5154859466212,
+          18.17373563810979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Mathadivagu Project",
+        "Project": "MATHADIVAGU",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "78.45861111",
+        "Lat": "19.67",
+        "Data": "Available",
+        "OLD_DAM_NA": "Mathadivagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Mathadivagu",
+        "frl": "+277 m",
+        "frl_m": 277,
+        "storage_tmc": "0.57 TMC",
+        "storage_tmc_value": 0.57,
+        "meta": "The Mathadivagu project is a medium irrigation scheme across the Mathadivagu stream near Waddai village in Thamsi mandal of Adilabad district.  Designed to irrigate about 8,500 acres, it features an ogee spillway and earth dam; the full reservoir level is +277.0 m and the maximum water level +277.5 m【79772160582113†L35-L54】.  The gross storage capacity is 16.175 M cum (≈0.57 TMC) with live storage of 14.329 M cum (≈0.51 TMC)【79772160582113†L89-L93】.  The left main canal and distributaries extend over 53 km to supply water to villages in Thamsi, Adilabad and Jainath mandals."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.44630994636965,
+          19.683415837257577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Modikuntavagu Project",
+        "Project": "MODIKUNTAVAGU",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "80.43444444",
+        "Lat": "18.55805556",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Modikuntavagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Modikuntavagu",
+        "frl": "+124 m",
+        "frl_m": 124,
+        "storage_tmc": "2.14 TMC",
+        "storage_tmc_value": 2.14,
+        "meta": "The Modikuntavagu medium project is located in Wazeedu mandal of Bhupalpally district and was created to irrigate about 13,600 acres in tribal areas. The full reservoir level is +124 m with a gross storage capacity of roughly 60.66 M cum (about 2.14 TMC)【310548741613650†L55-L63】. The scheme consists of a 1,259‑m earth bund and a gated ogee spillway with ten radial gates capable of passing major floods【310548741613650†L21-L43】. It also features a right‑bank irrigation sluice designed to supply nearly 10 cumecs of water to the canal network."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4374161857592,
+          18.54708081180893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Musi Project",
+        "Project": "MUSI PROJECT",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": "79.51055556",
+        "Lat": "17.2425",
+        "Data": "Available",
+        "OLD_DAM_NA": "Musi Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Musi Project (Musi Reservoir)",
+        "frl": "+645 ft (196.59 m)",
+        "storage_tmc": "4.46 TMC",
+        "meta": "The Musi Project is a medium storage dam constructed across the Musi River near Solipet in Nalgonda district between 1954 and 1963.  The earthen dam with a concrete spillway has twelve radial crest gates and creates a reservoir with a gross storage capacity of 4.46 TMC.  The full reservoir level and minimum draw‑down level are both +645 ft (196.59 m)【94244186029898†L135-L160】.  The dam irrigates about 45 000 acres and supplies drinking water to nearby villages.  Interestingly, the Musi Project sits upstream of Hyderabad; the same Musi river later flows through the city where the famous 1908 floods prompted construction of the Osman Sagar and Himayat Sagar reservoirs.  The project demonstrates the continued harnessing of the Musi for irrigation and flood control."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.5202497679935,
+          17.23484154164407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Nagarjuna Sagar Project",
+        "Project": "NAGARJUNA SAGAR",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": "79.30916667",
+        "Lat": "16.57416667",
+        "Data": "Available",
+        "OLD_DAM_NA": "Nagarjuna Sagar Project",
+        "auxiliary_": 79.22964856024386,
+        "auxiliar_1": 16.540883897805056,
+        "metadata_project": "Nagarjuna Sagar Project",
+        "frl": "590 ft (179.95 m)",
+        "storage_tmc": "312.045 TMC gross, 180.376 TMC live",
+        "meta": "Nagarjuna Sagar is a colossal masonry dam on the Krishna River between Nalgonda (Telangana) and Guntur (Andhra Pradesh).  Conceived as India’s first large multipurpose river valley project, it was built between 1955 and 1967.  The dam rises 124.7 m and spans 4.8 km, creating a reservoir with an FRL of 590 ft (179.95 m) and a gross storage capacity of 312.045 TMC; dead storage is 131.669 TMC and live storage 180.376 TMC【42734850253697†L133-L148】.  The project was inaugurated by Prime Minister Jawaharlal Nehru in 1955 and water was released into the right‑bank canal by Indira Gandhi in 1967.  Nagarjuna Sagar irrigates about 9.81 lakh ha through the Jawahar Canal (right bank) and Lalbahadur Shastri Canal (left bank) and generates 815 MW of power.  The reservoir submerged the ancient Buddhist centre of Nagarjunakonda, leading to extensive archaeological excavations.  With its towering masonry blocks and crest gates, Nagarjuna Sagar remains one of India’s largest dams and a landmark of post‑independence engineering."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.30916667,
+          16.57416667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Nallavagu Project",
+        "Project": "NALLAVAGU",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "77.72916667",
+        "Lat": "18.14361111",
+        "Data": "Available",
+        "OLD_DAM_NA": "Nallavagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Nallavagu",
+        "frl": "+455.05 m",
+        "frl_m": 455.05,
+        "storage_tmc": "0.746 TMC",
+        "storage_tmc_value": 0.746,
+        "meta": "Nallavagu is a medium irrigation project proposed across the Nallavagu stream near Sultanabad village in Kalher mandal of Sangareddy district.  Commissioned in 1967, it provides irrigation to about 6,030 acres in Kalher and Pitalam mandals.  The full reservoir level is +455.05 m and the gross storage is 21.13 M cum (≈0.746 TMC) with an un‑gated spillway【298356551930216†L29-L44】.  Left and right bank canals of 11.186 km and 22 km respectively carry water to the command area, supporting agriculture in drought‑prone villages【298356551930216†L55-L63】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.73523053672848,
+          18.16377816961503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Nizam Sagar Project",
+        "Project": "NIZAM SAGAR",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": "77.94277778",
+        "Lat": "18.20583333",
+        "Data": "Available",
+        "OLD_DAM_NA": "Nizam Sagar Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Nizam Sagar Project",
+        "frl": "428.24 m (1397.85 ft after modernisation)",
+        "storage_tmc": "29.72 TMC original (17.80 TMC present)",
+        "meta": "Nizam Sagar is one of the earliest major irrigation schemes in Telangana, built across the Manjeera River between 1923 and 1931 under the rule of Mir Osman Ali Khan, the last Nizam of Hyderabad.  The earthen dam with a masonry spillway originally had an FRL of 426.87 m and a gross storage of 29.72 TMC; silting later reduced capacity to 11.79 TMC.  A modernisation project raised the FRL to 428.24 m (1397.85 ft) and restored storage to 17.8 TMC【277722925435631†L17-L22】【277722925435631†L104-L125】.  The scheme irrigates about 2.75 lakh acres and supplies drinking water to Hyderabad and Secunderabad.  The 3 km long dam features 14 crest gates and includes a roadway on top.  Nizam Sagar gained fame when Mahatma Gandhi and Jawaharlal Nehru visited it during the freedom movement.  Scenic gardens and guest houses around the reservoir make it a tourist attraction.  It remains a cultural symbol of engineering excellence under the Nizams."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.95642148013906,
+          18.215458821982477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Pakhal Lake",
+        "Project": "SANGAM PROJECT(PAKAL LAKE)",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "79.98027778",
+        "Lat": "17.96333333",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Pakhal Lake",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Pakhal Lake",
+        "frl": "+252.92 m",
+        "frl_m": 252.92,
+        "storage_tmc": "3.386 TMC",
+        "storage_tmc_value": 3.386,
+        "meta": "Pakhal Lake is one of the notable Kakatiya-era irrigation works of Telangana. Historical accounts attribute its construction to Jagadala Mummadi, son of Bayyana Nayaka, a minister under Kakatiya king Ganapatideva, around the 13th century. Built about 50 km east of Warangal amid thick forest, the lake was created not just as a water body but as a carefully planned irrigation reservoir for surrounding farmlands. Its most distinctive engineering feature was the system of pick-up weirs built along the surplus course, where channels were dropped and picked up again downstream so tail-end lands could also receive water. This arrangement helped recycle regenerated flows and made the distribution system more efficient and equitable. The present medium irrigation project continues that legacy through its canal network serving the Khanapur and Narsampet region."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.99033103273403,
+          17.94815300591448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "S. Jaipal Reddy PRLI Scheme",
+        "Project": "PALAMURU_RANGA REDDY LIS",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "78.37722222",
+        "Lat": "16.07388889",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Palamuru_Ranga Reddy LIS",
+        "auxiliary_": 78.1590896475186,
+        "auxiliar_1": 16.07629075396453,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Palamuru–Rangareddy LIS",
+        "lift_pumps": 34,
+        "lift_max_water_tmc": 120,
+        "meta": "Palamuru–Rangareddy LIS lifts 2 TMC per day from the foreshore of Srisailam for 60 days (90 TMC for PRLIS and 30 TMC for the Dindi component).  The project has five stages: Lift‑1 (Yellur) has eight 145‑MW pumps; Lift‑2 (Yedula) nine pumps; Lift‑3 (Vattem) nine pumps; Lift‑4 (Udandapur) five pumps; and Lift‑5 (K.P. Laxmidevipally) three pumps【618302279045903†L21-L54】.  In total there are 34 pumps."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.36470190937044,
+          16.108497061085938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Palemvagu Project",
+        "Project": "PALEMVAGU PROJECT",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "80.58611111",
+        "Lat": "18.32638889",
+        "Data": "Available",
+        "OLD_DAM_NA": "Palemvagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Palemvagu",
+        "frl": "+132.5 m",
+        "frl_m": 132.5,
+        "storage_tmc": "1.26 TMC",
+        "storage_tmc_value": 1.26,
+        "meta": "Palemvagu is a medium irrigation project across the Palemvagu stream, a major tributary of the Godavari. Located near Mallapuram village in Bhupalpally district, it was designed to irrigate more than 10,000 acres of paddy and irrigated dry crops. The reservoir has a gross storage of 35.6 M cum (about 1.26 TMC) and a full reservoir level of +132.50 m【240579815023841†L37-L46】. The scheme includes an earth dam 590 m long with three operating radial gates (and one spare), and a canal system delivering water to fifteen distributaries【240579815023841†L50-L83】. Palemvagu not only supplies irrigation and drinking water to Venkatapuram mandal but also attenuates floods in the catchment."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.5879063337025,
+          18.340059597693603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Peddavagu (Jagannathpur) Project",
+        "Project": "PEDDAVAGU (JAGANNATHPUR) PROJECT",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "79.52722222",
+        "Lat": "19.31972222",
+        "Data": "Available",
+        "OLD_DAM_NA": "Peddavagu (Jagannathpur) Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Peddavagu (Jagannathpur)",
+        "frl": "+165 m",
+        "frl_m": 165,
+        "storage_tmc": "0.135 TMC",
+        "storage_tmc_value": 0.135,
+        "meta": "The Peddavagu project near Jagannathpur is a medium irrigation scheme in Asifabad district that comprises an earthen dam and an anicut/barrage across the Peddavagu stream. It is designed to irrigate 6,073 ha (15,000 acres) through a 29‑km right‑bank canal. The full reservoir level is +165 m and the gross storage capacity is about 3.811 M cum (≈0.135 TMC)【885373213920740†L39-L47】. The project includes a 720‑m earth bund and a 330‑m spillway with radial gates. Work has been intermittently delayed by land‑acquisition issues, but the scheme promises irrigation and drinking‑water supply to local villages【885373213920740†L49-L72】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.49770076355878,
+          19.327176210331363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Peddavagu (Nilwai) Project",
+        "Project": "PEDDAVAGU (NILWAI) PROJECT",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "79.82777778",
+        "Lat": "19.05611111",
+        "Data": "Available",
+        "OLD_DAM_NA": "Peddavagu (Nilwai) Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Nilwai",
+        "frl": "+124 m",
+        "frl_m": 124,
+        "storage_tmc": "0.85 TMC",
+        "storage_tmc_value": 0.85,
+        "meta": "Nilwai is a medium irrigation project across the Peddavagu stream in the Pranahitha sub‑basin of the Godavari. Situated near Nilwai village in Mancherial district, it is designed to irrigate about 13,000 acres across Vemanpally and Kotapally mandals. The full reservoir level is +124 m and the gross storage capacity is 23.941 M cum (≈0.85 TMC)【283637703149130†L48-L58】. The scheme consists of a 4.185 km earth bund and an ogee weir spillway with a crest level of +124 m【283637703149130†L60-L73】. Construction has faced issues related to land acquisition and forest clearance, but once complete it will bring much‑needed irrigation to a drought‑prone region."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.81598914435355,
+          19.064161501525938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Peddavagu (Sri Komaram Bheem) Project",
+        "Project": "PEDDAVAGU (SRI KOMARAM BHEEM) PROJECT",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "79.22916667",
+        "Lat": "19.41388889",
+        "Data": "Available",
+        "OLD_DAM_NA": "Peddavagu (Sri Komaram Bheem) Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Sri Komaram Bheem",
+        "frl": "+243 m",
+        "frl_m": 243,
+        "storage_tmc": "10.393 TMC",
+        "storage_tmc_value": 10.393,
+        "meta": "Sri Komaram Bheem project is a medium irrigation scheme built across the Peddavagu stream near Ada village in Asifabad district. It was sanctioned in 2005 and revised in 2009; the project aims to irrigate 45,500 acres across four mandals. The reservoir’s full reservoir level is +243 m, with a gross storage capacity of 294.29 M cum (≈10.39 TMC) and live storage of 8.97 TMC【875140777067578†L49-L60】. The dam includes an earth bund 1,012 m long, a gated spillway with nine large vents and supplies drinking water to about 229 villages【875140777067578†L67-L75】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.225576222595,
+          19.429465094530336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Peddavagu(Gummadavalli) Project",
+        "Project": "PEDDAVAGU PROJECT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "81.1675",
+        "Lat": "17.45361111",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Peddavagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Peddavagu (Gummadavalli)",
+        "frl": "+81.24 m",
+        "frl_m": 81.24,
+        "storage_tmc": "0.56 TMC",
+        "storage_tmc_value": 0.56,
+        "meta": " at Gummadavalli near Aswaraopeta. It is a medium irrigation project across the Peddavagu stream in the Godavari basin, historically designed to irrigate about 16,000 acres across 14 villages, with 2,360 acres on the Telangana side and the balance in the area that is now in Telangana. Telangana-side ayacut of 2,360 acres."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.16494679295644,
+          17.422706066943263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Pocharam Project",
+        "Project": "POCHARAM PROJECT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "78.17111111",
+        "Lat": "18.13555556",
+        "Data": "Available",
+        "OLD_DAM_NA": "Pocharam Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Pocharam",
+        "frl": "+446.22 m",
+        "frl_m": 446.22,
+        "storage_tmc": "1.82 TMC",
+        "storage_tmc_value": 1.82,
+        "meta": "Pocharam is a historic medium irrigation project across the Alair stream near Pocharam village in Kamareddy district. Built in 1922 at a cost of ₹27.11 lakh, it irrigates about 10,500 acres and supplies drinking water to Yellareddy town. The full reservoir level is +446.22 m; water utilisation (a proxy for storage) is 51.54 M cum (≈1.82 TMC)【279688142675023†L24-L34】【279688142675023†L45-L54】. The earthen bund and non‑gated spillway have withstood the test of time, and recent modernisation has improved canal distribution."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.17908988201114,
+          18.129641189013547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "PP Rao Project (Yerravagu)",
+        "Project": "PP RAO PROJECT (YERRAVAGU)",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "79.71444444",
+        "Lat": "19.18805556",
+        "Data": "Available",
+        "OLD_DAM_NA": "PP Rao Project (Yerravagu)",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Palvai Purushotham Rao (Yerravagu)",
+        "frl": "+147.5 m",
+        "frl_m": 147.5,
+        "storage_tmc": "0.85 TMC",
+        "storage_tmc_value": 0.85,
+        "meta": "The Palvai Purushotham Rao project, also known as the Yerravagu project, is a medium irrigation scheme across Yerravagu stream near Kalwada village in Dahegaon mandal, Asifabad district. It was financed under NABARD’s RIDF‑V programme and completed in the early 2000s. The full reservoir level is +147.50 m and the gross storage is 24.08 M cum (≈0.85 TMC)【849090895567663†L51-L68】. The project irrigates 11,150 acres across 17 villages and includes left and right bank canals; live storage after 25 years of silting is about 18.83 M cum【849090895567663†L69-L121】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.71173165751622,
+          19.19724860729068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Priyadarshini Jurala Project",
+        "Project": "JURALA",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": "77.70416667",
+        "Lat": "16.32638889",
+        "Data": "Available",
+        "OLD_DAM_NA": "Priyadarshini Jurala Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Priyadarshini Jurala Project",
+        "frl": "+318.516 m (1045 ft)",
+        "storage_tmc": "11.941 TMC gross, 6.798 TMC live",
+        "meta": "The Priyadarshini Jurala Project is a masonry–earthen barrage built across the Krishna River near Kuravpur in Mahabubnagar district.  Completed in the mid‑1990s, it forms the tail‑end link of the Jurala–Srisailam chain of dams.  The barrage has a full reservoir level/maximum water level of +318.516 m (+1045 ft) and a minimum draw‑down level of +314.858 m【66380943994007†L74-L98】.  Its reservoir holds a gross storage of 11.941 TMC and live storage of 6.798 TMC【66380943994007†L74-L98】.  Jurala feeds irrigation canals on both banks, stabilising ayacuts in Mahabubnagar and supporting the Nettempadu, Kalwakurthy and Bhima lift schemes.  It also houses a 234 MW hydro‑electric station where water falls through two tunnels into Srisailam’s backwaters.  The project is historically significant because Indira Gandhi laid its foundation stone in 1981 and it was completed after years of political delay.  Jurala has become a popular tourist spot due to its scenic reservoir and crocodile sanctuary."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.70416667,
+          16.32638889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Sammakka Sagar Project",
+        "Project": "Sammakka Sagar Project at Tupakulagudem",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "80.39916667",
+        "Lat": "18.44472222",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Sammakka Sagar Project at Tupakulagudem",
+        "auxiliary_": 80.33466110522694,
+        "auxiliar_1": 18.423776293633058,
+        "metadata_project": "Sammakka Sagar (Tupakulagudem Barrage)",
+        "frl": "+83.0 m",
+        "storage_tmc": "6.94 TMC",
+        "meta": "Originally conceived as the Kanthanapally barrage, this project was re‑engineered and renamed Sammakka Sagar to honour the tribal goddess Sammakka.  It is located at Tupakulagudem across the Godavari and serves as a balancing reservoir for the Sriram Sagar command.  The barrage has an FRL of +83.0 m and stores around 6.94 TMC【771273814440655†L99-L115】.  Though relatively small, it plays a strategic role in diverting 46.96 TMC annually to stabilise the SRSP Stage‑I and Stage‑II commands and supply drinking water to Warangal and surrounding districts.  The structure features a top‑of‑barrage level of +92.00 m, radial gates to manage monsoon floods, and connections to lift irrigation schemes.  By linking several canals and balancing reservoirs, Sammakka Sagar reduces dependence on unpredictable flood flows and ensures year‑round water delivery."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.42023062810942,
+          18.457059065828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Rajiv Bheema LIS",
+        "Project": "RAJIV BHEEMA LIS",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "77.55305556",
+        "Lat": "16.38027778",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Rajiv Bheema LIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Rajeev Bhima LIS",
+        "lift_pumps": 12,
+        "lift_max_water_tmc": 20,
+        "meta": "The Rajeev Bhima scheme lifts 20 TMC of Krishna water in two locations.  At each location there are two stages, each using three pumps (total 12 pumps).  Stage‑I lifts the water 45 m with three 12‑MW pumps; Stage‑II lifts 22 m with three 4‑MW pumps.  Similar pump sets operate at the second site【388305188713648†L15-L37】【388305188713648†L45-L63】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.57547590935128,
+          16.385636148911626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Rajolibanda Diversion Scheme",
+        "Project": "RAJOLIBANDA DIVERSION SCHEME",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": "77.18527778",
+        "Lat": "15.94305556",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Rajolibanda Diversion Scheme",
+        "auxiliary_": 77.17142734091581,
+        "auxiliar_1": 15.8968016974075,
+        "metadata_project": "Rajolibanda Diversion Scheme (RDS)",
+        "frl": "Crest level 332.23 m (1090 ft)",
+        "storage_tmc": "Water utilisation 17.10 TMC (Telangana share 15.90 TMC)",
+        "meta": "RDS is an inter‑state anicut constructed across the Tungabhadra River in the 1950s to irrigate dry lands in Raichur (Karnataka) and Gadwal (Telangana).  The masonry weir, 467 m long, has a crest level of 332.23 m (1090 ft)【313497412054982†L24-L26】.  Instead of a large reservoir, RDS diverts about 17.10 TMC of water annually through 143 km of left‑bank canals (Telangana gets 15.90 TMC and Karnataka 1.20 TMC)【313497412054982†L155-L176】.  The head regulator has three spans and the canal network irrigates 87 500 acres in Telangana and 4 villages in Andhra Pradesh.  Over the decades the scheme has faced disputes over water sharing, and the weir has been damaged by floods multiple times.  Recent plans propose constructing a barrage downstream and lining the canals to reduce seepage.  The project illustrates the challenges of managing trans‑boundary river projects under variable monsoon conditions."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.18168733259499,
+          15.955560306021162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Ralivagu Project",
+        "Project": "RALIVAGU PROJECT",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "79.36694444",
+        "Lat": "18.86722222",
+        "Data": "Available",
+        "OLD_DAM_NA": "Ralivagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Ralivagu",
+        "frl": "+151.5 m",
+        "frl_m": 151.5,
+        "storage_tmc": "0.409 TMC",
+        "storage_tmc_value": 0.409,
+        "meta": "The Ralivagu project is a medium scheme on the Ralivagu stream, a tributary of the Godavari, located near Mulkalla village in Mancherial district. The reservoir has a full reservoir level of +151.50 m and a gross storage capacity of 11.57 M cum (≈0.409 TMC)【138627798913677†L45-L73】. It irrigates about 3,280 acres through left and right bank canals. Construction has faced delays due to land‑acquisition issues near Mancherial town, but the project promises to support agriculture in the region【138627798913677†L63-L69】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.38090729101948,
+          18.89130522860005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Ramadugu Project",
+        "Project": "RAMADUGU PROJECT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "78.30666667",
+        "Lat": "18.61722222",
+        "Data": "Available",
+        "OLD_DAM_NA": "Ramadugu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Ramadugu",
+        "frl": "+389.63 m",
+        "frl_m": 389.63,
+        "storage_tmc": "0.966 TMC",
+        "storage_tmc_value": 0.966,
+        "meta": "The Ramadugu project, built across Pedda Vagu (a tributary of the Bheemgal river) near Ramadugu village in Nizamabad district, originally irrigated 5,000 acres. To expand irrigation, plans were made to raise the full reservoir level by 1.47 m, increasing capacity from 0.636 TMC to about 0.966 TMC. The current FRL is +389.63 m【25144373393364†L52-L66】. The modernised scheme will stabilise the existing ayacut and add 2,000 more acres by enlarging the earthen bund (787.6 m long) and upgrading canals. Funding approvals for modernisation were granted in 2005【25144373393364†L10-L18】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.29709214358662,
+          18.616844156525712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Ramappa Lake",
+        "Project": "RAMAPPA LAKE",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "79.95277778",
+        "Lat": "18.27055556",
+        "Data": "Available",
+        "OLD_DAM_NA": "Ramappa Lake",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Ramappa Lake",
+        "frl": "+202.97 m",
+        "frl_m": 202.97,
+        "storage_tmc": "2.912 TMC",
+        "storage_tmc_value": 2.912,
+        "meta": "Ramappa Lake is one of the great Kakatiya irrigation tanks of Telangana, situated on Rallavagu near Palampet about 65 km northeast of Hanamkonda. Telangana Irrigation Department records state that the lake was constructed during the Kakatiya dynasty, and that the inscription at the site points to its completion on 13 March 1213 AD. Built with an earthen bund about 610 m long, the tank was designed to store valley runoff and support cultivation in the surrounding dry tract. It still serves an ayacut of about 5,180 acres in villages including Palampet, Ramanujapur, Laxmidevipeta, Venkatapur and Nallagunta. Ramappa remains important not only for its age, but because it shows how Kakatiya tank engineering created durable irrigation landscapes that supported agriculture for centuries."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.9408096219833,
+          18.250325027428275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Sadarmatt Barrage",
+        "Project": "SADARMATT BARRAGE",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "78.63111111",
+        "Lat": "18.99805556",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Sadarmatt Barrage",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Sadarmat Barrage",
+        "frl": "+276 m",
+        "frl_m": 276,
+        "storage_tmc": "1.58 TMC",
+        "storage_tmc_value": 1.58,
+        "meta": "The Sadarmat Barrage was planned downstream of the 19th‑century Sadarmatt anicut on the Godavari river. After construction of the Sriramsagar dam upstream, flows to the anicut dwindled and much of the ayacut went unirrigated. To stabilise the old command, a new barrage is being built near Ponkal village with a full reservoir level of +276 m and gross storage of about 1.58 TMC【7938594633709†L25-L40】【7938594633709†L64-L72】. The design includes 55 vertical gates and a long earth bund and spillway; the barrage will supplement irrigation to roughly 18,000 acres under the old Sadarmatt and Ganganala canals【7938594633709†L57-L83】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.63217328402399,
+          18.993708180764948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Sathnala Project",
+        "Project": "SATNALA",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "78.65472222",
+        "Lat": "19.62194444",
+        "Data": "Available",
+        "OLD_DAM_NA": "Sathnala Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Sathnala",
+        "frl": "+286.5 m",
+        "frl_m": 286.5,
+        "storage_tmc": "1.1 TMC",
+        "storage_tmc_value": 1.1,
+        "meta": "Sathnala is a completed medium project across the Sathnala river (a tributary of Penganga) near Kanpa village in Adilabad district. It provides irrigation to 24,000 acres in tribal areas and has a full reservoir level and maximum water level of 286.50 m. The live storage at FRL is 1,240.68 Mcft (≈31.13 M cum or 1.10 TMC) with a dead storage of 6.52 M cum【149911443263086†L50-L74】. The project consists of an 1,862‑m‑long earthen bund and canal system; it was completed in 1986 and continues to serve 25 villages in Jainath and Bela mandals."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.66996167454134,
+          19.647720291614366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Shanigaram Project",
+        "Project": "SHANIGARAM",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "79.03944444",
+        "Lat": "18.18694444",
+        "Data": "Available",
+        "OLD_DAM_NA": "Shanigaram Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Shanigaram",
+        "frl": "+357.46 m",
+        "frl_m": 357.46,
+        "storage_tmc": "1.092 TMC",
+        "storage_tmc_value": 1.092,
+        "meta": "The Shanigaram project is a historic medium irrigation scheme across Siddipet Vagu in the Manair sub‑basin. Originally built in 1653 and restored to public‑works standards in 1891, it now serves as a 15.85‑m‑high earth dam near Shanigaram village in Siddipet district. The full reservoir level is +357.460 m and the gross storage capacity is about 1.092 TMC【734597622665550†L22-L41】. The project irrigates around 5,100 acres and is supplied by left and right main canals known as the Bejjanki and Gangamma channels. Shanigaram’s long history makes it a testament to the resilience of traditional water‑management structures."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.01925814681177,
+          18.17913670676133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Sitarama LIS",
+        "Project": "SITARAMA LIS",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "80.88453889",
+        "Lat": "17.87388889",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Sitarama/ Seethamma Sagar LIS",
+        "auxiliary_": 80.87962237508478,
+        "auxiliar_1": 17.835372133872777,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Sita Rama LIS",
+        "lift_pumps": 24,
+        "lift_max_water_tmc": null,
+        "meta": "The integrated Sita Rama Lift Irrigation Project merges the former Rajiv Sagar and Indira Sagar lift schemes.  It draws water from the Godavari upstream of Dummugudem anicut and uses five pump stations to send 259.88 cumecs (9,000 cusecs) of water through a network of gravity canals and lifts【856688852359705†L47-L65】.  The exact number of pumps per station and the total volume of water to be lifted were not stated in the available project brief."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.88433427663756,
+          17.87201126149762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Sripada Yellampally Project",
+        "Project": "SRI PADA YELLAMPALLY PROJECT",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "79.38222222",
+        "Lat": "18.82555556",
+        "Data": "Available",
+        "OLD_DAM_NA": "Sripada Yellampally Project",
+        "auxiliary_": 79.18494468174312,
+        "auxiliar_1": 18.857017156712217,
+        "metadata_project": "Sripada Sagar (Yellampally) Barrage",
+        "frl": "+148 m",
+        "storage_tmc": "20.175 TMC",
+        "meta": "The Sripada Sagar, or Yellampally, project is the first major barrage on the Godavari within Telangana.  Built near Peddapalli in the mid‑2000s, it forms the heart of the Yellampally Lift Irrigation Scheme.  The barrage’s crest level and design allow it to store 20.175 TMC of water at a full reservoir level of +148 m【872925527697390†L85-L97】.  Its 62 radial gates regulate flows and supply water to three large lift irrigation packages that pump water up to upland areas in Karimnagar, Adilabad and Nizamabad districts.  Besides irrigating nearly 2 lakh acres, the barrage provides drinking water to the twin cities of Hyderabad and Secunderabad through the Yellampally–Singur link.  The scheme also balances releases to the Lower Manair and Mid Manair reservoirs.  Yellampally’s design ensures continuous flow even when upstream projects reduce releases, making it a critical node in the Godavari water grid."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.37137109006484,
+          18.84390576160512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Srirama Sagar Project Stage I",
+        "Project": "SRI RAM SAGAR",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": "78.36222222",
+        "Lat": "18.97",
+        "Data": "Available",
+        "OLD_DAM_NA": "Srirama Sagar Project Stage I (Pochampad)",
+        "auxiliary_": 78.33030262195318,
+        "auxiliar_1": 18.99282731566331,
+        "metadata_project": "Sri Ram Sagar Project Stage‑I",
+        "frl": "1091 ft (332.537 m)",
+        "storage_tmc": "112 TMC gross (90.58 TMC live)",
+        "meta": "The Sri Ram Sagar Project (SRSP) Stage‑I, built across the Godavari River at Pochampadu, is one of the earliest multipurpose schemes in Telangana.  Construction began in the 1950s to irrigate the drought‑prone districts of Karimnagar, Adilabad, Nizamabad and Warangal.  After several years of work, a masonry dam 4.32 km long and 43 m high impounded the river and created a reservoir with a full reservoir level (FRL) of 1 091 ft (332.537 m) and a gross storage capacity of 112 TMC; live storage is 90.58 TMC【747133530284352†L118-L140】.  The project diverts water through the Kakatiya, Saraswati and Laxmi canals to irrigate more than one million acres.  It also has a small hydro‑electric plant.  The dam was originally designed for 80 TMC, but flood‑flow canal modifications and siltation led to re‑engineering.  Although Stage‑I suffered delays and cost overruns, it transformed agriculture across northern Telangana by stabilising ayacuts and providing drinking water to towns."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.34123804961064,
+          18.966604525449114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Srirama Sagar Project Stage II",
+        "Project": "SRIRAMA SAGAR PROJECT STAGE II",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "79.55472222",
+        "Lat": "17.78527778",
+        "Data": "NotAvailable",
+        "OLD_DAM_NA": "Srirama Sagar Project Stage II",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Sri Ram Sagar Project Stage‑II",
+        "frl": "—",
+        "storage_tmc": "≈24.4 TMC (water utilisation)",
+        "meta": "SRSP Stage‑II is an extension of the original SRSP to irrigate additional command areas in Warangal, Khammam and Nalgonda districts.  Instead of a new large reservoir, Stage‑II uses the tail‑race discharge from Stage‑I and utilises about 24.405 TMC of water along with 4.703 TMC of ground water to irrigate nearly 1 96 500 ha.  The scheme involves excavating the Kakatiya Main Canal for another 62 km beyond the Stage‑I delivery point, constructing balancing reservoirs at Mylaram and Bayyanna Vagu and taking distributary canals deep into the drought‑prone Deccan plateau.  Its importance lies in stabilising small tanks and wells and bringing irrigation to areas that previously depended on erratic monsoon rainfall.  Because the project relies on run‑of‑the‑river flow and balancing reservoirs rather than a new dam, the pdf does not provide a single FRL; instead the emphasis is on canal network and command area development."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.59469586777593,
+          17.765827011927456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Swarna Project",
+        "Project": "SWARNA PROJECT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "78.18638889",
+        "Lat": "19.20694444",
+        "Data": "Available",
+        "OLD_DAM_NA": "Swarna Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Swarna",
+        "frl": "+360.58 m",
+        "frl_m": 360.58,
+        "storage_tmc": "1.27 TMC",
+        "storage_tmc_value": 1.27,
+        "meta": "The Swarna project, located near Swarna village in Nirmal district, is a medium irrigation scheme across the Swarna river (a tributary of the Godavari). Construction started in 1959 and was completed in 1978. The full reservoir level is +360.58 m, and remote‑sensing monitoring reports indicate a gross storage capacity of 1,266.71 Mcft (≈1.27 TMC) at this level【229524211028354†L915-L920】. The project’s canal system comprises left and right bank canals and a Jowlinala canal that together irrigate 8,945 acres, benefiting villages in Sarangapur and Nirmal mandals【392218191368011†L12-L18】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.20370282526422,
+          19.236703586118157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Taliperu Project",
+        "Project": "TALIPERU",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "80.84861111",
+        "Lat": "18.17805556",
+        "Data": "Available",
+        "OLD_DAM_NA": "Taliperu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Taliperu",
+        "frl": "+74 m",
+        "frl_m": 74,
+        "storage_tmc": "0.73 TMC",
+        "storage_tmc_value": 0.73,
+        "meta": "The Taliperu project is a medium irrigation scheme across the Taliperu river near Peddamidisileru village in Kothagudem district. Built between 1978 and 1986 at a cost of about ₹52.8 crore, it irrigates 24,700 acres through long left and right bank canals. The full reservoir level is +74 m and the gross storage capacity is 20.67 M cum (≈0.73 TMC)【739923909961308†L51-L64】. The project features an 18‑m‑high earth dam and a canal network nearly 60 km long, and it is currently undergoing modernisation under a Japanese International Cooperation Agency (JICA) grant to handle larger flood discharges【739923909961308†L45-L97】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8590633013346,
+          18.100186071388315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Upper Manair Project",
+        "Project": "UPPER MANAIR PROJECT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "78.58138889",
+        "Lat": "18.27805556",
+        "Data": "Available",
+        "OLD_DAM_NA": "Upper Manair Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Upper Manair",
+        "frl": "+451.85 m",
+        "frl_m": 451.85,
+        "storage_tmc": "2.17 TMC",
+        "storage_tmc_value": 2.17,
+        "meta": "The Upper Manair project is an existing medium irrigation scheme across the Manair river near Narmal village in Karimnagar district. Constructed between 1945 and 1950, it was one of the first major earthen dams in the region. The full reservoir level is +451.85 m and the reservoir capacity is 61.44 M cum (about 2.17 TMC)【442977298835817†L31-L49】. Water is conveyed through left and right bank canals (3.26 km and 31.25 km respectively) to irrigate over 13,000 acres, benefiting villages in Gambhiraopet, Yellareddypeta and Mustabad mandals【442977298835817†L56-L69】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.53965991238174,
+          18.272449086212802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Vattivagu Project",
+        "Project": "VATTIVAGU PROJECT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "79.25805556",
+        "Lat": "19.28777778",
+        "Data": "Available",
+        "OLD_DAM_NA": "Vattivagu Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Vattivagu",
+        "frl": "+239.5 m",
+        "frl_m": 239.5,
+        "storage_tmc": "2.896 TMC",
+        "storage_tmc_value": 2.896,
+        "meta": "Vattivagu is a medium project across the Vatti Vagu stream near Pahadibanda village in Asifabad district. It is designed to irrigate 24,500 acres through left and right bank canals. The reservoir has a full reservoir level of +239.50 m and a gross storage of 82.02 M cum (≈2.896 TMC); live storage is 73.92 M cum (≈2.61 TMC)【834189218855268†L50-L65】. The earth bund is 3.5 km long with six radial gates, and the project supplies irrigation to more than thirty villages, boosting agricultural productivity in tribal regions【834189218855268†L69-L86】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.2677896618536,
+          19.28536786362327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Wyra Project",
+        "Project": "WYRA PROJECT",
+        "Category": "Medium",
+        "Status": "Completed",
+        "Long": "80.3821218610658",
+        "Lat": "17.2051490068298",
+        "Data": "Available",
+        "OLD_DAM_NA": "Wyra Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Wyra",
+        "frl": "+95.765 m",
+        "frl_m": 95.765,
+        "storage_tmc": "2.48 TMC",
+        "storage_tmc_value": 2.48,
+        "meta": "The Wyra project is one of the oldest medium irrigation schemes in Telangana. Constructed by the Nizam’s government between 1899 and 1930 across the Wyra river, it irrigates about 7,038 ha (17,386 acres) across Wyra, Thallada and Bonakal mandals. The reservoir’s full tank level (FTL, used as FRL) is +95.765 m and the gross storage capacity is 70.110 M cum (≈2.48 TMC)【833425256095336†L42-L55】. The earthen bund was an early engineering feat in the region and remains in operation today, demonstrating the longevity of historic irrigation works【833425256095336†L0-L10】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.38212186106583,
+          17.205149006829846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "GVSR Lower Manair Dam",
+        "Project": "LOWER MANAIR DAM",
+        "Category": "Major",
+        "Status": "Completed",
+        "Long": null,
+        "Lat": null,
+        "Data": "Available",
+        "OLD_DAM_NA": "GVSR Lower Manair Dam",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "frl": "+280.42 m",
+        "frl_m": 280.42,
+        "storage_tmc": "24.03 TMC",
+        "storage_tmc_value": 24.03,
+        "meta": "GVSR Lower Manair Dam, commonly known as Lower Manair Dam, is a major reservoir on the Manair River in the Godavari basin near Karimnagar. Telangana Irrigation Department records state that construction began in 1974 and the project was completed in 1985. The reservoir is located around km 146 of the Kakatiya Canal of the Sriram Sagar Project and was developed as an earth-cum-masonry dam to serve as an important balancing and irrigation reservoir for the canal system. Official district sources also note that the dam stands near the confluence of the Manair and Mohedamada rivers, making it one of the principal water bodies associated with the irrigation network and urban landscape of Karimnagar."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.13111320135229,
+          18.399749234879106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Laxmi (Medigadda) Barrage_Kaleshwaram Project",
+        "Project": "Laxmi (Medigadda) Barrage",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": "Laxmi (Medigadda) Barrage",
+        "auxiliary_": 79.93585150195479,
+        "auxiliar_1": 18.686026672543058,
+        "metadata_project": "Kaleshwaram Lift Irrigation Project",
+        "frl": "100 m (Medigadda), 120 m (Annaram), 130 m (Sundilla); other reservoirs vary",
+        "storage_tmc": "147.71 TMC total (Medigadda 16.17, Annaram 11.9, Sundilla 5.11 etc.)",
+        "meta": "The Kaleshwaram Project is one of the world’s largest multi‑stage lift irrigation schemes.  It re‑engineered the earlier Pranahita–Chevella concept to lift water from the Godavari near Medigadda and deliver it over 500 km to the highlands of Telangana.  The system consists of three primary barrages on the Godavari: Medigadda (FRL 100.0 m, storage 16.17 TMC), Annaram (FRL 120.0 m, 11.9 TMC) and Sundilla (FRL 130.0 m, 5.11 TMC), with several balancing reservoirs such as Medaram, Ananthagiri, Ranganayaka Sagar, Kondapochamma Sagar and Mallanna Sagar【670789010879875†L320-L387】.  In total, the reservoirs collectively store about 147.71 TMC【670789010879875†L320-L387】.  Gigantic pumps (some rated at 139 MW) lift water nearly 600 m in stages, enabling irrigation of 18.25 lakh acres, drinking water supply to Hyderabad and Secunderabad, and industrial water to Nagpur.  The project also includes a network of tunnels and canals.  Construction started in 2016 and was partially commissioned in 2019.  Its engineering marvel lies in the synchronous operation of giant pumps and balancing reservoirs, making it a symbol of modern Telangana’s irrigation ambition."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.07890944953763,
+          18.715275169320428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Saraswati (Annaram)_Barrage",
+        "Project": "Saraswati (Annaram)_Barrage",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": "Saraswati (Annaram)_Barrage",
+        "auxiliary_": 79.73472038486209,
+        "auxiliar_1": 18.76940449143453,
+        "metadata_project": "Kaleshwaram Lift Irrigation Project",
+        "frl": "100 m (Medigadda), 120 m (Annaram), 130 m (Sundilla); other reservoirs vary",
+        "storage_tmc": "147.71 TMC total (Medigadda 16.17, Annaram 11.9, Sundilla 5.11 etc.)",
+        "meta": "The Kaleshwaram Project is one of the world’s largest multi‑stage lift irrigation schemes.  It re‑engineered the earlier Pranahita–Chevella concept to lift water from the Godavari near Medigadda and deliver it over 500 km to the highlands of Telangana.  The system consists of three primary barrages on the Godavari: Medigadda (FRL 100.0 m, storage 16.17 TMC), Annaram (FRL 120.0 m, 11.9 TMC) and Sundilla (FRL 130.0 m, 5.11 TMC), with several balancing reservoirs such as Medaram, Ananthagiri, Ranganayaka Sagar, Kondapochamma Sagar and Mallanna Sagar【670789010879875†L320-L387】.  In total, the reservoirs collectively store about 147.71 TMC【670789010879875†L320-L387】.  Gigantic pumps (some rated at 139 MW) lift water nearly 600 m in stages, enabling irrigation of 18.25 lakh acres, drinking water supply to Hyderabad and Secunderabad, and industrial water to Nagpur.  The project also includes a network of tunnels and canals.  Construction started in 2016 and was partially commissioned in 2019.  Its engineering marvel lies in the synchronous operation of giant pumps and balancing reservoirs, making it a symbol of modern Telangana’s irrigation ambition."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.82432418316215,
+          18.763353078308175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Parvathi (Sundilla)Barrage",
+        "Project": "Parvathi (Sundilla)Barrage",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": "Parvathi (Sundilla)Barrage",
+        "auxiliary_": 79.5149720341669,
+        "auxiliar_1": 18.704163155787313,
+        "metadata_project": "Kaleshwaram Lift Irrigation Project",
+        "frl": "100 m (Medigadda), 120 m (Annaram), 130 m (Sundilla); other reservoirs vary",
+        "storage_tmc": "147.71 TMC total (Medigadda 16.17, Annaram 11.9, Sundilla 5.11 etc.)",
+        "meta": "The Kaleshwaram Project is one of the world’s largest multi‑stage lift irrigation schemes.  It re‑engineered the earlier Pranahita–Chevella concept to lift water from the Godavari near Medigadda and deliver it over 500 km to the highlands of Telangana.  The system consists of three primary barrages on the Godavari: Medigadda (FRL 100.0 m, storage 16.17 TMC), Annaram (FRL 120.0 m, 11.9 TMC) and Sundilla (FRL 130.0 m, 5.11 TMC), with several balancing reservoirs such as Medaram, Ananthagiri, Ranganayaka Sagar, Kondapochamma Sagar and Mallanna Sagar【670789010879875†L320-L387】.  In total, the reservoirs collectively store about 147.71 TMC【670789010879875†L320-L387】.  Gigantic pumps (some rated at 139 MW) lift water nearly 600 m in stages, enabling irrigation of 18.25 lakh acres, drinking water supply to Hyderabad and Secunderabad, and industrial water to Nagpur.  The project also includes a network of tunnels and canals.  Construction started in 2016 and was partially commissioned in 2019.  Its engineering marvel lies in the synchronous operation of giant pumps and balancing reservoirs, making it a symbol of modern Telangana’s irrigation ambition."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.61163581444771,
+          18.736437359127866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Thummilla LIS",
+        "Project": "OnGoing",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": "Thummilla LIS",
+        "auxiliary_": 77.69607416331407,
+        "auxiliar_1": 15.90521866271855,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Thummilla LIS",
+        "lift_pumps": 3,
+        "lift_max_water_tmc": 6.52,
+        "meta": "Thummilla LIS was conceived to stabilize the tail-end ayacut of the Rajolibanda Diversion Scheme, where chronic shortfall in Tungabhadra supplies left a large part of the command without reliable irrigation. Over the previous decade, the RDS ayacut reportedly received only about 5.56 TMC per year on average from Karnataka, irrigating around 31,000 acres, while about 55,600 acres of gap ayacut beyond D-24 remained under stress. To address this, Telangana approved surveys and DPR preparation in 2015 and later revised the scheme in 2017 to extend it beyond Mallammakunta to Julakal and Valluru reservoirs. The scheme lifts water from the foreshore of the Sunkesula balancing reservoir on the Tungabhadra near Thumilla village in Rajoli mandal and is designed to draw 6.52 TMC in 70 days. It uses three pumps in total: two 5.5 MW pumps to feed the RDS canal directly and one 10.5 MW pump to feed the Mallammakunta, Julakal and Valluru balancing reservoirs, with the aim of restoring irrigation to 55,600 acres and supplying drinking water to en route villages."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.74763092638852,
+          15.887633978440864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Srisailam Dam",
+        "Project": "NSR_Srisailam",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": "Srisailam Dam",
+        "auxiliary_": 78.84659771652808,
+        "auxiliar_1": 16.05916129491639,
+        "frl": "+269.75 m",
+        "frl_m": 269.75,
+        "storage_tmc": "219.23 TMC",
+        "storage_tmc_value": 219.23,
+        "meta": "Officially the Neelam Sanjeeva Reddy Srisailam Project, it was taken up by the Government of Andhra Pradesh as part of the major Krishna basin development works recommended after the Khosla Committee, in place of the earlier Krishna-Pennar proposal. Prime Minister Jawaharlal Nehru inaugurated the project on 24 July 1963 when Neelam Sanjiva Reddy was Chief Minister; although it was cleared by the Planning Commission in 1964, progress was slow for several years because of funding constraints, and execution gathered pace after external assistance was arranged in 1976. The project was built to impound and regulate Krishna waters in the deep Nallamala gorge so they could be used more effectively for irrigation and drought relief in the dry interior of the state, especially Rayalaseema and adjoining regions. Over time, Srisailam became a key source reservoir for downstream irrigation systems including the Srisailam Right Branch Canal, which was taken up to irrigate about 76,890 hectares in drought-prone Kurnool and Kadapa districts."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.89686732950685,
+          16.08639265398498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Kupti Project",
+        "Project": "Kupti Project",
+        "Category": "Major",
+        "Status": null,
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": "Kupti Project",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Kupti Project",
+        "frl": "394.0 m",
+        "storage_tmc": "5.30 TMC (gross), 3.32 TMC live",
+        "meta": "The Kupti Project is a medium irrigation scheme across a tributary of the Kaddam stream near the villages of Kupti and Laxmipur.  It has an earthen dam 3.5 km long with a masonry spillway.  The dam’s full reservoir level and maximum water level are both 394.0 m, with a minimum draw‑down level and sill level of 376.0 m【111979512654079†L16-L80】.  The reservoir stores 5.30 TMC gross and 3.32 TMC live water【111979512654079†L16-L80】.  Designed to irrigate about 42 883 acres of upland areas in Nirmal district and supply drinking water to Adilabad, the project includes a hydro‑electric component and canals that integrate with the Sri Ram Sagar system.  An interesting facet is its role in providing fluoride‑free drinking water to tribal habitations.  Although small compared to the Godavari barrages, the Kupti dam exemplifies the state’s focus on balanced regional development."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.42513507172913,
+          19.35691818719243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Chanakha Korata Barrage",
+        "Project": "Chanaka Korata Barrage",
+        "Category": "Major",
+        "Status": null,
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": "Chennaka Korata Barrage",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "metadata_project": "Lower Penganga Project (Chanaka–Korata Barrage)",
+        "frl": "Not explicitly given (TBL 221.5 m)",
+        "storage_tmc": "≈0.83 TMC (gross storage of Chanaka‑Korata)",
+        "meta": "The Lower Penganga Project is a joint venture of Telangana and Maharashtra on the Penganga River, a tributary of the Wardha.  Its principal component is the Chanaka–Korata barrage located on the interstate border.  According to the project documentation, the barrage has a total length of 3 681 m with a top‑of‑barrage level (TBL) of 221.5 m, but the full reservoir level is not explicitly stated【938240709757599†L210-L221】.  The gross storage capacity of the pond is 23.50 million cubic metres (≈0.83 TMC)【938240709757599†L210-L221】.  Maharashtra is allocated 37.55 TMC of water, while Telangana’s share is 5.12 TMC.  The scheme envisages raising a series of small barrages and barraging structures upstream to irrigate the drought‑prone tribal areas of Adilabad and Nirmal districts and to provide drinking water.  Its complexity lies in coordinating interstate water sharing, rehabilitating submerged villages and building long feeder canals through undulating terrain."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.52830376176668,
+          19.818624178670706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Jakora and Chandur LIS",
+        "Project": "Jakora and Chandur LIS",
+        "Category": "Medium",
+        "Status": "OnGoing",
+        "Long": "77.92777778",
+        "Lat": "18.51416667",
+        "Data": null,
+        "OLD_DAM_NA": "Jakora and Chandur LIS",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Jakora–Chandur LIS",
+        "lift_pumps": 12,
+        "lift_max_water_tmc": 0.72,
+        "meta": "This small scheme lifts 0.720 TMC from the Nizamsagar Main Canal to irrigate 7,975 acres in Varni, Chandur and Mosra mandals.  At Jakora, two 75‑kW pumps, two 90‑kW pumps and four 320‑kW pumps (eight pumps total) provide the lift; at Chandur there are four 315‑kW pumps【309371525725364†L24-L43】【309371525725364†L56-L72】.  (Data for the third Chintakunta lift is not specified.)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.92777778,
+          18.51416667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Manjeera LIS",
+        "Project": "Manjeera Lift Irrigation Scheme",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "77.89478056",
+        "Lat": "18.27032222",
+        "Data": null,
+        "OLD_DAM_NA": "Manjeera Lift Irrigation Scheme",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Manjeera (Nagmandugu) LIS",
+        "lift_pumps": 7,
+        "lift_max_water_tmc": 2.5,
+        "meta": "This scheme lifts 2.50 TMC of water from the Manjeera River downstream of Nizamsagar to irrigate 40,768 acres.  Stage‑1 pump house uses five pumps (three 3.95‑MW metallic‑volute pumps and two 230‑kW vertical‑turbine pumps) and Stage‑2 uses two pumps (one 3.95‑MW and one 3.50‑MW), for a total of seven pumps【621688816274192†L21-L55】【621688816274192†L76-L125】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.89478056,
+          18.27032222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Nalasomanadri Gattu LIS",
+        "Project": "Nalasomanadri Gattu LIS",
+        "Category": "Major",
+        "Status": "OnGoing",
+        "Long": "77.61172",
+        "Lat": "16.19085139",
+        "Data": null,
+        "OLD_DAM_NA": "Nalasomanadri Gattu LIS",
+        "auxiliary_": 77.52395947517736,
+        "auxiliar_1": 16.206367287892075,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Nalasomanadri (Gattu) LIS",
+        "lift_pumps": 2,
+        "lift_max_water_tmc": 2.8,
+        "meta": "This lift draws 2.80 TMC of water from Relampadu reservoir and uses two 12‑MW pumps to raise it 80 m into a new 1.32‑TMC Gattu balancing reservoir.  The system includes a 2.85‑km approach channel and a pressure main; it irrigates about 33,000 acres【308669702618234†L20-L33】【308669702618234†L46-L82】."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.61172,
+          16.19085139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Saral Sagar Project",
+        "Project": null,
+        "Category": "Medium",
+        "Status": "MEDIUM",
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": "SARAL SAGAR PROJECT",
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "frl": "+339.90 m",
+        "frl_m": 339.9,
+        "storage_tmc": "0.50 TMC",
+        "storage_tmc_value": 0.5,
+        "meta": "Saral Sagar Project, also known as Sarlasagar, is a historic medium irrigation reservoir across Chinnavagu, a tributary of the Krishna, in the Wanaparthy region. Official district sources describe it as a rare siphon-based irrigation project, often noted as the second largest in Asia using that technology. The project was started by Raja Rameshwara Rao of Wanaparthy in 1947 and completed in 1959, with the siphon system adapted from California. Telangana government records give the reservoir a gross storage capacity of 14.12 MCM at FRL +339.90 m and a designed ayacut of about 1,695 hectares, while district sources describe its irrigation benefit as about 4,182 acres. Its importance lies both in its unusual engineering and in its role in supporting irrigation in the dry uplands around Wanaparthy."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.8998496972871,
+          16.41197651529388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Mukkamamidi Project",
+        "Project": null,
+        "Category": "Medium",
+        "Status": "Medium",
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": null,
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "frl": "+120.50 m",
+        "frl_m": 120.5,
+        "storage_tmc": "0.143 TMC",
+        "storage_tmc_value": 0.143,
+        "meta": "Mukkamamidi Project is a medium irrigation work across the Mukkamamidi River, a tributary of the Pamuleru, near Mulkalapalli village in the old Khammam district. Telangana Remote Sensing Applications Centre records describe it as a completed project with gross storage of 142.67 Mcft at FRL +120.50 m. The project has a gross command area of about 2,270 hectares and a total ayacut of 1,320 hectares spread across five villages in Mulkalapalli mandal. District irrigation profile records place its irrigation potential at about 3,260 acres. Though modest in size, the project is important for stabilizing cultivation in this forest-fringe Godavari basin tract."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.87408773111255,
+          17.462621601580075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Sitamma Sagar Multi-Purpose Project",
+        "Project": "Sitamma Sagar Multi-Purpose Project\n",
+        "Category": "Major",
+        "Status": "Ongoing",
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": "Sitamma Sagar Multi-Purpose Project\n",
+        "auxiliary_": 80.77097059861545,
+        "auxiliar_1": 17.88623586906232,
+        "metadata_project": "Sitamma Sagar (Dummugudem Barrage)",
+        "frl": "+63.000 m",
+        "storage_tmc": "36.57 TMC",
+        "meta": "Sitamma Sagar is a new barrage built 200 m downstream of the 150‑year‑old Dummugudem weir on the Godavari River.  The old anicut, which once irrigated farmlands in Khammam district, had become dilapidated and could not regulate modern flows.  The new project raises the pond level to FRL +63.000 m and stores 36.57 TMC of water【746274294293292†L40-L66】.  Designed as part of the Sitarama Lift Irrigation Scheme, the barrage diverts water to several canals and pump houses that irrigate 9.36 lakh acres in Khammam, Nalgonda and Mahabubabad districts【746274294293292†L52-L66】.  It also supports hydropower generation and provides flood moderation.  The project includes fish ladders to sustain riverine biodiversity and has revived interest in navigation on the Godavari.  Its commissioning aims to honour the historical Dummugudem anicut built by the British engineer Sir Arthur Cotton while meeting the irrigation needs of a re‑engineered Telangana."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.885,
+          17.8738888859504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Dam_Name": "Chennur LIS",
+        "Project": "Chennur LIS",
+        "Category": "Major",
+        "Status": null,
+        "Long": null,
+        "Lat": null,
+        "Data": null,
+        "OLD_DAM_NA": null,
+        "auxiliary_": null,
+        "auxiliar_1": null,
+        "is_lift": true,
+        "project_subtype": "Lift",
+        "lift_metadata_name": "Chennur LIS",
+        "lift_pumps": 16,
+        "lift_pump_houses": 3,
+        "lift_max_water_tmc": null,
+        "meta": "Chennur LIS is retained here as a separate major lift irrigation project node in the Chennur region. For this project dataset, the scheme is described as having 16 pumps arranged across 3 pump houses. It is therefore classified as a lift project."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.56136944379148,
+          18.786494445423944
+        ]
+      }
+    }
+  ]
+}

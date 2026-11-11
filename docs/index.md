@@ -6,6 +6,12 @@ Telangana WaterMap is an open, provenance-aware atlas for improving the location
 
 The current map is a working static release. The next phase needs reviewers who can reconcile waterbody locations, identify likely lift intakes, and document receiving or outflow points with evidence.
 
+## Open the map
+
+[Open the interactive Telangana WaterMap](map/)
+
+The map is published at `https://akhilparimi97.github.io/telangana-watermap/map/`.
+
 ## Where to contribute
 
 - [Collaboration board](COLLABORATION-BOARD.md) — editable queue and review log.
