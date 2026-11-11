@@ -24,6 +24,12 @@
   </main>
   <div id="feature-drawer" class="feature-drawer" aria-live="polite"><button id="close-drawer" class="close" type="button" aria-label="Close feature details">×</button><div id="drawer-content"></div></div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="app.js?v=33"></script>
+  <div class="basemap-switcher" aria-label="Basemap">
+    <span class="basemap-title">VIEW</span>
+    <button type="button" data-basemap="imagery" class="active" aria-pressed="true">Satellite</button>
+    <button type="button" data-basemap="streets" aria-pressed="false">Street</button>
+    <button type="button" data-basemap="terrain" aria-pressed="false">Terrain</button>
+  </div>
+  <script src="app.js?v=34"></script>
 </body>
 </html>

@@ -55,9 +55,9 @@ function titleFor(feature, kind) {
 }
 function renderPlaceLabels() { placeLabelLayer.clearLayers(); const zoom = map.getZoom(); const values = flowGrid?.elevations || []; const min = values.length ? Math.min(...values) : 0; const max = values.length ? Math.max(...values) : 1; PLACE_LABELS.filter(([, , , minZoom]) => zoom >= minZoom).forEach(([name, lat, lon]) => { const elevation = flowGrid ? elevationAt(flowGrid, lat, lon) : null; const color = elevation === null ? '#0b1d24' : elevationColor(elevation, min, max); const text = elevation === null ? '#d9eeee' : (elevation > min + (max - min) * .58 ? '#102c32' : '#f5ffff'); const badge = elevation === null ? '' : ` style="background:${color};color:${text}"`; L.marker([lat, lon], { interactive: false, icon: L.divIcon({ className: 'place-label', html: `<span${badge}>${esc(name)}</span>`, iconSize: null }) }).addTo(placeLabelLayer); }); }
 function addToIndex(feature, kind) { featureIndex.push({ feature, kind, title: titleFor(feature, kind), search: JSON.stringify(props(feature)).toLowerCase() }); }
-function styleFor(kind) { return kind === 'boundary' ? { color: '#ffffff', weight: 3, fill: false, opacity: .95 } : kind === 'reservoirs' ? { color: '#0b777c', weight: 1.2, fillColor: palette.reservoirs, fillOpacity: .6 } : kind === 'rivers' ? { color: '#4ca5c5', weight: 2.4, opacity: .9, fillColor: palette.rivers, fillOpacity: .22 } : kind === 'streams' ? { color: '#84cbd1', weight: 1.1, opacity: .82 } : kind === 'canals' ? { color: '#e0a449', weight: 1.05, opacity: .65 } : kind === 'lakes' ? { color: '#3d9ba1', weight: .7, fillColor: '#5eb9bf', fillOpacity: .35 } : { color: '#d48d29', weight: 1.2, fillColor: palette.projects, fillOpacity: .6 } }
+function styleFor(kind) { return kind === 'boundary' ? { color: '#ffffff', weight: 3, fill: false, opacity: .95, interactive: false } : kind === 'reservoirs' ? { color: '#0b777c', weight: 1.2, fillColor: palette.reservoirs, fillOpacity: .6 } : kind === 'rivers' ? { color: '#4ca5c5', weight: 2.4, opacity: .9, fillColor: palette.rivers, fillOpacity: .22 } : kind === 'streams' ? { color: '#84cbd1', weight: 1.1, opacity: .82 } : kind === 'canals' ? { color: '#e0a449', weight: 1.05, opacity: .65 } : kind === 'lakes' ? { color: '#3d9ba1', weight: .7, fillColor: '#5eb9bf', fillOpacity: .35 } : { color: '#d48d29', weight: 1.2, fillColor: palette.projects, fillOpacity: .6 } }
 function pointToLayer(kind) { return (_, latlng) => L.circleMarker(latlng, { radius: kind === 'projects' ? 7 : 5, color: '#fff', weight: 1.5, fillColor: palette[kind], fillOpacity: .95 }); }
-function bindFeature(feature, layer, kind) { const name = titleFor(feature, kind); addToIndex(feature, kind); layer.bindTooltip(esc(name), { direction: 'top', sticky: true }); layer.on('click', () => openDrawer(feature, kind)); }
+function bindFeature(feature, layer, kind) { if (kind === 'boundary') return; const name = titleFor(feature, kind); addToIndex(feature, kind); layer.bindTooltip(esc(name), { direction: 'top', sticky: true }); layer.on('click', event => { L.DomEvent.stopPropagation(event); openDrawer(feature, kind); }); }
 function geoJsonLayer(data, kind) { return L.geoJSON(data, { style: () => styleFor(kind), pointToLayer: pointToLayer(kind), onEachFeature: (f, l) => bindFeature(f, l, kind) }); }
 
 async function fetchJson(url) { const response = await fetch(url); if (!response.ok) throw new Error(`${response.status} ${url}`); return response.json(); }
@@ -121,7 +121,9 @@ document.getElementById('reset-view').addEventListener('click', () => map.setVie
 map.on('zoomend', () => { renderPlaceLabels(); applyScaleVisibility(); rebuildGravityFlow(); });
 renderPlaceLabels();
 map.on('click', () => document.getElementById('feature-drawer').classList.remove('show'));
-L.control.layers({ 'Satellite': imagery, 'Street map': streets, 'Terrain': terrain }, null, { position: 'topright', collapsed: true }).addTo(map);
+// Custom basemap buttons replace the default Leaflet control.layers UI.
+const basemapButtons = document.querySelectorAll('[data-basemap]');
+basemapButtons.forEach(button => button.addEventListener('click', () => { const selected = button.dataset.basemap; [imagery, streets, terrain].forEach(layer => { if (map.hasLayer(layer)) map.removeLayer(layer); }); ({ imagery, streets, terrain }[selected] || imagery).addTo(map); basemapButtons.forEach(item => { const active = item === button; item.classList.toggle('active', active); item.setAttribute('aria-pressed', String(active)); }); }));
 
 (async () => {
   const requests = [
