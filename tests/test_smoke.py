@@ -25,8 +25,8 @@ class WaterMapSmokeTests(unittest.TestCase):
     def test_frontend_has_provenance_and_layer_controls(self):
         html = (WEB / "index.html").read_text(encoding="utf-8")
         js = (WEB / "app.js").read_text(encoding="utf-8")
-        self.assertIn("Source &amp; data quality", html)
-        self.assertIn("control.layers", js)
+        self.assertIn("READING THE MAP", html)
+        self.assertIn("maplibregl", js)
         self.assertIn("TGRAC", js)
 
 

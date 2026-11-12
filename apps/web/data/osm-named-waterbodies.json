@@ -1,0 +1,8424 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-01T08:52:28Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 2714223116,
+  "lat": 17.4323599,
+  "lon": 78.3394104,
+  "tags": {
+    "name": "ISB Lake",
+    "water": "lake"
+  }
+},
+{
+  "type": "node",
+  "id": 2714284426,
+  "lat": 17.4512902,
+  "lon": 78.3033233,
+  "tags": {
+    "name": "Gopanapally Lake",
+    "water": "lake"
+  }
+},
+{
+  "type": "node",
+  "id": 13737355607,
+  "lat": 18.5308933,
+  "lon": 79.3096358,
+  "tags": {
+    "name": "Chembuni Cheruvu",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 27934981,
+  "center": {
+    "lat": 17.3539326,
+    "lon": 78.5270199
+  },
+  "tags": {
+    "name": "Saroor Nagar Lake",
+    "natural": "water",
+    "water": "lake",
+    "wikidata": "Q7371574",
+    "wikimedia_commons": "Category:Saroornagar Lake",
+    "wikipedia": "en:Saroornagar Lake"
+  }
+},
+{
+  "type": "way",
+  "id": 28130557,
+  "center": {
+    "lat": 17.3747047,
+    "lon": 78.2877656
+  },
+  "tags": {
+    "alt_name": "Gandipet",
+    "intermittent": "no",
+    "name": "Osman Sagar",
+    "name:ar": "بحيرة عثمان ساغار",
+    "name:en": "Osman Sagar",
+    "name:fa": "دریاچه عثمان ساگر",
+    "name:ml": "ഉസ്മാൻ സാഗർ",
+    "name:te": "ఉస్మాన్ సాగర్",
+    "name:ur": "عثمان ساگر",
+    "natural": "water",
+    "salt": "no",
+    "tidal": "no",
+    "water": "lake",
+    "wikidata": "Q7107102",
+    "wikipedia": "en:Osman Sagar"
+  }
+},
+{
+  "type": "way",
+  "id": 28131043,
+  "center": {
+    "lat": 17.4310542,
+    "lon": 78.3899966
+  },
+  "tags": {
+    "leisure": "nature_reserve",
+    "name": "Durgam Cheruvu",
+    "name:fa": "دریاچه درگم چرووو",
+    "name:ml": "ദുർഗ്ഗം ചെരുവ്",
+    "name:te": "దుర్గం చెరువు",
+    "natural": "water",
+    "tourism": "attraction",
+    "water": "lake",
+    "wikidata": "Q5316410",
+    "wikimedia_commons": "Category:Durgam Cheruvu",
+    "wikipedia": "en:Durgam Cheruvu"
+  }
+},
+{
+  "type": "way",
+  "id": 28196632,
+  "center": {
+    "lat": 17.3935438,
+    "lon": 78.4132429
+  },
+  "tags": {
+    "name": "Shah Hatim Talab",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 28268709,
+  "center": {
+    "lat": 17.4033524,
+    "lon": 78.5785299
+  },
+  "tags": {
+    "name": "Nallacheruvu ( Uppal Mini Tank Bund )",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 28269088,
+  "center": {
+    "lat": 17.4210477,
+    "lon": 78.5538326
+  },
+  "tags": {
+    "name": "Pedda Cheruvu",
+    "natural": "water",
+    "salt": "no",
+    "tidal": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 28847688,
+  "center": {
+    "lat": 17.3537536,
+    "lon": 78.3716132
+  },
+  "tags": {
+    "name": "Peeran Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 29050686,
+  "center": {
+    "lat": 17.4671801,
+    "lon": 78.3880688
+  },
+  "tags": {
+    "name": "Mullakathuva Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 29123877,
+  "center": {
+    "lat": 17.3230045,
+    "lon": 78.4252126
+  },
+  "tags": {
+    "name": "pushparahil cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 29124331,
+  "center": {
+    "lat": 17.4232686,
+    "lon": 78.4479170
+  },
+  "tags": {
+    "name": "jalagam vengal rao lake",
+    "name:te": "జలగం వెంగల రావు లేక్",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 29124351,
+  "center": {
+    "lat": 17.4107540,
+    "lon": 78.4479142
+  },
+  "tags": {
+    "alt_name": "Hamid Khan Kunta",
+    "name": "Banjara Lake",
+    "natural": "water",
+    "wikidata": "Q4855813",
+    "wikipedia": "en:Banjara Lake"
+  }
+},
+{
+  "type": "way",
+  "id": 29124416,
+  "center": {
+    "lat": 17.4014307,
+    "lon": 78.4508395
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "park pond",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 29251874,
+  "center": {
+    "lat": 17.4785739,
+    "lon": 78.4127840
+  },
+  "tags": {
+    "name": "IDPL Tank",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 29252764,
+  "center": {
+    "lat": 17.4015551,
+    "lon": 78.5403691
+  },
+  "tags": {
+    "name": "Ramanthapur Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 29473313,
+  "center": {
+    "lat": 17.4098211,
+    "lon": 78.4049419
+  },
+  "tags": {
+    "name": "Hakimpet Kunta",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 45056467,
+  "center": {
+    "lat": 17.6096656,
+    "lon": 78.5566344
+  },
+  "tags": {
+    "name": "Shamirpet Lake",
+    "natural": "water",
+    "wikidata": "Q7348705",
+    "wikipedia": "en:Shamirpet Lake"
+  }
+},
+{
+  "type": "way",
+  "id": 46669818,
+  "center": {
+    "lat": 17.2990424,
+    "lon": 78.4971381
+  },
+  "tags": {
+    "name": "Pedda Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 46670354,
+  "center": {
+    "lat": 17.2920818,
+    "lon": 78.4872501
+  },
+  "tags": {
+    "name": "Shukur Sagar",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 51774939,
+  "center": {
+    "lat": 17.9955052,
+    "lon": 79.5215909
+  },
+  "tags": {
+    "name": "Vaddepally Lake",
+    "name:ml": "വാഡേപ്പള്ളി തടാകം",
+    "name:te": "వడ్డేపల్లి సరస్సు",
+    "natural": "water",
+    "source": "local knowledge",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 52014012,
+  "center": {
+    "lat": 17.5259457,
+    "lon": 78.4682608
+  },
+  "tags": {
+    "name": "Fox Sagar",
+    "natural": "water",
+    "water": "pond",
+    "wikidata": "Q6172869"
+  }
+},
+{
+  "type": "way",
+  "id": 55700491,
+  "center": {
+    "lat": 17.8263294,
+    "lon": 77.3315265
+  },
+  "tags": {
+    "name": "Karanja Lake",
+    "name:kn": "ಕಾರಂಜ ಜಲಾಶಯ",
+    "natural": "water",
+    "source": "Landsat"
+  }
+},
+{
+  "type": "way",
+  "id": 55700518,
+  "center": {
+    "lat": 17.7240764,
+    "lon": 77.9619831
+  },
+  "tags": {
+    "name": "Manjira",
+    "natural": "water",
+    "source": "Landsat",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 55987388,
+  "center": {
+    "lat": 18.1368750,
+    "lon": 78.1838750
+  },
+  "tags": {
+    "name": "Pocharam Reservoir",
+    "natural": "water",
+    "source": "Landsat",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 56460254,
+  "center": {
+    "lat": 18.2746058,
+    "lon": 77.9656523
+  },
+  "tags": {
+    "name": "Kalyani Water Reservoir",
+    "natural": "water",
+    "source": "Landsat",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 57378877,
+  "center": {
+    "lat": 19.1500000,
+    "lon": 78.7286250
+  },
+  "tags": {
+    "name": "Kaddam Lake",
+    "natural": "water",
+    "source": "Landsat",
+    "wikidata": "Q34893481"
+  }
+},
+{
+  "type": "way",
+  "id": 59826135,
+  "center": {
+    "lat": 17.2896250,
+    "lon": 80.0977500
+  },
+  "tags": {
+    "name": "Muthagudem Lake",
+    "natural": "water",
+    "source": "Landsat"
+  }
+},
+{
+  "type": "way",
+  "id": 66794485,
+  "center": {
+    "lat": 16.4620357,
+    "lon": 79.5347433
+  },
+  "tags": {
+    "name": "Bugga Vagu Reservoir",
+    "natural": "water",
+    "operator": "Andhra Pradesh Water Resources Department",
+    "reservoir_type": "water_storage",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 66794486,
+  "center": {
+    "lat": 16.3667567,
+    "lon": 79.9280416
+  },
+  "tags": {
+    "name": "Nekarikallu Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 81940530,
+  "center": {
+    "lat": 18.7015313,
+    "lon": 80.1730192
+  },
+  "tags": {
+    "name": "Godavari",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 89581482,
+  "center": {
+    "lat": 17.4747199,
+    "lon": 78.4921975
+  },
+  "tags": {
+    "name": "Bon Cheruvu",
+    "natural": "water",
+    "wikidata": "Q34878401"
+  }
+},
+{
+  "type": "way",
+  "id": 90770155,
+  "center": {
+    "lat": 17.4571449,
+    "lon": 78.3808643
+  },
+  "tags": {
+    "name": "Timmidkunta Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 96358423,
+  "center": {
+    "lat": 17.4708810,
+    "lon": 78.3718793
+  },
+  "tags": {
+    "name": "Kotla Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 97465883,
+  "center": {
+    "lat": 18.7606823,
+    "lon": 79.5631465
+  },
+  "tags": {
+    "alt_name": "Sundilla Reservoir",
+    "name": "Parvati Reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 97471782,
+  "center": {
+    "lat": 18.4217247,
+    "lon": 78.9188837
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Midmanair Reservoir",
+    "name:te": "shri raja rajeshwari reservoir",
+    "natural": "water",
+    "note": "25.875 TMC 200000 acres ayacut",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 97689954,
+  "center": {
+    "lat": 15.8417159,
+    "lon": 78.0368790
+  },
+  "tags": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/TUNGABHADRA_RIVER_KURNOOL.jpg",
+    "name": "TUNGABHADRA RIVER",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 100402270,
+  "center": {
+    "lat": 18.8858226,
+    "lon": 79.4436837
+  },
+  "tags": {
+    "name": "Ram cheruvu lake",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 101386689,
+  "center": {
+    "lat": 16.5374704,
+    "lon": 79.4074583
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Yetthipothala",
+    "name:te": "ఎత్తిపోతల",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 101962510,
+  "center": {
+    "lat": 19.9873550,
+    "lon": 79.2658894
+  },
+  "tags": {
+    "name": "Erai River",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 101962538,
+  "center": {
+    "lat": 19.8215143,
+    "lon": 79.3746016
+  },
+  "tags": {
+    "name": "Wardha",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 111987367,
+  "center": {
+    "lat": 17.5046661,
+    "lon": 78.4746337
+  },
+  "tags": {
+    "boat": "no",
+    "name": "Vennalagadda Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 112319621,
+  "center": {
+    "lat": 17.8310859,
+    "lon": 80.8358781
+  },
+  "tags": {
+    "name": "Manasarovar",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 112553260,
+  "center": {
+    "lat": 17.9554803,
+    "lon": 79.9990466
+  },
+  "tags": {
+    "name": "Pakhal Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "lake",
+    "wikidata": "Q3374015",
+    "wikipedia": "en:Pakhal Lake"
+  }
+},
+{
+  "type": "way",
+  "id": 112553299,
+  "center": {
+    "lat": 18.0469369,
+    "lon": 79.9462640
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Ranga Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 112554178,
+  "center": {
+    "lat": 19.2699070,
+    "lon": 79.2644691
+  },
+  "tags": {
+    "name": "Vattivaagu",
+    "name:en": "Vattivaagu",
+    "name:te": "వట్టివాగు",
+    "natural": "water",
+    "source:name": "Survey Of India",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 112603519,
+  "center": {
+    "lat": 18.5639238,
+    "lon": 77.7825165
+  },
+  "tags": {
+    "name": "Pothangal Cheruvu",
+    "name:te": "పొతంగల్ చెరువు",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 113164532,
+  "center": {
+    "lat": 17.4639246,
+    "lon": 78.4043151
+  },
+  "tags": {
+    "name": "Kamuni Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 113164557,
+  "center": {
+    "lat": 17.4522927,
+    "lon": 78.4032963
+  },
+  "tags": {
+    "name": "sunnam cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 115701941,
+  "center": {
+    "lat": 17.3621076,
+    "lon": 78.8354874
+  },
+  "tags": {
+    "name": "Revanpally Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 115701953,
+  "center": {
+    "lat": 17.3551224,
+    "lon": 78.8232538
+  },
+  "tags": {
+    "name": "Pochampally Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 115702044,
+  "center": {
+    "lat": 17.1929414,
+    "lon": 78.6250895
+  },
+  "tags": {
+    "name": "Ibrahimpatnam Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 115702077,
+  "center": {
+    "lat": 16.3952484,
+    "lon": 77.9704857
+  },
+  "tags": {
+    "name": "Shenkara Samudram",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 115702110,
+  "center": {
+    "lat": 16.6805952,
+    "lon": 78.2801628
+  },
+  "tags": {
+    "name": "Pedda Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 115707378,
+  "center": {
+    "lat": 17.0218203,
+    "lon": 80.9617174
+  },
+  "tags": {
+    "fixme": "improve geometry reservoir",
+    "name": "Gonelavagu Reservoir",
+    "natural": "water",
+    "reservoir_type": "water_storage",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 115707387,
+  "center": {
+    "lat": 17.1723725,
+    "lon": 80.7227037
+  },
+  "tags": {
+    "name": "Lanka Sagar",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 115707390,
+  "center": {
+    "lat": 16.8710800,
+    "lon": 80.5786025
+  },
+  "tags": {
+    "name": "Ralla Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 115707393,
+  "center": {
+    "lat": 17.1078610,
+    "lon": 81.2181492
+  },
+  "tags": {
+    "name": "Yerrakaluva Reservoir",
+    "natural": "water",
+    "water": "reservoir",
+    "wikidata": "Q131196499"
+  }
+},
+{
+  "type": "way",
+  "id": 115707397,
+  "center": {
+    "lat": 17.0165580,
+    "lon": 80.9262619
+  },
+  "tags": {
+    "fixme": "Possibly seasonal growth, disparity between different aerials",
+    "name": "Tammileru Reservoir",
+    "natural": "water",
+    "reservoir_type": "water_storage",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 115769453,
+  "center": {
+    "lat": 17.4149130,
+    "lon": 81.1628384
+  },
+  "tags": {
+    "name": "Pedda Vagu Reservoir",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 115771999,
+  "center": {
+    "lat": 17.5237666,
+    "lon": 78.2632810
+  },
+  "tags": {
+    "addr:city": "patancheru",
+    "addr:housenumber": "7/21",
+    "addr:postcode": "5021377",
+    "addr:street": "x;road",
+    "name": "PATANCHERU CHERUVU",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 115772000,
+  "center": {
+    "lat": 17.5236085,
+    "lon": 78.3334398
+  },
+  "tags": {
+    "name": "Ameenpur Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "lake",
+    "wikidata": "Q58379737",
+    "wikipedia": "en:Ameenpur Lake"
+  }
+},
+{
+  "type": "way",
+  "id": 115877848,
+  "center": {
+    "lat": 17.8511659,
+    "lon": 78.0578613
+  },
+  "tags": {
+    "name": "Annasagar Lake",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 115877870,
+  "center": {
+    "lat": 17.8273184,
+    "lon": 79.2620274
+  },
+  "tags": {
+    "name": "Ashwaraopalli Reservoir",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 115877892,
+  "center": {
+    "lat": 17.8214251,
+    "lon": 78.0707359
+  },
+  "tags": {
+    "name": "andole river",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 116300100,
+  "center": {
+    "lat": 15.8629389,
+    "lon": 79.9615860
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Bhavanasi",
+    "name:te": "భవనాసి చెరువు",
+    "natural": "water",
+    "salt": "no",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 116643119,
+  "center": {
+    "lat": 17.0951441,
+    "lon": 77.6504445
+  },
+  "tags": {
+    "name": "Kodangal-PataKodangal Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 116686252,
+  "center": {
+    "lat": 18.1106985,
+    "lon": 78.5883580
+  },
+  "tags": {
+    "name": "bhoompally pond",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 116686262,
+  "center": {
+    "lat": 18.0536334,
+    "lon": 78.5004043
+  },
+  "tags": {
+    "description": "Telugu is the local language where Cheruvu means a lake",
+    "name": "Pragathi Dharmaram Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 116686270,
+  "center": {
+    "lat": 17.8382171,
+    "lon": 79.4312407
+  },
+  "tags": {
+    "name": "pedha cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 116762991,
+  "center": {
+    "lat": 16.5737065,
+    "lon": 78.0362212
+  },
+  "tags": {
+    "name": "Khilla Ghanpur Lake",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 116933088,
+  "center": {
+    "lat": 17.3934291,
+    "lon": 78.5393150
+  },
+  "tags": {
+    "name": "Ramanthapur chinna cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 117035111,
+  "center": {
+    "lat": 17.4249016,
+    "lon": 78.3420206
+  },
+  "tags": {
+    "name": "Wipro Lake",
+    "natural": "water",
+    "source": "Natural",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 117326072,
+  "center": {
+    "lat": 18.0994872,
+    "lon": 78.8625825
+  },
+  "tags": {
+    "name": "Narsapoor Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 117326083,
+  "center": {
+    "lat": 18.0929169,
+    "lon": 78.8377659
+  },
+  "tags": {
+    "name": "Komati Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 117586059,
+  "center": {
+    "lat": 17.3458867,
+    "lon": 78.5624791
+  },
+  "tags": {
+    "name": "Peddha cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 118553631,
+  "center": {
+    "lat": 17.1634261,
+    "lon": 79.4970703
+  },
+  "tags": {
+    "name": "bv cbv",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 119057412,
+  "center": {
+    "lat": 18.8042472,
+    "lon": 78.5196414
+  },
+  "tags": {
+    "name": "Hasakothur Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 119180784,
+  "center": {
+    "lat": 17.9898879,
+    "lon": 79.5807525
+  },
+  "tags": {
+    "name": "Bhadrakali Lake",
+    "name:ml": "ഭദ്രകാളി തടാകം",
+    "name:te": "భద్రకాళి సరస్సు",
+    "natural": "water",
+    "water": "lake",
+    "wikidata": "Q28172512",
+    "wikipedia": "en:Bhadrakali Lake"
+  }
+},
+{
+  "type": "way",
+  "id": 119396529,
+  "center": {
+    "lat": 17.8702084,
+    "lon": 79.4552515
+  },
+  "tags": {
+    "name": "chouta cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 119396727,
+  "center": {
+    "lat": 18.6121642,
+    "lon": 79.3683350
+  },
+  "tags": {
+    "name": "Yellamma Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 119398340,
+  "center": {
+    "lat": 17.9591792,
+    "lon": 79.5806051
+  },
+  "tags": {
+    "name": "Ursu Pond",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 119398417,
+  "center": {
+    "lat": 19.0844628,
+    "lon": 78.3644527
+  },
+  "tags": {
+    "name": "Natraj Mill Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 119398427,
+  "center": {
+    "lat": 18.7924205,
+    "lon": 78.3022643
+  },
+  "tags": {
+    "name": "Perkit Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 119489279,
+  "center": {
+    "lat": 16.6062549,
+    "lon": 78.7561798
+  },
+  "tags": {
+    "name": "cherukupally lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 119724334,
+  "center": {
+    "lat": 19.6204268,
+    "lon": 78.5097411
+  },
+  "tags": {
+    "name": "Mavala Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery"
+  }
+},
+{
+  "type": "way",
+  "id": 119724355,
+  "center": {
+    "lat": 19.7763608,
+    "lon": 79.0606387
+  },
+  "tags": {
+    "name": "Naranda Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 120288271,
+  "center": {
+    "lat": 16.3166579,
+    "lon": 80.4336576
+  },
+  "tags": {
+    "boat": "permissive",
+    "name": "Koritepadu Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 120635420,
+  "center": {
+    "lat": 16.3127683,
+    "lon": 78.1977770
+  },
+  "tags": {
+    "name": "గుండ్ల చెరువు",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 120635421,
+  "center": {
+    "lat": 16.2184656,
+    "lon": 77.8302383
+  },
+  "tags": {
+    "name": "Balancing Reservoir",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 121202919,
+  "center": {
+    "lat": 16.0200501,
+    "lon": 79.8994499
+  },
+  "tags": {
+    "name": "Kunduru lake",
+    "name:te": "కుందూరు",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 122444390,
+  "center": {
+    "lat": 17.4867611,
+    "lon": 78.3458849
+  },
+  "tags": {
+    "name": "Madinaguda Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 122444393,
+  "center": {
+    "lat": 17.4848217,
+    "lon": 78.3550828
+  },
+  "tags": {
+    "name": "Kotha Kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 128257159,
+  "center": {
+    "lat": 17.4719293,
+    "lon": 77.2779822
+  },
+  "tags": {
+    "landuse": "reservoir",
+    "name": "Dotikola Kere",
+    "name:kn": "ದೋಟಿಕೊಳ ಕೆರೆ"
+  }
+},
+{
+  "type": "way",
+  "id": 129523141,
+  "center": {
+    "lat": 17.5011459,
+    "lon": 78.4001675
+  },
+  "tags": {
+    "name": "Yellama Kunta 2",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 129523142,
+  "center": {
+    "lat": 17.5013436,
+    "lon": 78.4070326
+  },
+  "tags": {
+    "name": "Yellamma Kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 129532522,
+  "center": {
+    "lat": 17.4881883,
+    "lon": 78.4184783
+  },
+  "tags": {
+    "name": "Nalla Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 131219967,
+  "center": {
+    "lat": 19.9535182,
+    "lon": 79.3025512
+  },
+  "tags": {
+    "name": "Ramala Talab",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "way",
+  "id": 135955898,
+  "center": {
+    "lat": 19.6703980,
+    "lon": 79.7839990
+  },
+  "tags": {
+    "name": "Pranhita",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 136665688,
+  "center": {
+    "lat": 16.3212412,
+    "lon": 80.4718280
+  },
+  "tags": {
+    "name": "Gaddipadu Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16"
+  }
+},
+{
+  "type": "way",
+  "id": 139188489,
+  "center": {
+    "lat": 17.9714466,
+    "lon": 78.0276597
+  },
+  "tags": {
+    "name": "Chinna Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 139893084,
+  "center": {
+    "lat": 16.3069066,
+    "lon": 80.5136299
+  },
+  "tags": {
+    "leisure": "nature_reserve",
+    "name": "Uppalapadu Bird Sanctuary",
+    "natural": "water",
+    "wikidata": "Q18357307",
+    "wikimedia_commons": "Category:Uppalapadu Bird Sanctuary",
+    "wikipedia": "en:Uppalapadu Bird Sanctuary"
+  }
+},
+{
+  "type": "way",
+  "id": 140391601,
+  "center": {
+    "lat": 17.4334518,
+    "lon": 78.5486848
+  },
+  "tags": {
+    "name": "Nacharam Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 142454966,
+  "center": {
+    "lat": 18.0406447,
+    "lon": 79.5324548
+  },
+  "tags": {
+    "name": "Bheemaram Reservoir",
+    "natural": "water",
+    "source": "bing",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 142504133,
+  "center": {
+    "lat": 17.8974114,
+    "lon": 78.8638920
+  },
+  "tags": {
+    "name": "Tapaspally Reservoir",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 147232637,
+  "center": {
+    "lat": 17.3842501,
+    "lon": 78.3701581
+  },
+  "tags": {
+    "name": "Chinna Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 148819195,
+  "center": {
+    "lat": 19.8715801,
+    "lon": 79.2443392
+  },
+  "tags": {
+    "name": "Wardha",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148819380,
+  "center": {
+    "lat": 19.9272140,
+    "lon": 79.1177455
+  },
+  "tags": {
+    "name": "Wardha",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148820074,
+  "center": {
+    "lat": 19.8109679,
+    "lon": 79.0138285
+  },
+  "tags": {
+    "name": "Penganga",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148820075,
+  "center": {
+    "lat": 19.8683855,
+    "lon": 79.1201154
+  },
+  "tags": {
+    "name": "Penganga",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148820426,
+  "center": {
+    "lat": 19.7820943,
+    "lon": 78.7223051
+  },
+  "tags": {
+    "name": "Penganga",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148820817,
+  "center": {
+    "lat": 19.8465497,
+    "lon": 78.4250745
+  },
+  "tags": {
+    "name": "Penganga",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148820818,
+  "center": {
+    "lat": 19.8085278,
+    "lon": 78.5576588
+  },
+  "tags": {
+    "name": "Penganga",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148821204,
+  "center": {
+    "lat": 19.8953104,
+    "lon": 78.2948975
+  },
+  "tags": {
+    "name": "Penganga",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148821388,
+  "center": {
+    "lat": 20.0144296,
+    "lon": 79.0871484
+  },
+  "tags": {
+    "name": "Wardha River",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148825023,
+  "center": {
+    "lat": 19.6061186,
+    "lon": 79.4861455
+  },
+  "tags": {
+    "name": "Wardha River",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148825027,
+  "center": {
+    "lat": 19.7748534,
+    "lon": 79.4550250
+  },
+  "tags": {
+    "name": "Wardha River",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148825548,
+  "center": {
+    "lat": 19.5306741,
+    "lon": 79.5490765
+  },
+  "tags": {
+    "name": "Wardha River",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148830900,
+  "center": {
+    "lat": 19.9533403,
+    "lon": 79.2792092
+  },
+  "tags": {
+    "name": "Erai River",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148832622,
+  "center": {
+    "lat": 19.9039464,
+    "lon": 79.2962060
+  },
+  "tags": {
+    "name": "Erai River",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 148834451,
+  "center": {
+    "lat": 19.5921454,
+    "lon": 79.7097145
+  },
+  "tags": {
+    "name": "Wardha",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 152973712,
+  "center": {
+    "lat": 17.5028738,
+    "lon": 78.3825068
+  },
+  "tags": {
+    "name": "Hydernagar Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 158331211,
+  "center": {
+    "lat": 17.5000344,
+    "lon": 78.3310752
+  },
+  "tags": {
+    "name": "Gangaram Cheruvu",
+    "natural": "water",
+    "salt": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 162380874,
+  "center": {
+    "lat": 17.1849202,
+    "lon": 80.2571493
+  },
+  "tags": {
+    "name": "Pam lake",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 162388293,
+  "center": {
+    "lat": 17.1327156,
+    "lon": 80.2878105
+  },
+  "tags": {
+    "name": "Nagiligonda lake",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 168232259,
+  "center": {
+    "lat": 17.2606962,
+    "lon": 80.1073077
+  },
+  "tags": {
+    "name": "edulapuram tank(cheruvu)",
+    "name:en": "edulapuram tank(cheruvu)",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 178234877,
+  "center": {
+    "lat": 17.3123709,
+    "lon": 77.8631879
+  },
+  "tags": {
+    "name": "temple bath",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 189313270,
+  "center": {
+    "lat": 16.0875580,
+    "lon": 79.9251827
+  },
+  "tags": {
+    "boat": "yes",
+    "designation": "Elchur Grama Panchayat",
+    "name": "Elchur Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial"
+  }
+},
+{
+  "type": "way",
+  "id": 197898691,
+  "center": {
+    "lat": 17.9834954,
+    "lon": 79.5412576
+  },
+  "tags": {
+    "name": "Bandham Cheruvu",
+    "natural": "water",
+    "salt": "no",
+    "tidal": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 214170900,
+  "center": {
+    "lat": 17.4657672,
+    "lon": 78.3651500
+  },
+  "tags": {
+    "name": "rajanna kunta",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 217676867,
+  "center": {
+    "lat": 18.8780785,
+    "lon": 79.2436756
+  },
+  "tags": {
+    "name": "Yellampalli Reservoir",
+    "name:te": "శ్రీపాద ఎల్లంపల్లి సాగర్",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 219367427,
+  "center": {
+    "lat": 17.0300815,
+    "lon": 80.2438413
+  },
+  "tags": {
+    "name": "Chirunomula Lake",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 221156977,
+  "center": {
+    "lat": 17.4671481,
+    "lon": 78.3460271
+  },
+  "tags": {
+    "name": "Kudikunta Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 235442258,
+  "center": {
+    "lat": 17.9962518,
+    "lon": 79.5723268
+  },
+  "tags": {
+    "name": "siddeswara tank",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 238310640,
+  "center": {
+    "lat": 17.3869004,
+    "lon": 78.3768185
+  },
+  "tags": {
+    "name": "Pedda Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 244004786,
+  "center": {
+    "lat": 16.7433012,
+    "lon": 77.9974123
+  },
+  "tags": {
+    "name": "Palamoor Old Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 244379224,
+  "center": {
+    "lat": 16.5835773,
+    "lon": 77.1735789
+  },
+  "tags": {
+    "name": "Bhima",
+    "name:kn": "ಭೀಮಾ",
+    "name:mr": "भीमा",
+    "name:te": "కృష్ణా",
+    "natural": "water",
+    "water": "river",
+    "width": "150"
+  }
+},
+{
+  "type": "way",
+  "id": 245410553,
+  "center": {
+    "lat": 18.2878291,
+    "lon": 77.2829065
+  },
+  "tags": {
+    "landuse": "reservoir",
+    "name": "Belakuni Bhopalagada Tank",
+    "name:kn": "ಭೋಪಾಳಗಢ ಬೆಳಕುಣಿ ಕೆರೆ"
+  }
+},
+{
+  "type": "way",
+  "id": 251142556,
+  "center": {
+    "lat": 16.4150801,
+    "lon": 80.4527473
+  },
+  "tags": {
+    "name": "Tadikonda Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 256676764,
+  "center": {
+    "lat": 16.3130009,
+    "lon": 80.4166704
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Brindhavan Gardens Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 259166558,
+  "center": {
+    "lat": 16.4321045,
+    "lon": 80.5673345
+  },
+  "tags": {
+    "name": "Peda Koneru",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 261478392,
+  "center": {
+    "lat": 17.4301800,
+    "lon": 78.3396378
+  },
+  "tags": {
+    "name": "Microsoft Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 263824383,
+  "center": {
+    "lat": 17.4752555,
+    "lon": 78.3318416
+  },
+  "tags": {
+    "name": "Artifical Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 263825342,
+  "center": {
+    "lat": 17.4793654,
+    "lon": 78.3296784
+  },
+  "tags": {
+    "name": "Gopi Cheruvu",
+    "natural": "water",
+    "water": "pond",
+    "wikidata": "Q34887376"
+  }
+},
+{
+  "type": "way",
+  "id": 265159686,
+  "center": {
+    "lat": 17.4939165,
+    "lon": 78.5534752
+  },
+  "tags": {
+    "name": "Kapra lake",
+    "natural": "water",
+    "water": "lake",
+    "wikidata": "Q19892493",
+    "wikipedia": "en:Kapra Lake"
+  }
+},
+{
+  "type": "way",
+  "id": 265608912,
+  "center": {
+    "lat": 19.6761939,
+    "lon": 78.5433873
+  },
+  "tags": {
+    "name": "Khanapur Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 267608471,
+  "center": {
+    "lat": 17.3103459,
+    "lon": 78.4720400
+  },
+  "tags": {
+    "name": "Salkam Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 267610554,
+  "center": {
+    "lat": 17.3127043,
+    "lon": 78.4547826
+  },
+  "tags": {
+    "name": "Palle Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 267611516,
+  "center": {
+    "lat": 17.2999946,
+    "lon": 78.4433256
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Hyderabad",
+    "natural": "water",
+    "salt": "yes",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 269128351,
+  "center": {
+    "lat": 17.3563315,
+    "lon": 78.4113598
+  },
+  "tags": {
+    "name": "Upparpally Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 269572571,
+  "center": {
+    "lat": 16.4673314,
+    "lon": 80.2569321
+  },
+  "tags": {
+    "name": "PEDAKURAPADU COMMON LAKE",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 271124286,
+  "center": {
+    "lat": 17.5063308,
+    "lon": 78.2945081
+  },
+  "tags": {
+    "name": "Ramachandrapuram Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 271680421,
+  "center": {
+    "lat": 17.5013993,
+    "lon": 78.3589873
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Miyapur Cheruvu",
+    "name:te": "మియాపూర్ చెరువు",
+    "natural": "water",
+    "tidal": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 271680422,
+  "center": {
+    "lat": 17.5168160,
+    "lon": 78.3507993
+  },
+  "tags": {
+    "name": "Kandi Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 273426399,
+  "center": {
+    "lat": 17.5018685,
+    "lon": 78.5040213
+  },
+  "tags": {
+    "alt_name": "Old Alwal Pond",
+    "name": "Old Alwal Temple Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 274497491,
+  "center": {
+    "lat": 17.5251165,
+    "lon": 78.3842130
+  },
+  "tags": {
+    "name": "Nizam Talab",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 274497497,
+  "center": {
+    "lat": 17.5576764,
+    "lon": 78.3796225
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Mallampet Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 274500699,
+  "center": {
+    "lat": 17.5361460,
+    "lon": 78.2687291
+  },
+  "tags": {
+    "name": "patancheru",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 275252289,
+  "center": {
+    "lat": 17.6030879,
+    "lon": 78.5487711
+  },
+  "tags": {
+    "name": "NALSAR Lake (Dry)",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 275891700,
+  "center": {
+    "lat": 17.2647951,
+    "lon": 78.5053503
+  },
+  "tags": {
+    "name": "Anatula Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 278779412,
+  "center": {
+    "lat": 16.7384795,
+    "lon": 77.9845150
+  },
+  "tags": {
+    "name": "Nalla Kunta Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 278779415,
+  "center": {
+    "lat": 16.7278697,
+    "lon": 77.9923806
+  },
+  "tags": {
+    "name": "Nalla Cheruvvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 278815994,
+  "center": {
+    "lat": 16.0900434,
+    "lon": 80.1830296
+  },
+  "tags": {
+    "name": "Kotamma Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 279684332,
+  "center": {
+    "lat": 17.9711359,
+    "lon": 79.6293678
+  },
+  "tags": {
+    "name": "Katta Mallana Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 279684334,
+  "center": {
+    "lat": 17.9969348,
+    "lon": 79.6440159
+  },
+  "tags": {
+    "name": "water tank",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 279696149,
+  "center": {
+    "lat": 17.9642554,
+    "lon": 79.6059697
+  },
+  "tags": {
+    "name": "water tank",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 279696150,
+  "center": {
+    "lat": 17.9604454,
+    "lon": 79.6095456
+  },
+  "tags": {
+    "name": "water tank",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 280451557,
+  "center": {
+    "lat": 18.0182929,
+    "lon": 79.5579915
+  },
+  "tags": {
+    "name": "Pochamma Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 281767641,
+  "center": {
+    "lat": 17.4498076,
+    "lon": 78.4411128
+  },
+  "tags": {
+    "name": "Kanjerla Laxmi Narayan Yadav Park Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 281800159,
+  "center": {
+    "lat": 17.4272311,
+    "lon": 78.5721695
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Rama Cheruvu",
+    "natural": "water",
+    "salt": "no",
+    "tidal": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 282200987,
+  "center": {
+    "lat": 17.3559385,
+    "lon": 78.5069818
+  },
+  "tags": {
+    "name": "Erra Kunta",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 287429408,
+  "center": {
+    "lat": 17.9497618,
+    "lon": 80.8223576
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Manuguru cheruvu",
+    "natural": "water",
+    "salt": "yes",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 290790706,
+  "center": {
+    "lat": 17.3980400,
+    "lon": 78.5942317
+  },
+  "tags": {
+    "name": "Peerzadiguda Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 291435733,
+  "center": {
+    "lat": 17.3236951,
+    "lon": 78.5221638
+  },
+  "tags": {
+    "name": "Mantrala Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 291436063,
+  "center": {
+    "lat": 17.3197973,
+    "lon": 78.6006720
+  },
+  "tags": {
+    "name": "Batula Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 291437284,
+  "center": {
+    "lat": 17.3049646,
+    "lon": 78.4112232
+  },
+  "tags": {
+    "name": "Mulagund Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 291438377,
+  "center": {
+    "lat": 17.3157718,
+    "lon": 78.5281000
+  },
+  "tags": {
+    "name": "Talla Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 305258247,
+  "center": {
+    "lat": 17.5184911,
+    "lon": 78.8439676
+  },
+  "tags": {
+    "name": "Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 305258480,
+  "center": {
+    "lat": 17.5116807,
+    "lon": 78.8734644
+  },
+  "tags": {
+    "name": "Bhongir Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 305258941,
+  "center": {
+    "lat": 17.5145937,
+    "lon": 78.8520812
+  },
+  "tags": {
+    "name": "Anantharam Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 305259350,
+  "center": {
+    "lat": 17.5256090,
+    "lon": 78.8504383
+  },
+  "tags": {
+    "name": "Somanath Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 305261742,
+  "center": {
+    "lat": 17.4906485,
+    "lon": 78.8784617
+  },
+  "tags": {
+    "name": "cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 305839814,
+  "center": {
+    "lat": 17.4955539,
+    "lon": 78.9003844
+  },
+  "tags": {
+    "name": "Bhongir Chinna Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 305840010,
+  "center": {
+    "lat": 17.4654479,
+    "lon": 78.9057221
+  },
+  "tags": {
+    "name": "Aanajipur Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 305842290,
+  "center": {
+    "lat": 17.4861036,
+    "lon": 78.9236873
+  },
+  "tags": {
+    "name": "Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 305903668,
+  "center": {
+    "lat": 17.4076718,
+    "lon": 78.8390548
+  },
+  "tags": {
+    "name": "Pedda Ravulapally cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 305908608,
+  "center": {
+    "lat": 17.3827400,
+    "lon": 78.8786200
+  },
+  "tags": {
+    "name": "Indriyala Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 309064747,
+  "center": {
+    "lat": 17.5161423,
+    "lon": 78.8921236
+  },
+  "tags": {
+    "name": "Hill Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 309949689,
+  "center": {
+    "lat": 16.2419435,
+    "lon": 80.6491317
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Chakali Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 318348330,
+  "center": {
+    "lat": 17.4484301,
+    "lon": 78.3339059
+  },
+  "tags": {
+    "name": "Peacock Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 325157104,
+  "center": {
+    "lat": 17.4106158,
+    "lon": 78.5766483
+  },
+  "tags": {
+    "name": "Sudda kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 327491498,
+  "center": {
+    "lat": 18.2336309,
+    "lon": 77.4552643
+  },
+  "tags": {
+    "landuse": "reservoir",
+    "name": "Tegampura Kere",
+    "name:kn": "ತೇಗಂಪೂರ ಕೆರೆ"
+  }
+},
+{
+  "type": "way",
+  "id": 327491531,
+  "center": {
+    "lat": 18.4135719,
+    "lon": 77.3462629
+  },
+  "tags": {
+    "landuse": "reservoir",
+    "name": "Bavalgaon tank",
+    "name:kn": "ಬಾವಲಗಾಂವ ಕೆರೆ"
+  }
+},
+{
+  "type": "way",
+  "id": 327630040,
+  "center": {
+    "lat": 18.0086316,
+    "lon": 77.3522717
+  },
+  "tags": {
+    "name": "Bilaspur Tank",
+    "name:kn": "ಬಿಲಾಸ್ಪುರ ಕೆರೆ",
+    "natural": "water",
+    "source": "Landsat"
+  }
+},
+{
+  "type": "way",
+  "id": 328436596,
+  "center": {
+    "lat": 16.7084306,
+    "lon": 81.1125823
+  },
+  "tags": {
+    "name": "Gajjala Vari Water Park",
+    "name:en": "Buddha park",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 329694243,
+  "center": {
+    "lat": 17.4250642,
+    "lon": 77.2155994
+  },
+  "tags": {
+    "landuse": "reservoir",
+    "name": "Kodli Allapura Kere",
+    "name:kn": "ಕೋಡ್ಲಿ ಅಲ್ಲಾಪುರ ಕೆರೆ"
+  }
+},
+{
+  "type": "way",
+  "id": 330751132,
+  "center": {
+    "lat": 17.2613670,
+    "lon": 77.5783122
+  },
+  "tags": {
+    "name": "Golla Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 331333925,
+  "center": {
+    "lat": 17.3884269,
+    "lon": 79.6646014
+  },
+  "tags": {
+    "name": "Chintal Chervu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 331333926,
+  "center": {
+    "lat": 17.3926188,
+    "lon": 79.6700365
+  },
+  "tags": {
+    "name": "Bandam Kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 331334651,
+  "center": {
+    "lat": 17.3827290,
+    "lon": 79.6472384
+  },
+  "tags": {
+    "name": "Marri Kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 331345227,
+  "center": {
+    "lat": 17.4018210,
+    "lon": 79.6652756
+  },
+  "tags": {
+    "name": "Medi Kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 331383759,
+  "center": {
+    "lat": 17.5043880,
+    "lon": 79.8858835
+  },
+  "tags": {
+    "name": "Muthyalamma Kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 331383823,
+  "center": {
+    "lat": 17.5055851,
+    "lon": 79.8909046
+  },
+  "tags": {
+    "name": "Reddy Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 331383909,
+  "center": {
+    "lat": 17.5212393,
+    "lon": 79.8802079
+  },
+  "tags": {
+    "name": "Tummidi Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 331794870,
+  "center": {
+    "lat": 16.8670172,
+    "lon": 78.1054735
+  },
+  "tags": {
+    "name": "karoor cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 331799275,
+  "center": {
+    "lat": 17.6599129,
+    "lon": 79.2735090
+  },
+  "tags": {
+    "name": "dk pond",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 331879858,
+  "center": {
+    "lat": 16.4310925,
+    "lon": 80.5725642
+  },
+  "tags": {
+    "name": "Nancharamma Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 331893146,
+  "center": {
+    "lat": 16.4339213,
+    "lon": 80.5690637
+  },
+  "tags": {
+    "name": "Cheekati Koneru",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 332082764,
+  "center": {
+    "lat": 16.8619361,
+    "lon": 78.1337409
+  },
+  "tags": {
+    "name": "kucharkal cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 332097134,
+  "center": {
+    "lat": 17.4060021,
+    "lon": 78.3996783
+  },
+  "tags": {
+    "name": "Shaikpet Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 332098885,
+  "center": {
+    "lat": 17.5382715,
+    "lon": 78.3692416
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Bachupally Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 332136302,
+  "center": {
+    "lat": 16.8683454,
+    "lon": 78.1023531
+  },
+  "tags": {
+    "name": "for cattle",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 334475095,
+  "center": {
+    "lat": 16.8915807,
+    "lon": 78.0408329
+  },
+  "tags": {
+    "name": "nawabpet lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 345942353,
+  "center": {
+    "lat": 18.1209633,
+    "lon": 78.4348420
+  },
+  "tags": {
+    "addr:city": "ramayampet",
+    "addr:postcode": "502101",
+    "name": "malle cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 347066503,
+  "center": {
+    "lat": 18.1755381,
+    "lon": 78.6579182
+  },
+  "tags": {
+    "area": "yes",
+    "name": "pedda cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 347069124,
+  "center": {
+    "lat": 17.1302708,
+    "lon": 79.6225928
+  },
+  "tags": {
+    "name": "pullareddy cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 347093354,
+  "center": {
+    "lat": 16.9357411,
+    "lon": 80.0368441
+  },
+  "tags": {
+    "name": "Redlakunta Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 347164858,
+  "center": {
+    "lat": 17.9763551,
+    "lon": 77.9089896
+  },
+  "tags": {
+    "name": "Reddipally cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 347328467,
+  "center": {
+    "lat": 18.0621461,
+    "lon": 77.8512501
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Bujaranapally Cheruvu",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 355789515,
+  "center": {
+    "lat": 16.8936570,
+    "lon": 79.8421904
+  },
+  "tags": {
+    "name": "Kachavarigudem Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 361685060,
+  "center": {
+    "lat": 17.4138653,
+    "lon": 78.4202571
+  },
+  "tags": {
+    "name": "Lotus Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 362966095,
+  "center": {
+    "lat": 17.2823322,
+    "lon": 78.3611934
+  },
+  "tags": {
+    "AND_a_w": "10000419",
+    "name": "Himayat Sagar",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 364475193,
+  "center": {
+    "lat": 17.5553229,
+    "lon": 78.3590655
+  },
+  "tags": {
+    "name": "Rella Kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 364475405,
+  "center": {
+    "lat": 17.5531395,
+    "lon": 78.3628479
+  },
+  "tags": {
+    "name": "Mallampet MSKC Lake",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 374402697,
+  "center": {
+    "lat": 17.6972143,
+    "lon": 79.6975232
+  },
+  "tags": {
+    "fixme": "paddy or pond?",
+    "name": "Annaram pedda cheru/Dharga cheru",
+    "natural": "water",
+    "note": "main crop under this pond = Paddy",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 397023362,
+  "center": {
+    "lat": 17.3102278,
+    "lon": 78.4120836
+  },
+  "tags": {
+    "addr:city": "Hyderabad",
+    "addr:housenumber": "MANAGE Hostels",
+    "addr:postcode": "500030",
+    "addr:street": "manage rd",
+    "name": "MANAGE Swimming pool",
+    "natural": "water",
+    "water": "pool"
+  }
+},
+{
+  "type": "way",
+  "id": 440408308,
+  "center": {
+    "lat": 16.4035734,
+    "lon": 77.8743470
+  },
+  "tags": {
+    "name": "Water Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 441972337,
+  "center": {
+    "lat": 17.4564048,
+    "lon": 78.3389247
+  },
+  "tags": {
+    "name": "Water Tank",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 442585482,
+  "center": {
+    "lat": 16.4010288,
+    "lon": 77.8764929
+  },
+  "tags": {
+    "name": "Water Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 449254144,
+  "center": {
+    "lat": 18.5826820,
+    "lon": 77.8910575
+  },
+  "tags": {
+    "name": "Pedda Cheruvu",
+    "name:te": "పెద్ద చెరువు",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 450373046,
+  "center": {
+    "lat": 17.3147765,
+    "lon": 78.5700683
+  },
+  "tags": {
+    "name": "Kappala Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 450510026,
+  "center": {
+    "lat": 17.3234100,
+    "lon": 78.5964670
+  },
+  "tags": {
+    "name": "Kummari Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 457317681,
+  "center": {
+    "lat": 17.9310832,
+    "lon": 77.4946464
+  },
+  "tags": {
+    "name": "Papanash Lake",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 461997210,
+  "center": {
+    "lat": 17.3478893,
+    "lon": 78.6186463
+  },
+  "tags": {
+    "name": "Kuntloor Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 462345419,
+  "center": {
+    "lat": 17.3527512,
+    "lon": 78.4235309
+  },
+  "tags": {
+    "name": "Upperpally Nala",
+    "natural": "water",
+    "water": "sewer"
+  }
+},
+{
+  "type": "way",
+  "id": 464271676,
+  "center": {
+    "lat": 16.0808482,
+    "lon": 78.9056664
+  },
+  "tags": {
+    "description": "It was stated 2014",
+    "name": "Sri lakshmi water service",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 468492433,
+  "center": {
+    "lat": 17.4971129,
+    "lon": 78.5883005
+  },
+  "tags": {
+    "name": "Sai Priya Colony Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 468492809,
+  "center": {
+    "lat": 17.4981213,
+    "lon": 78.5886966
+  },
+  "tags": {
+    "name": "SP2",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 474867730,
+  "center": {
+    "lat": 18.1877345,
+    "lon": 80.6170853
+  },
+  "tags": {
+    "name": "vadugudem lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 474867731,
+  "center": {
+    "lat": 18.1858679,
+    "lon": 80.6217670
+  },
+  "tags": {
+    "name": "vadugudem",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 474867732,
+  "center": {
+    "lat": 18.1839457,
+    "lon": 80.6233608
+  },
+  "tags": {
+    "name": "RAVANAKKAPET",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 474869172,
+  "center": {
+    "lat": 18.1936146,
+    "lon": 80.6111998
+  },
+  "tags": {
+    "name": "PALAIGUDEM",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 476912808,
+  "center": {
+    "lat": 17.4632128,
+    "lon": 78.4149190
+  },
+  "tags": {
+    "name": "Chinna Maisamma Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 486487578,
+  "center": {
+    "lat": 16.8679551,
+    "lon": 80.7152169
+  },
+  "tags": {
+    "name": "Pedda Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 487192434,
+  "center": {
+    "lat": 16.0202450,
+    "lon": 80.9172044
+  },
+  "tags": {
+    "name": "GURRAPU CHERUVU",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 500257373,
+  "center": {
+    "lat": 17.3840588,
+    "lon": 78.4007134
+  },
+  "tags": {
+    "name": "third tank",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 537051562,
+  "center": {
+    "lat": 17.4759224,
+    "lon": 78.5332238
+  },
+  "tags": {
+    "name": "Ramakrishnapuram Cheruvu",
+    "natural": "water",
+    "water": "lake",
+    "wikidata": "Q19803491",
+    "wikipedia": "en:Ramakrishnapuram Lake"
+  }
+},
+{
+  "type": "way",
+  "id": 538072266,
+  "center": {
+    "lat": 16.8600409,
+    "lon": 81.3127260
+  },
+  "tags": {
+    "name": "Buttayagudem Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 545605705,
+  "center": {
+    "lat": 17.3433907,
+    "lon": 78.3831144
+  },
+  "tags": {
+    "name": "local rain water pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 548160104,
+  "center": {
+    "lat": 18.0044146,
+    "lon": 79.9522277
+  },
+  "tags": {
+    "name": "kummarikunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 548160105,
+  "center": {
+    "lat": 18.0041773,
+    "lon": 79.9600115
+  },
+  "tags": {
+    "name": "pedda cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805188,
+  "center": {
+    "lat": 16.9047590,
+    "lon": 81.2963162
+  },
+  "tags": {
+    "name": "Narappa Koneru",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805189,
+  "center": {
+    "lat": 16.8964311,
+    "lon": 81.2859562
+  },
+  "tags": {
+    "name": "Chittimavi Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805190,
+  "center": {
+    "lat": 16.8962592,
+    "lon": 81.3019623
+  },
+  "tags": {
+    "name": "Pothuraju Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805191,
+  "center": {
+    "lat": 16.8916497,
+    "lon": 81.3001827
+  },
+  "tags": {
+    "name": "Nuthula Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805192,
+  "center": {
+    "lat": 16.8780135,
+    "lon": 81.2912267
+  },
+  "tags": {
+    "name": "V Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805193,
+  "center": {
+    "lat": 16.8774308,
+    "lon": 81.2832901
+  },
+  "tags": {
+    "name": "Kotha cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805194,
+  "center": {
+    "lat": 16.8702722,
+    "lon": 81.2908271
+  },
+  "tags": {
+    "name": "Madhava Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805195,
+  "center": {
+    "lat": 16.8664298,
+    "lon": 81.2746547
+  },
+  "tags": {
+    "name": "Nerella Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805196,
+  "center": {
+    "lat": 16.8628002,
+    "lon": 81.2963363
+  },
+  "tags": {
+    "name": "Jammi Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548805197,
+  "center": {
+    "lat": 16.8668815,
+    "lon": 81.3014741
+  },
+  "tags": {
+    "name": "Panthule Koneru",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 548881353,
+  "center": {
+    "lat": 18.7888173,
+    "lon": 80.8195630
+  },
+  "tags": {
+    "name": "Mahadev Talab",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 551010509,
+  "center": {
+    "lat": 17.9352953,
+    "lon": 79.0401078
+  },
+  "tags": {
+    "name": "Gagillapur",
+    "natural": "water",
+    "salt": "yes",
+    "source:position": "Bing",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "13",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 552301759,
+  "center": {
+    "lat": 17.2260768,
+    "lon": 80.8697794
+  },
+  "tags": {
+    "name": "Bethupalli Pedda Cheruvu",
+    "name:te": "బెతుపల్లి పెద్ద చెరువు",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 552553221,
+  "center": {
+    "lat": 15.9699111,
+    "lon": 78.6553717
+  },
+  "tags": {
+    "landuse": "reservoir",
+    "name": "Varadarajaswamy Gudi Project",
+    "reservoir_type": "water_storage"
+  }
+},
+{
+  "type": "way",
+  "id": 552553222,
+  "center": {
+    "lat": 15.9595136,
+    "lon": 79.1321826
+  },
+  "tags": {
+    "landuse": "reservoir",
+    "name": "Bommalapuram Reservoir",
+    "natural": "water",
+    "reservoir_type": "water_storage",
+    "source:position": "Bing",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "14",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 557851060,
+  "center": {
+    "lat": 17.2678000,
+    "lon": 78.5161738
+  },
+  "tags": {
+    "name": "Kurmalguda Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 558714419,
+  "center": {
+    "lat": 17.7267775,
+    "lon": 78.2865143
+  },
+  "tags": {
+    "name": "narsapur lake",
+    "natural": "water",
+    "source:position": "MapBox",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "14",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 564627043,
+  "center": {
+    "lat": 15.9755278,
+    "lon": 80.4261300
+  },
+  "tags": {
+    "name": "Uppara Palem Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 573617002,
+  "center": {
+    "lat": 17.3171416,
+    "lon": 78.5558004
+  },
+  "tags": {
+    "name": "1 ML ELSR",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 574431439,
+  "center": {
+    "lat": 17.3195058,
+    "lon": 78.6844681
+  },
+  "tags": {
+    "name": "Abdullapurmet lake",
+    "natural": "water",
+    "source": "Bing",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 576130906,
+  "center": {
+    "lat": 18.8751673,
+    "lon": 77.9158039
+  },
+  "tags": {
+    "name": "Artificial Reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 578280869,
+  "center": {
+    "lat": 17.4076760,
+    "lon": 78.6016763
+  },
+  "tags": {
+    "name": "Medipally Municiple Ward",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 596477919,
+  "center": {
+    "lat": 18.1165812,
+    "lon": 78.8450146
+  },
+  "tags": {
+    "alt_name": "Erra Cheruvu",
+    "name": "Lal Talab",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 596491356,
+  "center": {
+    "lat": 17.7255776,
+    "lon": 78.2566944
+  },
+  "tags": {
+    "name": "bvrit pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 596831199,
+  "center": {
+    "lat": 17.6226091,
+    "lon": 78.0962581
+  },
+  "tags": {
+    "name": "mahboob sagar",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 625370001,
+  "center": {
+    "lat": 17.5430014,
+    "lon": 78.5759512
+  },
+  "tags": {
+    "name": "Infinity Pool",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 629817383,
+  "center": {
+    "lat": 17.1398404,
+    "lon": 80.8208128
+  },
+  "tags": {
+    "name": "Pond Of Bhimavaram",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 653923558,
+  "center": {
+    "lat": 17.1847212,
+    "lon": 79.3917845
+  },
+  "tags": {
+    "name": "chandampally pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 653925957,
+  "center": {
+    "lat": 17.4596153,
+    "lon": 78.3401832
+  },
+  "tags": {
+    "name": "Chambal pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 661188648,
+  "center": {
+    "lat": 17.4147498,
+    "lon": 78.3617775
+  },
+  "tags": {
+    "name": "Khajaguda Lake",
+    "natural": "water",
+    "water": "lake",
+    "wikidata": "Q64094699",
+    "wikipedia": "en:Khajaguda Lake"
+  }
+},
+{
+  "type": "way",
+  "id": 670652454,
+  "center": {
+    "lat": 17.4405165,
+    "lon": 78.3624571
+  },
+  "tags": {
+    "description": "Private Lake",
+    "intermittent": "no",
+    "name": "QL Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 671217936,
+  "center": {
+    "lat": 17.4765386,
+    "lon": 80.1012633
+  },
+  "tags": {
+    "addr:city": "Gollacherla",
+    "addr:city_1": "Mahabubabad",
+    "addr:postcode": "506381",
+    "name": "Gollacherla Lake Area",
+    "name:te": "గొల్లచెర్ల లేక్ ఏరియా",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 678265486,
+  "center": {
+    "lat": 19.0836093,
+    "lon": 77.2375761
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "common pond",
+    "natural": "water",
+    "salt": "no",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 680550229,
+  "center": {
+    "lat": 17.9934597,
+    "lon": 79.6124644
+  },
+  "tags": {
+    "name": "chinna vaddepalli",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 680563998,
+  "center": {
+    "lat": 16.7541899,
+    "lon": 81.0319258
+  },
+  "tags": {
+    "name": "water pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 680563999,
+  "center": {
+    "lat": 16.7528819,
+    "lon": 81.0298365
+  },
+  "tags": {
+    "name": "erra cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 680577860,
+  "center": {
+    "lat": 16.7426313,
+    "lon": 81.0467094
+  },
+  "tags": {
+    "name": "fish pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 686325013,
+  "center": {
+    "lat": 17.4023617,
+    "lon": 78.3274880
+  },
+  "tags": {
+    "name": "Kokapet Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 694316946,
+  "center": {
+    "lat": 17.4334939,
+    "lon": 78.6057005
+  },
+  "tags": {
+    "name": "ChengiCherla Cheruvu aka Pochamma Kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 694317636,
+  "center": {
+    "lat": 17.4238071,
+    "lon": 78.6081506
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Chengi Cherla Perumala Cheruvu",
+    "natural": "water",
+    "salt": "yes",
+    "tidal": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 715753112,
+  "center": {
+    "lat": 17.4603711,
+    "lon": 78.3411173
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Pochamma Kunta",
+    "natural": "water",
+    "salt": "no",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 715774912,
+  "center": {
+    "lat": 17.3209765,
+    "lon": 78.4364001
+  },
+  "tags": {
+    "name": "Marsha bhai kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 726164834,
+  "center": {
+    "lat": 16.9965411,
+    "lon": 77.3418965
+  },
+  "tags": {
+    "name": "Konapura Lake",
+    "name:kn": "ಕೋನಾಪುರ ಕೆರೆ",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 726172893,
+  "center": {
+    "lat": 17.4705584,
+    "lon": 78.2964968
+  },
+  "tags": {
+    "name": "Irrigation Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 726173848,
+  "center": {
+    "lat": 17.3905616,
+    "lon": 78.3967227
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Golconda Mote",
+    "natural": "water",
+    "water": "moat"
+  }
+},
+{
+  "type": "way",
+  "id": 732828341,
+  "center": {
+    "lat": 16.0134136,
+    "lon": 80.2787432
+  },
+  "tags": {
+    "name": "chinna cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 732828342,
+  "center": {
+    "lat": 16.0102214,
+    "lon": 80.2773125
+  },
+  "tags": {
+    "name": "Pedda cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 732828964,
+  "center": {
+    "lat": 16.0056108,
+    "lon": 80.2922139
+  },
+  "tags": {
+    "name": "Surayya kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 732855843,
+  "center": {
+    "lat": 15.9592076,
+    "lon": 80.3189052
+  },
+  "tags": {
+    "name": "Uura cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 732855844,
+  "center": {
+    "lat": 15.9619489,
+    "lon": 80.3186559
+  },
+  "tags": {
+    "name": "kothacheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 732855845,
+  "center": {
+    "lat": 15.9549804,
+    "lon": 80.3207069
+  },
+  "tags": {
+    "name": "Malakunta",
+    "natural": "water",
+    "salt": "yes",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 733184168,
+  "center": {
+    "lat": 18.6186233,
+    "lon": 79.3694334
+  },
+  "tags": {
+    "name": "Gundam Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 733437617,
+  "center": {
+    "lat": 17.5273903,
+    "lon": 78.2964605
+  },
+  "tags": {
+    "addr:city": "Beeramguda,Hyderabad",
+    "addr:postcode": "502032",
+    "name": "Ushkabavi Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 733442126,
+  "center": {
+    "lat": 19.0638056,
+    "lon": 79.5395779
+  },
+  "tags": {
+    "name": "pallecheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 733442145,
+  "center": {
+    "lat": 19.0715013,
+    "lon": 79.5170303
+  },
+  "tags": {
+    "name": "vil pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 736516954,
+  "center": {
+    "lat": 15.9803063,
+    "lon": 80.3765687
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "kothapalem Cheruvu",
+    "natural": "water",
+    "salt": "no",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 737767393,
+  "center": {
+    "lat": 16.0722635,
+    "lon": 80.3304416
+  },
+  "tags": {
+    "name": "Lavu Vari Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 737782314,
+  "center": {
+    "lat": 17.4589780,
+    "lon": 78.3593805
+  },
+  "tags": {
+    "name": "kothaguda lake",
+    "name:te": "కొత్తగూడ చెరువు",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 737789731,
+  "center": {
+    "lat": 17.4295333,
+    "lon": 78.3486450
+  },
+  "tags": {
+    "golf": "lateral_water_hazard",
+    "name": "Chintal Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 737927551,
+  "center": {
+    "lat": 19.4124780,
+    "lon": 80.0075351
+  },
+  "tags": {
+    "name": "Chota Talav",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 738103256,
+  "center": {
+    "lat": 17.3344216,
+    "lon": 78.7046164
+  },
+  "tags": {
+    "name": "peddacheruvu lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 738103257,
+  "center": {
+    "lat": 17.3321736,
+    "lon": 78.7024425
+  },
+  "tags": {
+    "name": "pathakuntla lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 738103259,
+  "center": {
+    "lat": 17.3464787,
+    "lon": 78.6834725
+  },
+  "tags": {
+    "name": "Tharimatipet lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 738103606,
+  "center": {
+    "lat": 17.3205498,
+    "lon": 78.3903322
+  },
+  "tags": {
+    "name": "Patthikunta tank",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 738106931,
+  "center": {
+    "lat": 17.3063819,
+    "lon": 78.6914849
+  },
+  "tags": {
+    "name": "Imamguda lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 739005126,
+  "center": {
+    "lat": 16.6348885,
+    "lon": 79.5242238
+  },
+  "tags": {
+    "name": "Krishna River",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 740702842,
+  "center": {
+    "lat": 17.4572717,
+    "lon": 78.3438035
+  },
+  "tags": {
+    "name": "sigma lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 740790192,
+  "center": {
+    "lat": 18.9462811,
+    "lon": 79.0958964
+  },
+  "tags": {
+    "name": "Chinthamani cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 740932271,
+  "center": {
+    "lat": 17.2884924,
+    "lon": 78.5836500
+  },
+  "tags": {
+    "name": "Injapur Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 746045695,
+  "center": {
+    "lat": 17.0297958,
+    "lon": 81.3814097
+  },
+  "tags": {
+    "name": "Pangidi Cheruvu",
+    "name:te": "పంగిడి చెరువు",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 746045696,
+  "center": {
+    "lat": 17.0319244,
+    "lon": 81.3706250
+  },
+  "tags": {
+    "name": "Tirupathi Cheruvu",
+    "name:te": "తిరుపతి చెరువు",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 746756695,
+  "center": {
+    "lat": 19.2438165,
+    "lon": 78.1945896
+  },
+  "tags": {
+    "name": "Swarna Project Reservoir",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 747900029,
+  "center": {
+    "lat": 17.4972524,
+    "lon": 78.3515158
+  },
+  "tags": {
+    "name": "Patel Cheruvu",
+    "name:te": "పటేల్ చెరువు",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 748816670,
+  "center": {
+    "lat": 17.4903678,
+    "lon": 78.3610408
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Hafeezpet Cheruvu",
+    "natural": "water",
+    "salt": "no",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 758944129,
+  "center": {
+    "lat": 16.1873171,
+    "lon": 81.1237945
+  },
+  "tags": {
+    "name": "Pampula cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 767746000,
+  "center": {
+    "lat": 18.4577302,
+    "lon": 79.5794082
+  },
+  "tags": {
+    "name": "FISH Pond",
+    "natural": "water",
+    "salt": "yes",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 768051538,
+  "center": {
+    "lat": 18.4547162,
+    "lon": 79.5751816
+  },
+  "tags": {
+    "name": "Mini Pond Kistampet",
+    "natural": "water",
+    "salt": "no",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 768396146,
+  "center": {
+    "lat": 18.4546770,
+    "lon": 79.5680119
+  },
+  "tags": {
+    "name": "Rangaiah kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 768455341,
+  "center": {
+    "lat": 17.1114209,
+    "lon": 80.7742056
+  },
+  "tags": {
+    "name": "Rayudupalem Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 768457491,
+  "center": {
+    "lat": 17.1187015,
+    "lon": 80.7829804
+  },
+  "tags": {
+    "name": "Ralla quary",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 769177989,
+  "center": {
+    "lat": 18.4450794,
+    "lon": 79.5443427
+  },
+  "tags": {
+    "name": "Tharupally cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 773832384,
+  "center": {
+    "lat": 16.5247863,
+    "lon": 80.6646307
+  },
+  "tags": {
+    "name": "Eluru Canal",
+    "natural": "water",
+    "water": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 776658392,
+  "center": {
+    "lat": 15.8364738,
+    "lon": 80.3620149
+  },
+  "tags": {
+    "name": "water tank",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 776675204,
+  "center": {
+    "lat": 15.8392512,
+    "lon": 80.3606755
+  },
+  "tags": {
+    "name": "village pond",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 780897064,
+  "center": {
+    "lat": 17.3721744,
+    "lon": 78.4063927
+  },
+  "tags": {
+    "name": "Musa River",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 790538808,
+  "center": {
+    "lat": 17.3712076,
+    "lon": 78.3535361
+  },
+  "tags": {
+    "name": "Timber Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 790655281,
+  "center": {
+    "lat": 17.3645395,
+    "lon": 78.3746837
+  },
+  "tags": {
+    "name": "Bairagiguda Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 790736601,
+  "center": {
+    "lat": 17.3633300,
+    "lon": 78.3930022
+  },
+  "tags": {
+    "name": "Sun City Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 798548392,
+  "center": {
+    "lat": 18.7191099,
+    "lon": 79.6210099
+  },
+  "tags": {
+    "name": "Annaram pump house approach canal",
+    "natural": "water",
+    "water": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 801963405,
+  "center": {
+    "lat": 17.7443579,
+    "lon": 78.6854809
+  },
+  "tags": {
+    "name": "Konda Pochamma Sagar Reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 802155132,
+  "center": {
+    "lat": 18.7740822,
+    "lon": 79.9837517
+  },
+  "tags": {
+    "name": "Godavari",
+    "natural": "water",
+    "water": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 802155135,
+  "center": {
+    "lat": 18.7887479,
+    "lon": 79.9249167
+  },
+  "tags": {
+    "name": "Medigadda pump house approach canal",
+    "natural": "water",
+    "water": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 802155149,
+  "center": {
+    "lat": 18.7262280,
+    "lon": 79.7985828
+  },
+  "tags": {
+    "alt_name": "Saraswati Reservoir",
+    "name": "Annaram Reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 814547927,
+  "center": {
+    "lat": 18.6861602,
+    "lon": 79.5406794
+  },
+  "tags": {
+    "basin": "filtration",
+    "intermittent": "yes",
+    "name": "Singareni filter bed",
+    "natural": "water",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 815494430,
+  "center": {
+    "lat": 17.4933283,
+    "lon": 79.0741225
+  },
+  "tags": {
+    "alt_name": "Cheruvu",
+    "gns:adm1": "2",
+    "gns:cc1": "IN",
+    "gns:dsg_code": "RSVI",
+    "gns:dsg_string": "intermittent reservoir",
+    "gns:id": "12973555",
+    "gns:n:modify_date": "21.07.2015",
+    "gns:uni": "16395031",
+    "intermittent": "yes",
+    "is_in:country": "India",
+    "name": "Pedda Cheruvu",
+    "natural": "water",
+    "source": "Maxar; GNS(geonames.nga.mil)",
+    "source:name": "GNS(geonames.nga.mil)",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 816976521,
+  "center": {
+    "lat": 18.7210532,
+    "lon": 79.6329590
+  },
+  "tags": {
+    "boat": "no",
+    "name": "forebay Annaram pump house",
+    "natural": "water",
+    "ship": "no",
+    "source": "Maxar",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 816976522,
+  "center": {
+    "lat": 18.8470461,
+    "lon": 79.4209488
+  },
+  "tags": {
+    "name": "forebay Sundilla pump house",
+    "natural": "water",
+    "ship": "no",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 817332493,
+  "center": {
+    "lat": 18.7912038,
+    "lon": 79.9284004
+  },
+  "tags": {
+    "name": "Medigadda pump house forebay",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 818385478,
+  "center": {
+    "lat": 16.0235011,
+    "lon": 79.8749416
+  },
+  "tags": {
+    "name": "Paritalavaripalem",
+    "name:te": "పరిటాలవారిపాలెం",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 835307873,
+  "center": {
+    "lat": 17.2481054,
+    "lon": 80.1590298
+  },
+  "tags": {
+    "name": "Lakaram Lake",
+    "natural": "water",
+    "wikidata": "Q6474554",
+    "wikipedia": "en:Lakaram lake"
+  }
+},
+{
+  "type": "way",
+  "id": 835307874,
+  "center": {
+    "lat": 17.2439157,
+    "lon": 80.1553636
+  },
+  "tags": {
+    "name": "Lakaram Lake Tankbund",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 841007638,
+  "center": {
+    "lat": 17.8263619,
+    "lon": 80.8324289
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Water holding reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 841406549,
+  "center": {
+    "lat": 18.1507347,
+    "lon": 78.8628941
+  },
+  "tags": {
+    "name": "Sri Ranganayaka Sagar",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 862921246,
+  "center": {
+    "lat": 18.0214972,
+    "lon": 79.9199086
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Mayindla Cheruvu",
+    "natural": "water",
+    "salt": "no",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 863803478,
+  "center": {
+    "lat": 16.3489326,
+    "lon": 77.5780941
+  },
+  "tags": {
+    "name": "Pond 1",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 863803479,
+  "center": {
+    "lat": 16.3489319,
+    "lon": 77.5774720
+  },
+  "tags": {
+    "name": "Pond 2",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 872343633,
+  "center": {
+    "lat": 16.5431059,
+    "lon": 80.4531756
+  },
+  "tags": {
+    "name": "Dondapadu tank",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 881244375,
+  "center": {
+    "lat": 16.4382282,
+    "lon": 80.7676541
+  },
+  "tags": {
+    "name": "KANKIPADU POND",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 881499999,
+  "center": {
+    "lat": 16.2218338,
+    "lon": 80.6376972
+  },
+  "tags": {
+    "name": "Mallepadu Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 881574475,
+  "center": {
+    "lat": 16.5208166,
+    "lon": 80.7769688
+  },
+  "tags": {
+    "name": "Kesarapalli Cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 887652237,
+  "center": {
+    "lat": 17.0556353,
+    "lon": 77.9331090
+  },
+  "tags": {
+    "name": "Fish Pond",
+    "natural": "water",
+    "salt": "yes",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 891676380,
+  "center": {
+    "lat": 17.5051818,
+    "lon": 78.3207754
+  },
+  "tags": {
+    "name": "HMWSSB Suraksha Colony Water Reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 905262190,
+  "center": {
+    "lat": 17.3092423,
+    "lon": 78.6345219
+  },
+  "tags": {
+    "name": "Eedula Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 911112088,
+  "center": {
+    "lat": 18.6908265,
+    "lon": 77.7355335
+  },
+  "tags": {
+    "name": "Sagroli Lake",
+    "name:mr": "तळ",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 921973658,
+  "center": {
+    "lat": 18.0540074,
+    "lon": 77.8615421
+  },
+  "tags": {
+    "name": "Bujaranapally Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 943424461,
+  "center": {
+    "lat": 16.2342379,
+    "lon": 80.5532743
+  },
+  "tags": {
+    "alt_name": "pond",
+    "name": "Vignan Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 969472801,
+  "center": {
+    "lat": 17.7684432,
+    "lon": 78.8036710
+  },
+  "tags": {
+    "name": "Jagdevpur Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 969473884,
+  "center": {
+    "lat": 17.7665715,
+    "lon": 78.7983230
+  },
+  "tags": {
+    "name": "Jagdevpur Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 984909162,
+  "center": {
+    "lat": 16.3404145,
+    "lon": 78.2047970
+  },
+  "tags": {
+    "name": "Oorakunta",
+    "name:te": "ఊరకుంట",
+    "natural": "water",
+    "salt": "yes",
+    "tidal": "yes",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 986688421,
+  "center": {
+    "lat": 16.3376059,
+    "lon": 78.2138491
+  },
+  "tags": {
+    "name": "Devara Cheruvu",
+    "name:te": "దేవర చెరువు",
+    "natural": "water",
+    "tidal": "yes",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 989815631,
+  "center": {
+    "lat": 17.4522134,
+    "lon": 78.3269943
+  },
+  "tags": {
+    "name": "Buffalo Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 989835967,
+  "center": {
+    "lat": 17.4454015,
+    "lon": 78.3209295
+  },
+  "tags": {
+    "name": "Chilakala Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 989835969,
+  "center": {
+    "lat": 17.4631217,
+    "lon": 78.3193332
+  },
+  "tags": {
+    "name": "Garloni Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 995670146,
+  "center": {
+    "lat": 16.3669605,
+    "lon": 81.1489980
+  },
+  "tags": {
+    "name": "Pampula Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 995713532,
+  "center": {
+    "lat": 16.3684259,
+    "lon": 81.1532753
+  },
+  "tags": {
+    "name": "Pond near graveyard",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1000333386,
+  "center": {
+    "lat": 16.3431175,
+    "lon": 78.1879548
+  },
+  "tags": {
+    "name": "Beeravoni Cheruvu",
+    "name:te": "బీరవోని చెరువు",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1000335166,
+  "center": {
+    "lat": 16.3516147,
+    "lon": 78.2140409
+  },
+  "tags": {
+    "name": "Mogulla Cheruvu",
+    "name:te": "మొగుళ్ల చెరువు",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1001140160,
+  "center": {
+    "lat": 17.5188409,
+    "lon": 78.3886511
+  },
+  "tags": {
+    "name": "Madhuranagar Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1001141822,
+  "center": {
+    "lat": 17.5182162,
+    "lon": 78.3765371
+  },
+  "tags": {
+    "name": "Achari Kunta Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1029494361,
+  "center": {
+    "lat": 16.0432903,
+    "lon": 80.6571202
+  },
+  "tags": {
+    "name": "Brahmam Cheruvu",
+    "name:te": "బ్రహ్మం చెరువు",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1029980922,
+  "center": {
+    "lat": 16.0406496,
+    "lon": 80.6609931
+  },
+  "tags": {
+    "name": "Tirapatamma goyyi",
+    "name:te": "తిరపతమ్మ గొయ్యి",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1034152794,
+  "center": {
+    "lat": 17.3533889,
+    "lon": 78.5598826
+  },
+  "tags": {
+    "name": "mansoorabd",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1034979031,
+  "center": {
+    "lat": 15.7370638,
+    "lon": 79.1319944
+  },
+  "tags": {
+    "construction": "reservoir",
+    "landuse": "construction",
+    "name": "Nallamala Reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1059144377,
+  "center": {
+    "lat": 18.0929169,
+    "lon": 78.8377659
+  },
+  "tags": {
+    "name": "komati chervu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1059197226,
+  "center": {
+    "lat": 18.6274451,
+    "lon": 79.3869840
+  },
+  "tags": {
+    "name": "bandampalle cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1060239482,
+  "center": {
+    "lat": 16.3658724,
+    "lon": 78.2247861
+  },
+  "tags": {
+    "name": "Hazar Cheruvu",
+    "name:te": "హజార్  చెరువు",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1060245642,
+  "center": {
+    "lat": 16.3534944,
+    "lon": 78.2213735
+  },
+  "tags": {
+    "name": "కోంటి కుంట",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1060246534,
+  "center": {
+    "lat": 16.3446567,
+    "lon": 78.1929058
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Dasarla kunta",
+    "name:te": "దాసర్ల కుంట",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1060247632,
+  "center": {
+    "lat": 16.3245866,
+    "lon": 78.2045303
+  },
+  "tags": {
+    "name": "KURUVONI KUNTA",
+    "name:te": "కురువోని కుంట",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1072286499,
+  "center": {
+    "lat": 16.7370769,
+    "lon": 77.6447110
+  },
+  "tags": {
+    "name": "Thirumalapooram Uracheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1076261381,
+  "center": {
+    "lat": 17.4905970,
+    "lon": 80.6524626
+  },
+  "tags": {
+    "name": "rudrampur lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1076262687,
+  "center": {
+    "lat": 17.4015407,
+    "lon": 78.5403691
+  },
+  "tags": {
+    "name": "ramanthapur lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1076269933,
+  "center": {
+    "lat": 17.7036027,
+    "lon": 79.4987989
+  },
+  "tags": {
+    "name": "WATER POND",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1076331463,
+  "center": {
+    "lat": 17.6731379,
+    "lon": 79.4340706
+  },
+  "tags": {
+    "name": "palakurthy lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1081729959,
+  "center": {
+    "lat": 16.5376916,
+    "lon": 80.9829472
+  },
+  "tags": {
+    "description": "DRINKING WATER POND",
+    "name": "DRINKING WATER POND ARIPIRALA",
+    "natural": "water",
+    "salt": "no",
+    "tidal": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1082288768,
+  "center": {
+    "lat": 17.5297308,
+    "lon": 78.3671221
+  },
+  "tags": {
+    "name": "Rajivgandhi Nagar Pond",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1082306204,
+  "center": {
+    "lat": 16.0592820,
+    "lon": 79.8848618
+  },
+  "tags": {
+    "name": "Karumanchi Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1082491085,
+  "center": {
+    "lat": 16.5355027,
+    "lon": 80.9810052
+  },
+  "tags": {
+    "fishing": "private",
+    "intermittent": "no",
+    "name": "fish pond",
+    "natural": "water",
+    "salt": "yes",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1082906685,
+  "center": {
+    "lat": 18.0973978,
+    "lon": 79.3604046
+  },
+  "tags": {
+    "emergency": "water_tank",
+    "name": "Vura Cheruvu",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1116866445,
+  "center": {
+    "lat": 19.4181530,
+    "lon": 80.5601256
+  },
+  "tags": {
+    "name": "Koyanguda Project",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1122007194,
+  "center": {
+    "lat": 18.0695313,
+    "lon": 78.2803422
+  },
+  "tags": {
+    "name": "Housing Board Pound",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1122007223,
+  "center": {
+    "lat": 17.4117823,
+    "lon": 78.5957985
+  },
+  "tags": {
+    "name": "water tank",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1122022100,
+  "center": {
+    "lat": 17.8599086,
+    "lon": 79.4356214
+  },
+  "tags": {
+    "name": "Kotha cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1122036294,
+  "center": {
+    "lat": 18.3136663,
+    "lon": 80.5507178
+  },
+  "tags": {
+    "name": "boda cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1122036934,
+  "center": {
+    "lat": 17.8509534,
+    "lon": 79.4595092
+  },
+  "tags": {
+    "name": "Ramayyakunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1122036935,
+  "center": {
+    "lat": 17.8571905,
+    "lon": 79.4624333
+  },
+  "tags": {
+    "name": "uppugal checkdam",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1122036979,
+  "center": {
+    "lat": 17.8368715,
+    "lon": 79.4206001
+  },
+  "tags": {
+    "name": "Venkatadri kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1122036983,
+  "center": {
+    "lat": 17.8558174,
+    "lon": 79.4302759
+  },
+  "tags": {
+    "name": "Ravindher fish pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1150035928,
+  "center": {
+    "lat": 18.3694447,
+    "lon": 78.4455428
+  },
+  "tags": {
+    "name": "Issaipet Reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1150035957,
+  "center": {
+    "lat": 18.2597533,
+    "lon": 78.5339993
+  },
+  "tags": {
+    "name": "Upper Manair Reservoir",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1161965746,
+  "center": {
+    "lat": 17.1016926,
+    "lon": 78.0454022
+  },
+  "tags": {
+    "name": "kondurg pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1161965749,
+  "center": {
+    "lat": 17.0762745,
+    "lon": 78.0290346
+  },
+  "tags": {
+    "name": "Gangannaguda pond",
+    "natural": "water",
+    "salt": "no",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1161982980,
+  "center": {
+    "lat": 17.5096530,
+    "lon": 78.5866519
+  },
+  "tags": {
+    "name": "Ambedkar nagar lake",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1173272538,
+  "center": {
+    "lat": 18.3549121,
+    "lon": 78.9030585
+  },
+  "tags": {
+    "name": "Villge upper pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1180143115,
+  "center": {
+    "lat": 16.8695994,
+    "lon": 79.5682514
+  },
+  "tags": {
+    "name": "water tank",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1194233030,
+  "center": {
+    "lat": 18.3446193,
+    "lon": 80.6061009
+  },
+  "tags": {
+    "name": "Palem Project Reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1225575993,
+  "center": {
+    "lat": 15.9189346,
+    "lon": 79.3041171
+  },
+  "tags": {
+    "name": "Bodireddipalle Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1226914340,
+  "center": {
+    "lat": 17.0067781,
+    "lon": 80.5196115
+  },
+  "tags": {
+    "name": "Nalla Cheruvu",
+    "name:te": "నల్ల చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1228364442,
+  "center": {
+    "lat": 17.5868623,
+    "lon": 81.3418568
+  },
+  "tags": {
+    "name": "Thimmaiah Cheruvu",
+    "name:te": "తిమ్మయ్య చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1228364470,
+  "center": {
+    "lat": 17.6332685,
+    "lon": 81.0407359
+  },
+  "tags": {
+    "name": "Mukkanapalli Tank",
+    "name:te": "ముక్కనపల్లి ట్యాంక్",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1228870276,
+  "center": {
+    "lat": 15.9367218,
+    "lon": 80.2012569
+  },
+  "tags": {
+    "name": "Chintaguntapalem Lake",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1232388454,
+  "center": {
+    "lat": 16.9896634,
+    "lon": 80.5198224
+  },
+  "tags": {
+    "name": "Pedharaasi Kunta",
+    "name:te": "పేదరాసి కుంట",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1233585590,
+  "center": {
+    "lat": 19.1098230,
+    "lon": 78.2050982
+  },
+  "tags": {
+    "name": "Kaleshwaram Package 27 Outlet",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1236528438,
+  "center": {
+    "lat": 17.1429080,
+    "lon": 80.8647253
+  },
+  "tags": {
+    "name": "Thumbur Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1236528819,
+  "center": {
+    "lat": 17.1113881,
+    "lon": 80.8647764
+  },
+  "tags": {
+    "name": "Duddipudi Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1236778106,
+  "center": {
+    "lat": 17.5152035,
+    "lon": 78.2998776
+  },
+  "tags": {
+    "name": "Shambuni Kunta",
+    "natural": "water",
+    "water": "lake",
+    "water_source": "rain fed"
+  }
+},
+{
+  "type": "way",
+  "id": 1243634905,
+  "center": {
+    "lat": 17.2104397,
+    "lon": 80.8518761
+  },
+  "tags": {
+    "name": "Vesyakantala Cheruvu",
+    "name:te": "వేశ్యకాంతల చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1245494173,
+  "center": {
+    "lat": 16.6233538,
+    "lon": 80.4989790
+  },
+  "tags": {
+    "name": "VTPS Ash Pond",
+    "natural": "water",
+    "water": "wastewater"
+  }
+},
+{
+  "type": "way",
+  "id": 1246241897,
+  "center": {
+    "lat": 16.7851563,
+    "lon": 80.8561725
+  },
+  "tags": {
+    "name": "Moghal Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1250743679,
+  "center": {
+    "lat": 17.6716048,
+    "lon": 77.8331879
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "water body",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1253864377,
+  "center": {
+    "lat": 16.5064057,
+    "lon": 80.6311884
+  },
+  "tags": {
+    "amenity": "fountain",
+    "name": "Ambedhkar Fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1266779326,
+  "center": {
+    "lat": 16.5763417,
+    "lon": 80.6830134
+  },
+  "tags": {
+    "name": "cheruvu centre",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1266784550,
+  "center": {
+    "lat": 16.5788714,
+    "lon": 81.3783507
+  },
+  "tags": {
+    "name": "CHERUVU",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1273846063,
+  "center": {
+    "lat": 17.1135969,
+    "lon": 80.8319729
+  },
+  "tags": {
+    "name": "Lingagudem Cheruvu",
+    "name:te": "లింగగూడెం చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1287920503,
+  "center": {
+    "lat": 18.3613376,
+    "lon": 78.8891962
+  },
+  "tags": {
+    "name": "Kotha Cheruvu Obulapoor PA",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1291762881,
+  "center": {
+    "lat": 16.4040023,
+    "lon": 80.5575269
+  },
+  "tags": {
+    "name": "lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1291762882,
+  "center": {
+    "lat": 16.4048953,
+    "lon": 80.5580000
+  },
+  "tags": {
+    "name": "lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1292007049,
+  "center": {
+    "lat": 16.1825184,
+    "lon": 80.6623201
+  },
+  "tags": {
+    "name": "Kuchipudi cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1293007193,
+  "center": {
+    "lat": 16.3068611,
+    "lon": 80.4522130
+  },
+  "tags": {
+    "name": "water plant",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1299225530,
+  "center": {
+    "lat": 16.3008308,
+    "lon": 80.4815443
+  },
+  "tags": {
+    "name": "NTR Manasa Sarovar",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1300413164,
+  "center": {
+    "lat": 17.6113688,
+    "lon": 81.3286515
+  },
+  "tags": {
+    "name": "Uppari Cheruvu",
+    "name:te": "ఉప్పరి చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1302491887,
+  "center": {
+    "lat": 17.6691811,
+    "lon": 80.9618773
+  },
+  "tags": {
+    "name": "Paidi guravaiah kunta",
+    "name:te": "పైడి గురవయ్య కుంట",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1303402393,
+  "center": {
+    "lat": 16.3523089,
+    "lon": 78.2050915
+  },
+  "tags": {
+    "name": "KUNTA",
+    "name:te": "కుంట",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1303402430,
+  "center": {
+    "lat": 16.3534960,
+    "lon": 78.2075040
+  },
+  "tags": {
+    "name": "kunta",
+    "name:te": "కుంట",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1303402481,
+  "center": {
+    "lat": 16.3516679,
+    "lon": 78.2081424
+  },
+  "tags": {
+    "name": "KUNTA",
+    "name:te": "కుంట",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1303402699,
+  "center": {
+    "lat": 16.3544951,
+    "lon": 78.2063310
+  },
+  "tags": {
+    "name": "KUNTA",
+    "name:te": "కుంట",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1303402729,
+  "center": {
+    "lat": 16.3546381,
+    "lon": 78.2064105
+  },
+  "tags": {
+    "name": "BAVI",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1303402793,
+  "center": {
+    "lat": 16.3526021,
+    "lon": 78.2021553
+  },
+  "tags": {
+    "name": "KUNTA",
+    "name:te": "కుంట",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1303403019,
+  "center": {
+    "lat": 16.3536531,
+    "lon": 78.2014317
+  },
+  "tags": {
+    "name": "KUNTA",
+    "name:te": "కుంట",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1303403182,
+  "center": {
+    "lat": 16.3539271,
+    "lon": 78.2013329
+  },
+  "tags": {
+    "name": "KUNTA",
+    "name:te": "కుంట",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1303406485,
+  "center": {
+    "lat": 16.3487888,
+    "lon": 78.2054475
+  },
+  "tags": {
+    "name": "పాత కుంట",
+    "name:en": "Paatha Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1317880143,
+  "center": {
+    "lat": 16.4590612,
+    "lon": 80.7181634
+  },
+  "tags": {
+    "name": "CHERUVU",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1318757933,
+  "center": {
+    "lat": 16.0997466,
+    "lon": 80.7791562
+  },
+  "tags": {
+    "name": "cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1320135971,
+  "center": {
+    "lat": 16.5625831,
+    "lon": 80.7985008
+  },
+  "tags": {
+    "name": "New pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1321639868,
+  "center": {
+    "lat": 16.4876932,
+    "lon": 81.0764560
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "prado1",
+    "natural": "water",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 1321639869,
+  "center": {
+    "lat": 16.4874028,
+    "lon": 81.0744950
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "prado 2",
+    "natural": "water",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 1321639870,
+  "center": {
+    "lat": 16.4864217,
+    "lon": 81.0786688
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "prado3",
+    "natural": "water",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 1321639871,
+  "center": {
+    "lat": 16.4857399,
+    "lon": 81.0764907
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "prado 4",
+    "natural": "water",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 1321639872,
+  "center": {
+    "lat": 16.4832908,
+    "lon": 81.0729585
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "prado 5",
+    "natural": "water",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 1321639873,
+  "center": {
+    "lat": 16.4843909,
+    "lon": 81.0760609
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "prado 6",
+    "natural": "water",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 1321822940,
+  "center": {
+    "lat": 17.0683557,
+    "lon": 80.8496052
+  },
+  "tags": {
+    "name": "Achchamma Cheruvu",
+    "name:te": "అచ్చమ్మ చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1322821150,
+  "center": {
+    "lat": 16.3054293,
+    "lon": 80.5141968
+  },
+  "tags": {
+    "area": "yes",
+    "landuse": "reservoir",
+    "name": "Water Filter Beds"
+  }
+},
+{
+  "type": "way",
+  "id": 1323785371,
+  "center": {
+    "lat": 16.6117490,
+    "lon": 80.5373808
+  },
+  "tags": {
+    "name": "KONDAPALLI LAKE",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1324064004,
+  "center": {
+    "lat": 17.4394963,
+    "lon": 78.3221013
+  },
+  "tags": {
+    "name": "Quarry Trek, University of Hyderabad",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1324064005,
+  "center": {
+    "lat": 17.4390514,
+    "lon": 78.3199084
+  },
+  "tags": {
+    "name": "SDS Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1324064006,
+  "center": {
+    "lat": 17.4375177,
+    "lon": 78.3232001
+  },
+  "tags": {
+    "name": "Gnyankund",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1324320625,
+  "center": {
+    "lat": 16.1794419,
+    "lon": 81.0350833
+  },
+  "tags": {
+    "name": "Pampula cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1324320628,
+  "center": {
+    "lat": 16.1745872,
+    "lon": 81.0336325
+  },
+  "tags": {
+    "name": "Vura Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1328684852,
+  "center": {
+    "lat": 16.3003480,
+    "lon": 81.0486231
+  },
+  "tags": {
+    "name": "Pampula Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1328684854,
+  "center": {
+    "lat": 16.3090664,
+    "lon": 81.0285368
+  },
+  "tags": {
+    "name": "Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1329674304,
+  "center": {
+    "lat": 17.6422996,
+    "lon": 81.0793800
+  },
+  "tags": {
+    "name": "Gannerugoyyapadu Cheruvu",
+    "name:te": "గన్నేరుగొయ్యపాడు చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1329686649,
+  "center": {
+    "lat": 17.5945343,
+    "lon": 81.2090783
+  },
+  "tags": {
+    "name": "Palluru Cheruvu",
+    "name:te": "పల్లూరు చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1329686669,
+  "center": {
+    "lat": 17.5957852,
+    "lon": 81.2346921
+  },
+  "tags": {
+    "name": "Jaggavaram Cheruvu",
+    "name:te": "జగ్గవరం చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1330333144,
+  "center": {
+    "lat": 17.5685375,
+    "lon": 81.2914752
+  },
+  "tags": {
+    "name": "Nalla Kunta",
+    "name:te": "నల్ల కుంట",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1330333149,
+  "center": {
+    "lat": 17.5603235,
+    "lon": 81.2965274
+  },
+  "tags": {
+    "name": "Pedda Cheruvu",
+    "name:te": "పెద్ద చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1330579987,
+  "center": {
+    "lat": 17.5716250,
+    "lon": 81.3166132
+  },
+  "tags": {
+    "name": "Yerra Kunta",
+    "name:te": "యర్ర కుంట",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1330580017,
+  "center": {
+    "lat": 17.5992390,
+    "lon": 81.3507463
+  },
+  "tags": {
+    "name": "Kotha Cheruvu",
+    "name:te": "కొత్త చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1330580048,
+  "center": {
+    "lat": 17.6064948,
+    "lon": 81.3569270
+  },
+  "tags": {
+    "name": "Venkampalem Cheruvu",
+    "name:te": "వెంకంపాలెం చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1331827042,
+  "center": {
+    "lat": 16.4065978,
+    "lon": 80.5439809
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Swimming pool",
+    "natural": "water",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 1331828038,
+  "center": {
+    "lat": 16.4064148,
+    "lon": 80.5437934
+  },
+  "tags": {
+    "basin": "pool",
+    "intermittent": "yes",
+    "name": "Swimming pool",
+    "natural": "water",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 1332018000,
+  "center": {
+    "lat": 18.5235252,
+    "lon": 78.6365144
+  },
+  "tags": {
+    "name": "Nimmapalli Cheruvu",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1336318347,
+  "center": {
+    "lat": 16.1873308,
+    "lon": 80.9115697
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Ranjesh's Pond",
+    "natural": "water",
+    "salt": "no",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1336342415,
+  "center": {
+    "lat": 16.4034831,
+    "lon": 80.5567114
+  },
+  "tags": {
+    "name": "Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1338042400,
+  "center": {
+    "lat": 17.9639534,
+    "lon": 78.7471836
+  },
+  "tags": {
+    "name": "Mallanna Sagar Reservoir",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1340552996,
+  "center": {
+    "lat": 16.6108555,
+    "lon": 80.5119078
+  },
+  "tags": {
+    "name": "VTPS Ash pond",
+    "natural": "water",
+    "water": "wastewater"
+  }
+},
+{
+  "type": "way",
+  "id": 1362980220,
+  "center": {
+    "lat": 17.8074380,
+    "lon": 79.2280351
+  },
+  "tags": {
+    "name": "Patel Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1363562545,
+  "center": {
+    "lat": 16.3058003,
+    "lon": 80.6073010
+  },
+  "tags": {
+    "name": "Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1371024763,
+  "center": {
+    "lat": 17.8852080,
+    "lon": 77.5365606
+  },
+  "tags": {
+    "name": "Goranahalli Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1373896520,
+  "center": {
+    "lat": 17.5745004,
+    "lon": 78.8810989
+  },
+  "tags": {
+    "name": "Baswapur Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1384339853,
+  "center": {
+    "lat": 16.9023485,
+    "lon": 80.6394967
+  },
+  "tags": {
+    "name": "Pedda Cheruvu",
+    "name:te": "పెద్ద చెరువు",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1390496335,
+  "center": {
+    "lat": 16.3387629,
+    "lon": 80.4452809
+  },
+  "tags": {
+    "name": "lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1390763538,
+  "center": {
+    "lat": 16.3378208,
+    "lon": 80.4442751
+  },
+  "tags": {
+    "name": "lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1390763719,
+  "center": {
+    "lat": 16.3379956,
+    "lon": 80.4447790
+  },
+  "tags": {
+    "name": "Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1390763938,
+  "center": {
+    "lat": 16.3383096,
+    "lon": 80.4451988
+  },
+  "tags": {
+    "name": "Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1390763945,
+  "center": {
+    "lat": 16.3386398,
+    "lon": 80.4455604
+  },
+  "tags": {
+    "name": "Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1390764019,
+  "center": {
+    "lat": 16.3389125,
+    "lon": 80.4459590
+  },
+  "tags": {
+    "name": "Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1390764281,
+  "center": {
+    "lat": 16.3394581,
+    "lon": 80.4461689
+  },
+  "tags": {
+    "name": "Lake",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1390874477,
+  "center": {
+    "lat": 16.2902481,
+    "lon": 80.3937387
+  },
+  "tags": {
+    "name": "Ankireddipalem cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1390878930,
+  "center": {
+    "lat": 16.3333960,
+    "lon": 80.4427978
+  },
+  "tags": {
+    "name": "Anjiah Water Plant",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1395633838,
+  "center": {
+    "lat": 17.6577046,
+    "lon": 79.4201456
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "patel kunta",
+    "natural": "water",
+    "salt": "no",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1415436780,
+  "center": {
+    "lat": 18.4909267,
+    "lon": 78.6674745
+  },
+  "tags": {
+    "name": "Kondam Cheruvu",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1415444601,
+  "center": {
+    "lat": 18.4921389,
+    "lon": 78.7038388
+  },
+  "tags": {
+    "name": "Ghat-Ghat Cheruvu",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1420118048,
+  "center": {
+    "lat": 17.5051833,
+    "lon": 78.3911672
+  },
+  "tags": {
+    "name": "Kindi Kunta Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1423836099,
+  "center": {
+    "lat": 16.8223855,
+    "lon": 81.2046576
+  },
+  "tags": {
+    "name": "Peda cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1424028525,
+  "center": {
+    "lat": 17.5204809,
+    "lon": 78.3794659
+  },
+  "tags": {
+    "name": "Nizampet Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1425200318,
+  "center": {
+    "lat": 18.4670300,
+    "lon": 78.6344787
+  },
+  "tags": {
+    "name": "Potharayan Cheruvu",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1427523024,
+  "center": {
+    "lat": 18.4780444,
+    "lon": 78.6117377
+  },
+  "tags": {
+    "name": "Venkatrao Kunta",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1427523029,
+  "center": {
+    "lat": 18.4711469,
+    "lon": 78.6143076
+  },
+  "tags": {
+    "name": "Dandoni Kunta",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1436660430,
+  "center": {
+    "lat": 16.2871687,
+    "lon": 80.4435006
+  },
+  "tags": {
+    "name": "koneru",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1442070839,
+  "center": {
+    "lat": 17.4644415,
+    "lon": 78.3304403
+  },
+  "tags": {
+    "intermittent": "no",
+    "name": "Cognitive Lake",
+    "natural": "water",
+    "salt": "no",
+    "tidal": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1443737347,
+  "center": {
+    "lat": 16.1175052,
+    "lon": 80.9301260
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "Lakshmipuram Cheruvu",
+    "natural": "water",
+    "salt": "no",
+    "tidal": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1448720782,
+  "center": {
+    "lat": 16.1863993,
+    "lon": 81.1226258
+  },
+  "tags": {
+    "name": "Pampula cheruvu",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1453357445,
+  "center": {
+    "lat": 18.6969354,
+    "lon": 79.8319889
+  },
+  "tags": {
+    "name": "Shanaga Kunta",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1454387192,
+  "center": {
+    "lat": 17.3497417,
+    "lon": 78.4435896
+  },
+  "tags": {
+    "name": "Singos Tank",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1454926351,
+  "center": {
+    "lat": 18.0432956,
+    "lon": 79.5501128
+  },
+  "tags": {
+    "name": "Scenic Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1455961727,
+  "center": {
+    "lat": 17.2586082,
+    "lon": 78.6882646
+  },
+  "tags": {
+    "name": "Indira Sagar",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1464548435,
+  "center": {
+    "lat": 17.4398502,
+    "lon": 79.3101982
+  },
+  "tags": {
+    "name": "Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1464548440,
+  "center": {
+    "lat": 17.4463554,
+    "lon": 79.3111343
+  },
+  "tags": {
+    "name": "Cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1465017695,
+  "center": {
+    "lat": 16.0301853,
+    "lon": 80.8702722
+  },
+  "tags": {
+    "name": "Fish lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1472896139,
+  "center": {
+    "lat": 17.5128197,
+    "lon": 78.3203633
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "BANDAMKOMMU LAKE",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1473511835,
+  "center": {
+    "lat": 17.1073859,
+    "lon": 79.0214018
+  },
+  "tags": {
+    "fishing": "private",
+    "name": "Cheekatimadi cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1473514478,
+  "center": {
+    "lat": 17.1742647,
+    "lon": 79.2123150
+  },
+  "tags": {
+    "name": "Ramalingeshwara Pond",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1479123420,
+  "center": {
+    "lat": 17.5466832,
+    "lon": 77.2302362
+  },
+  "tags": {
+    "name": "Lower Mullamari reservoir",
+    "name:kn": "ಕೆಳದಂಡೆ ಮುಲ್ಲಾಮಾರಿ ಜಲಾಶಯ",
+    "natural": "water",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "way",
+  "id": 1484044192,
+  "center": {
+    "lat": 17.5228951,
+    "lon": 78.3054012
+  },
+  "tags": {
+    "name": "Gandi Kunta (beeramguda cheruvu)",
+    "name:te": "గండి కుంట",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1484510888,
+  "center": {
+    "lat": 17.9117763,
+    "lon": 78.9712365
+  },
+  "tags": {
+    "name": "Cheriyal Lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1493289194,
+  "center": {
+    "lat": 16.9588374,
+    "lon": 78.3523010
+  },
+  "tags": {
+    "name": "guta chruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1493295288,
+  "center": {
+    "lat": 18.1849738,
+    "lon": 79.4238731
+  },
+  "tags": {
+    "name": "cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1493553424,
+  "center": {
+    "lat": 17.6051606,
+    "lon": 80.0013134
+  },
+  "tags": {
+    "name": "Nizam cheruvu",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1494491003,
+  "center": {
+    "lat": 18.6855334,
+    "lon": 79.1300689
+  },
+  "tags": {
+    "name": "cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1495329006,
+  "center": {
+    "lat": 18.3350019,
+    "lon": 79.3573444
+  },
+  "tags": {
+    "name": "Gaddapaka lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1495329011,
+  "center": {
+    "lat": 18.3477355,
+    "lon": 79.3565788
+  },
+  "tags": {
+    "name": "Kachapur lake",
+    "natural": "water",
+    "water": "lake"
+  }
+},
+{
+  "type": "way",
+  "id": 1495342398,
+  "center": {
+    "lat": 16.9827065,
+    "lon": 78.3689586
+  },
+  "tags": {
+    "name": "Kothapet Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1495345961,
+  "center": {
+    "lat": 16.9944962,
+    "lon": 78.3841983
+  },
+  "tags": {
+    "name": "Santhapur Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1500222988,
+  "center": {
+    "lat": 18.5307564,
+    "lon": 79.3096795
+  },
+  "tags": {
+    "name": "Chembuni Cheruvu",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1503818518,
+  "center": {
+    "lat": 19.0811522,
+    "lon": 78.3494166
+  },
+  "tags": {
+    "name": "Ravi School Lake",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1519270656,
+  "center": {
+    "lat": 17.4601304,
+    "lon": 79.2653887
+  },
+  "tags": {
+    "intermittent": "yes",
+    "name": "local lake",
+    "natural": "water",
+    "salt": "no",
+    "tidal": "no",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 39024,
+  "center": {
+    "lat": 17.3449347,
+    "lon": 78.4379938
+  },
+  "tags": {
+    "name": "Mir Alam Tank",
+    "name:fa": "مخزن میر عالم",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "reservoir",
+    "wikidata": "Q6872013"
+  }
+},
+{
+  "type": "relation",
+  "id": 337152,
+  "center": {
+    "lat": 15.9927549,
+    "lon": 78.2079698
+  },
+  "tags": {
+    "name": "Srisailam reservoir",
+    "name:ml": "ശ്രീശൈലം തടാകം",
+    "name:te": "శ్రీశైలం జలాశయం",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 1574043,
+  "center": {
+    "lat": 18.8456776,
+    "lon": 77.2488173
+  },
+  "tags": {
+    "name": "Manyaad Dam",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1579471,
+  "center": {
+    "lat": 18.3039135,
+    "lon": 79.8575853
+  },
+  "tags": {
+    "alt_name": "Ghanpur Lake",
+    "name": "Ghanpur Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon",
+    "wikidata": "Q33255091"
+  }
+},
+{
+  "type": "relation",
+  "id": 1579472,
+  "center": {
+    "lat": 17.9993120,
+    "lon": 79.4240015
+  },
+  "tags": {
+    "name": "Dharmasagar Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1579473,
+  "center": {
+    "lat": 17.2245705,
+    "lon": 79.8966980
+  },
+  "tags": {
+    "name": "NSLBC balancing reservoir",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 1579478,
+  "center": {
+    "lat": 18.1480225,
+    "lon": 80.0736356
+  },
+  "tags": {
+    "alt_name": "Laknavaram Cheruvu",
+    "name": "Laknavaram Lake",
+    "name:kn": "ಲಕ್ನವರಮ್ ಕೆರೆ",
+    "name:te": "లక్నవరం చెరువు",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon",
+    "water": "lake",
+    "wikidata": "Q25567504",
+    "wikipedia": "en:Laknavaram Lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 1579487,
+  "center": {
+    "lat": 18.3661918,
+    "lon": 79.0974426
+  },
+  "tags": {
+    "name": "Manair Reservoir",
+    "name:ml": "മനയർ റിസർവോയർ",
+    "name:te": "మనైర్ రిజర్వాయర్",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 1580311,
+  "center": {
+    "lat": 18.6249363,
+    "lon": 77.9110908
+  },
+  "tags": {
+    "name": "Bellal Cheruvu",
+    "name:te": "బెల్లాల్ చెరువు",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 1597039,
+  "center": {
+    "lat": 18.9564629,
+    "lon": 78.1133589
+  },
+  "tags": {
+    "fixme": "some of the borders of the reservoir seems to be nonsense if you look to bing imagery",
+    "name": "Sriram Sagar",
+    "name:ml": "ശ്രീരാം സാഗർ",
+    "name:te": "శ్రీరాంసాగర్",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon",
+    "water": "reservoir",
+    "wikidata": "Q7361521",
+    "wikipedia": "en:Sriram Sagar Reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 1597223,
+  "center": {
+    "lat": 19.8021342,
+    "lon": 77.3722458
+  },
+  "tags": {
+    "name": "Isapur Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1606895,
+  "center": {
+    "lat": 16.3550646,
+    "lon": 77.6435267
+  },
+  "tags": {
+    "name": "Jurala Reservoir",
+    "name:kn": "ಜುರಾಲ ಜಲಾಶಯ",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 1606900,
+  "center": {
+    "lat": 17.0923929,
+    "lon": 79.0902329
+  },
+  "tags": {
+    "name": "Panagal",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1606905,
+  "center": {
+    "lat": 17.1567832,
+    "lon": 78.1215477
+  },
+  "tags": {
+    "fishing": "yes",
+    "intermittent": "yes",
+    "name": "Shabd Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 1608743,
+  "center": {
+    "lat": 17.9715485,
+    "lon": 78.0190659
+  },
+  "tags": {
+    "name": "Pedda Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon",
+    "water": "pond"
+  }
+},
+{
+  "type": "relation",
+  "id": 1611523,
+  "center": {
+    "lat": 15.8526833,
+    "lon": 78.6882018
+  },
+  "tags": {
+    "name": "Siddapuram Tank",
+    "natural": "water",
+    "source:position": "Bing Imagery",
+    "source:tracer": "scanaerial",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 1732756,
+  "center": {
+    "lat": 17.5773462,
+    "lon": 77.3616832
+  },
+  "tags": {
+    "name": "Biranahalli reservoir",
+    "name:kn": "ಬೀರನಹಳ್ಳಿ ಕೆರೆ",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1801939,
+  "center": {
+    "lat": 16.8375480,
+    "lon": 77.4390006
+  },
+  "tags": {
+    "name": "Keshwara Kere",
+    "name:kn": "ಕೇಶ್ವಾರ ಕೆರೆ",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1835169,
+  "center": {
+    "lat": 16.8306839,
+    "lon": 79.3655992
+  },
+  "tags": {
+    "name": "nidamanoor cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1835187,
+  "center": {
+    "lat": 16.4220896,
+    "lon": 78.7239933
+  },
+  "tags": {
+    "name": "Chandra Sagar",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon",
+    "wikidata": "Q34879676"
+  }
+},
+{
+  "type": "relation",
+  "id": 1841488,
+  "center": {
+    "lat": 18.7047385,
+    "lon": 78.0322945
+  },
+  "tags": {
+    "name": "Alisagar",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1841589,
+  "center": {
+    "lat": 18.0847918,
+    "lon": 79.5825363
+  },
+  "tags": {
+    "name": "Beautiful Nagaram Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 1842197,
+  "center": {
+    "lat": 18.7292777,
+    "lon": 79.4654951
+  },
+  "tags": {
+    "name": "balancing reservoir",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1879274,
+  "center": {
+    "lat": 17.0921256,
+    "lon": 79.3085110
+  },
+  "tags": {
+    "name": "Panagal Lake",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 1956402,
+  "center": {
+    "lat": 16.4950526,
+    "lon": 79.1946387
+  },
+  "tags": {
+    "name": "Nagarjuna Sagar",
+    "name:en": "Nagarjuna Sagar",
+    "name:hi": "नागार्जुन सागर",
+    "name:kn": "ನಾಗಾರ್ಜುನ ಸಾಗರ",
+    "name:ml": "നാഗാർജുന സാഗർ",
+    "name:mr": "नागर्जुन सागर",
+    "name:te": "నాగార్జునసాగర్",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon",
+    "wikidata": "Q34911844"
+  }
+},
+{
+  "type": "relation",
+  "id": 1988396,
+  "center": {
+    "lat": 17.5390885,
+    "lon": 78.4279193
+  },
+  "tags": {
+    "name": "Ramaram Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1988398,
+  "center": {
+    "lat": 17.4253168,
+    "lon": 78.3727146
+  },
+  "tags": {
+    "name": "Khajaguda Talab",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "17",
+    "type": "multipolygon",
+    "water": "lake",
+    "wikidata": "Q115148101",
+    "wikipedia": "en:Khajaguda Talab"
+  }
+},
+{
+  "type": "relation",
+  "id": 1988399,
+  "center": {
+    "lat": 17.4170331,
+    "lon": 78.3862898
+  },
+  "tags": {
+    "name": "Malakam Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "17",
+    "type": "multipolygon",
+    "water": "pond"
+  }
+},
+{
+  "type": "relation",
+  "id": 1988400,
+  "center": {
+    "lat": 17.3802590,
+    "lon": 78.4156469
+  },
+  "tags": {
+    "name": "Langar Hauz",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "17",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1988401,
+  "center": {
+    "lat": 17.4135384,
+    "lon": 78.3743711
+  },
+  "tags": {
+    "name": "Manikonda Cheruvu",
+    "natural": "water",
+    "source:position": "Bing Imagery 2011",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "18",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 2310409,
+  "center": {
+    "lat": 18.2339827,
+    "lon": 79.9426453
+  },
+  "tags": {
+    "alt_name": "Ramappa Lake",
+    "name": "Ramappa Cheruvu",
+    "natural": "water",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 2833155,
+  "center": {
+    "lat": 17.4229769,
+    "lon": 78.4745517
+  },
+  "tags": {
+    "alt_name": "Hussain Sagar Lake",
+    "name": "Hussain Sagar",
+    "name:ar": "بحيرة حسين ساغار",
+    "name:fa": "دریاچه حسین ساگر",
+    "name:hi": "हुसैन सागर",
+    "name:ml": "ഹുസ്സൈൻ സാഗർ",
+    "name:te": "హుసేన్ సాగర్",
+    "name:ur": "حسین ساگر",
+    "natural": "water",
+    "tourism": "attraction",
+    "type": "multipolygon",
+    "water": "lake",
+    "wikidata": "Q3275994",
+    "wikipedia": "en:Hussain Sagar"
+  }
+},
+{
+  "type": "relation",
+  "id": 3324119,
+  "center": {
+    "lat": 19.4318253,
+    "lon": 79.8829043
+  },
+  "tags": {
+    "name": "Pranhita",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "river"
+  }
+},
+{
+  "type": "relation",
+  "id": 3341847,
+  "center": {
+    "lat": 15.9819887,
+    "lon": 80.9011274
+  },
+  "tags": {
+    "name": "krishna river",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "river"
+  }
+},
+{
+  "type": "relation",
+  "id": 3980854,
+  "center": {
+    "lat": 18.1232811,
+    "lon": 80.6661701
+  },
+  "tags": {
+    "AND_a_w": "10000414",
+    "name": "Godavari",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "river"
+  }
+},
+{
+  "type": "relation",
+  "id": 5411363,
+  "center": {
+    "lat": 17.3135057,
+    "lon": 78.3536316
+  },
+  "tags": {
+    "AND_a_w": "10000419",
+    "intermittent": "no",
+    "name": "Himayat Sagar",
+    "name:ar": "بحيرة هيمايات ساغار",
+    "name:fa": "دریاچه حمایت ساگر",
+    "name:ml": "ഹിമായത് സാഗർ",
+    "name:te": "హిమాయత్ సాగర్",
+    "natural": "water",
+    "salt": "no",
+    "tidal": "no",
+    "type": "multipolygon",
+    "water": "lake",
+    "wikidata": "Q5765170"
+  }
+},
+{
+  "type": "relation",
+  "id": 5895968,
+  "center": {
+    "lat": 18.9405382,
+    "lon": 79.9450148
+  },
+  "tags": {
+    "name": "Pranhita",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "river"
+  }
+},
+{
+  "type": "relation",
+  "id": 5896018,
+  "center": {
+    "lat": 19.1486377,
+    "lon": 79.9020698
+  },
+  "tags": {
+    "name": "Pranhita",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "river"
+  }
+},
+{
+  "type": "relation",
+  "id": 6058545,
+  "center": {
+    "lat": 18.7376767,
+    "lon": 78.2608895
+  },
+  "tags": {
+    "name": "Narayanapet Cheruvu",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 7876724,
+  "center": {
+    "lat": 17.8332509,
+    "lon": 77.8280256
+  },
+  "tags": {
+    "name": "Singur reservoir",
+    "name:kn": "ಸಿಂಗೂರು ಜಲಶಾಯ",
+    "natural": "water",
+    "source:position": "Bing",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "12",
+    "type": "multipolygon",
+    "water": "reservoir",
+    "wikidata": "Q7524286",
+    "wikipedia": "en:Singur Reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 7891408,
+  "center": {
+    "lat": 17.2185237,
+    "lon": 80.3750472
+  },
+  "tags": {
+    "alt_name": "Wyra Lake",
+    "name": "Wyra Reservoir",
+    "name:te": "వైరా రిజర్వాయర్",
+    "natural": "water",
+    "source:position": "MapBox",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "13",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 7891933,
+  "center": {
+    "lat": 17.2914171,
+    "lon": 81.3504767
+  },
+  "tags": {
+    "name": "Jalleru Jalasayamu",
+    "natural": "water",
+    "source:position": "Bing",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "15",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 7982455,
+  "center": {
+    "lat": 17.6580081,
+    "lon": 78.6050748
+  },
+  "tags": {
+    "name": "Lalgadi Malakpet Lake",
+    "natural": "water",
+    "source:position": "Bing",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "15",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 8329672,
+  "center": {
+    "lat": 16.3911928,
+    "lon": 76.9603508
+  },
+  "tags": {
+    "name": "Krishna",
+    "name:kn": "ಕೃಷ್ಣಾ",
+    "name:te": "కృష్ణా",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "river"
+  }
+},
+{
+  "type": "relation",
+  "id": 8534423,
+  "center": {
+    "lat": 19.0908942,
+    "lon": 78.3584190
+  },
+  "tags": {
+    "name": "Gollapet lake",
+    "natural": "water",
+    "source:position": "Bing",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "15",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 8851924,
+  "center": {
+    "lat": 16.7331057,
+    "lon": 77.7771068
+  },
+  "tags": {
+    "landuse": "reservoir",
+    "name": "The Koilsagar Reservoir",
+    "natural": "water",
+    "type": "multipolygon",
+    "url": "http://adilabadandra.blogspot.com/2012/11/peddavagu-river.html"
+  }
+},
+{
+  "type": "relation",
+  "id": 8932481,
+  "center": {
+    "lat": 18.1740648,
+    "lon": 77.9552722
+  },
+  "tags": {
+    "name": "Nizam Sagar Reservoir",
+    "name:te": "నిజాంసాగర్ జలాశయము",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "reservoir",
+    "wikidata": "Q7042101"
+  }
+},
+{
+  "type": "relation",
+  "id": 9092737,
+  "center": {
+    "lat": 18.4910355,
+    "lon": 80.4216063
+  },
+  "tags": {
+    "name": "Godavari",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "river"
+  }
+},
+{
+  "type": "relation",
+  "id": 9337122,
+  "center": {
+    "lat": 17.8604788,
+    "lon": 79.3573970
+  },
+  "tags": {
+    "name": "Ghanpur Cheruvu",
+    "natural": "water",
+    "source:position": "Bing",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "13",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 10190937,
+  "center": {
+    "lat": 17.5111762,
+    "lon": 78.3956432
+  },
+  "tags": {
+    "name": "Amber Cheruvu",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "pond"
+  }
+},
+{
+  "type": "relation",
+  "id": 10191256,
+  "center": {
+    "lat": 17.2915538,
+    "lon": 78.4558454
+  },
+  "tags": {
+    "name": "Umda Sagar",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 10207305,
+  "center": {
+    "lat": 17.3177988,
+    "lon": 78.4885189
+  },
+  "tags": {
+    "name": "Gurram Cheruvu",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 10214001,
+  "center": {
+    "lat": 17.5077230,
+    "lon": 78.5115536
+  },
+  "tags": {
+    "name": "Alwal Lake",
+    "natural": "water",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 10220456,
+  "center": {
+    "lat": 16.6010006,
+    "lon": 79.4012500
+  },
+  "tags": {
+    "name": "Nagarjuna Sagar tail pond",
+    "name:te": "నాగార్జున సాగర్ టెయిల్ పాండ్",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "pond",
+    "wikidata": "Q16895635"
+  }
+},
+{
+  "type": "relation",
+  "id": 10669535,
+  "center": {
+    "lat": 17.4634583,
+    "lon": 78.5366043
+  },
+  "tags": {
+    "boat": "no",
+    "name": "Safilguda Lake Park",
+    "natural": "water",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 10842996,
+  "center": {
+    "lat": 17.4612549,
+    "lon": 78.5457967
+  },
+  "tags": {
+    "name": "Banda Cheruvu",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 11060442,
+  "center": {
+    "lat": 19.4345710,
+    "lon": 79.2031994
+  },
+  "tags": {
+    "landuse": "reservoir",
+    "name": "Sri Komarambhim Project",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 11180265,
+  "center": {
+    "lat": 17.5466002,
+    "lon": 77.4739086
+  },
+  "tags": {
+    "name": "Chandrampalli Reservoir",
+    "name:kn": "ಚಂದ್ರಂಪಳ್ಳಿ ಜಲಾಶಯ",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 11247469,
+  "center": {
+    "lat": 17.4255313,
+    "lon": 78.6979061
+  },
+  "tags": {
+    "name": "Edulabad Lake",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "pond",
+    "wikidata": "Q24933750",
+    "wikipedia": "en:Edulabad Lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 11769747,
+  "center": {
+    "lat": 17.4175222,
+    "lon": 78.4182329
+  },
+  "tags": {
+    "name": "Chiraan Kunta",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "pond"
+  }
+},
+{
+  "type": "relation",
+  "id": 11832056,
+  "center": {
+    "lat": 16.1889585,
+    "lon": 77.6437900
+  },
+  "tags": {
+    "name": "Relampadu Balancing Reservoir",
+    "natural": "water",
+    "source:position": "Bing",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "15",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 11832172,
+  "center": {
+    "lat": 16.2851548,
+    "lon": 77.6520109
+  },
+  "tags": {
+    "name": "Guddemdoddi Balancing Reservoir",
+    "natural": "water",
+    "source:position": "Bing",
+    "source:tracer": "scanaerial",
+    "source:zoomlevel": "16",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 13111438,
+  "center": {
+    "lat": 17.4689154,
+    "lon": 78.3159112
+  },
+  "tags": {
+    "name": "Nallagandla Chervu",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "lake",
+    "website": "http://www.nallagandlalake.org/"
+  }
+},
+{
+  "type": "relation",
+  "id": 14247759,
+  "center": {
+    "lat": 18.2593984,
+    "lon": 78.9161726
+  },
+  "tags": {
+    "name": "Ananthagiri Reservoir",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 15523024,
+  "center": {
+    "lat": 17.5233016,
+    "lon": 79.1806500
+  },
+  "tags": {
+    "name": "ura cheruvu",
+    "natural": "water",
+    "salt": "no",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 17966162,
+  "center": {
+    "lat": 17.3155261,
+    "lon": 78.4276548
+  },
+  "tags": {
+    "name": "Noor Mohammed Cheruvu",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 19910887,
+  "center": {
+    "lat": 17.3406406,
+    "lon": 78.5088109
+  },
+  "tags": {
+    "name": "DRDO Tamhankar Lake",
+    "natural": "water",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 19911201,
+  "center": {
+    "lat": 17.3354083,
+    "lon": 78.5233869
+  },
+  "tags": {
+    "name": "Chandana Cheruvu",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "lake"
+  }
+},
+{
+  "type": "relation",
+  "id": 20189457,
+  "center": {
+    "lat": 17.4461416,
+    "lon": 77.4831960
+  },
+  "tags": {
+    "name": "Chikkalingadalli Kere",
+    "name:kn": "ಚಿಕ್ಕಲಿಂಗದಳ್ಳಿ ಕೆರೆ",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 20212063,
+  "center": {
+    "lat": 17.6407656,
+    "lon": 77.3673819
+  },
+  "tags": {
+    "name": "Changalera Kere",
+    "name:kn": "ಚಾಂಗಲೇರಾ ಕೆರೆ",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+},
+{
+  "type": "relation",
+  "id": 20305007,
+  "center": {
+    "lat": 16.7104945,
+    "lon": 80.0102571
+  },
+  "tags": {
+    "name": "K L Rao Sagar",
+    "name:te": "కె ఎల్ రావు జలాశయము",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "reservoir"
+  }
+}
+
+  ]
+}

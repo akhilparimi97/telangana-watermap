@@ -1,0 +1,17 @@
+{
+  "format": "Mapbox Vector Tile",
+  "source_layer": "canals",
+  "minimum_zoom": 10,
+  "maximum_zoom": 13,
+  "bounds": [
+    77.51426452644937,
+    15.959720046902943,
+    79.93529029704976,
+    19.498880830497047
+  ],
+  "source_feature_count": 9000,
+  "named_feature_count": 0,
+  "written_tile_count": 6533,
+  "encoded_feature_instances": 46413,
+  "bytes": 2667567
+}

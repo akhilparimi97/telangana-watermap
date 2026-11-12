@@ -2,34 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071517">
   <title>Telangana WaterMap</title>
-  <link rel="preconnect" href="https://unpkg.com">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="vendor/maplibre-gl.css?v=4.7.1">
+  <link rel="stylesheet" href="styles.css?v=final-2">
 </head>
 <body>
-  <main class="app-shell">
-    <aside class="sidebar">
-      <button id="toggle-sidebar" class="sidebar-toggle" type="button" aria-label="Collapse map controls" aria-expanded="true">×</button>
-      <div class="brand"><span class="brand-mark">≈</span><div><div class="eyebrow">TELANGANA / WATER ATLAS</div><h1>WaterMap</h1></div></div>
-      <p class="lede">A provenance-aware view of water collection, distribution and flow across Telangana.</p>
-      <div class="search-wrap"><label for="search">Find a project or water feature</label><input id="search" type="search" placeholder="Search loaded features…" autocomplete="off"><div id="search-results" class="search-results"></div></div>
-      <section class="stats" aria-label="Loaded data"><div><strong id="stat-features">—</strong><span>features</span></div><div><strong id="stat-sources">3</strong><span>sources</span></div><div><strong id="stat-status">—</strong><span>status</span></div></section>
-      <section class="panel"><div class="section-title">Water systems</div><div id="layer-list" class="layer-list"></div></section>
-      <section class="panel source-panel"><div class="section-title">Source &amp; data quality</div><p>Initial layers come from Telangana government ICAD and TGRAC services. Records retain their source and retrieval context; this is an atlas, not live operational telemetry.</p><div class="quality-key"><span><i class="dot official"></i>Official geometry</span><span><i class="dot derived"></i>Derived / future</span></div></section>
-      <footer><a href="https://irrigation.telangana.gov.in/icad/maps" target="_blank" rel="noreferrer">ICAD source map ↗</a><a href="https://tgrac.telangana.gov.in/arcgis/rest/services/TGIIC_Folder/BaseLayers/MapServer" target="_blank" rel="noreferrer">TGRAC ArcGIS ↗</a><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap ↗</a><span>v0.1 · inventory preview</span></footer>
-    </aside>
-    <section class="map-frame"><div id="map" aria-label="Interactive map of Telangana water systems"></div><div class="map-badge"><span class="live-dot"></span><span id="load-message">Loading official layers…</span></div><button id="reset-view" class="reset-view" type="button">⌖ Reset view</button><button id="reopen-sidebar" class="reopen-sidebar" type="button" aria-label="Open map controls" hidden>☰ Controls</button><div class="north">N</div></section>
-  </main>
-  <div id="feature-drawer" class="feature-drawer" aria-live="polite"><button id="close-drawer" class="close" type="button" aria-label="Close feature details">×</button><div id="drawer-content"></div></div>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <div class="basemap-switcher" aria-label="Basemap">
-    <span class="basemap-title">VIEW</span>
-    <button type="button" data-basemap="imagery" class="active" aria-pressed="true">Satellite</button>
-    <button type="button" data-basemap="streets" aria-pressed="false">Street</button>
-    <button type="button" data-basemap="terrain" aria-pressed="false">Terrain</button>
-  </div>
-  <script src="app.js?v=36"></script>
+  <div id="map" aria-label="Interactive Telangana water atlas"></div>
+  <header class="topbar">
+    <button id="menu-toggle" class="icon-button" aria-label="Toggle atlas controls">☰</button>
+    <div class="brand"><span class="brand-wave">≋</span><div><strong>Telangana WaterMap</strong><small>Terrain → collection → lifting → distribution</small></div></div>
+    <div class="status"><span class="pulse"></span><span id="load-message">Loading atlas…</span></div>
+    <button id="reset-view" class="compact-button">Reset Telangana</button>
+  </header>
+  <aside id="sidebar" class="sidebar">
+    <section class="search-section"><label for="search">Search projects and water bodies</label><input id="search" type="search" placeholder="Kaleshwaram, Mid Manair…" autocomplete="off"><div id="search-results" class="search-results"></div></section>
+    <section class="panel story-panel"><div class="section-head"><span>GUIDED EXPLORATION</span><small>6 steps</small></div><div id="story-steps" class="story-steps"></div><p id="story-copy" class="story-copy">Start with Telangana's terrain and river basins, then follow collection, lifting, storage and distribution.</p></section>
+    <section class="panel"><div class="section-head"><span>MAP LAYERS</span><small id="zoom-band">State view</small></div><div id="layer-list" class="layer-list"></div></section>
+    <section class="panel time-panel"><div class="section-head"><span>WATER EXTENT</span><small>2015–2026 interface</small></div><p id="coverage-note" class="coverage-note">Loading verified observation coverage…</p><div class="time-row"><label for="time-year">Year</label><input id="time-year" type="range" min="2015" max="2026" value="2025"><output id="year-output">2025</output></div><div class="time-row"><label for="time-month">Month</label><input id="time-month" type="range" min="1" max="12" value="12"><output id="month-output">Dec</output></div><div id="observation-status" class="observation-status">No curated observation for this selection.</div></section>
+    <section class="panel source-key"><div class="section-head"><span>READING THE MAP</span></div><div><i class="key blue"></i>Natural / DEM-inferred flow</div><div><i class="key red"></i>Lift project or conceptual transfer</div><div><i class="key amber"></i>Engineered distribution</div><p>Feature details identify Government source, Satellite-derived, DEM-inferred and Public/reference source data.</p></section>
+    <section class="panel owner-panel"><button id="owner-login" class="owner-login">Owner route editor</button><div id="owner-tools" hidden><label for="route-select">Existing route</label><select id="route-select"><option value="">New route…</option></select><div class="owner-actions"><button id="load-route">Load selected</button><button id="route-history">History / revert</button></div><label for="project-id">Project ID</label><input id="project-id" placeholder="e.g. kaleshwaram-link-1"><label for="edit-note">Edit note</label><input id="edit-note" placeholder="Why this route was adjusted"><div class="owner-actions"><button id="start-route">Plot new</button><button id="undo-point">Undo point</button><button id="save-route" disabled>Save version</button><button id="cancel-route">Cancel</button></div><small>Click to add points. Drag white route vertices to move intake, destination, or intermediate coordinates. Saved geometry is conceptual/owner-edited and versioned.</small><div id="history-list" class="history-list" aria-live="polite"></div></div></section>
+  </aside>
+  <div class="basemap-control" aria-label="Basemap selection"><button data-basemap="satellite" class="active">Satellite</button><button data-basemap="street">Street</button></div>
+  <section id="detail-card" class="detail-card" aria-live="polite" hidden><button id="close-detail" class="close-detail" aria-label="Close details">×</button><div id="detail-content"></div></section>
+  <div class="scale-note">Water extent is not storage volume · No live pump/gate telemetry</div>
+  <script src="vendor/maplibre-gl.js?v=4.7.1"></script>
+  <script src="app.js?v=final-7"></script>
 </body>
 </html>

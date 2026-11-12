@@ -4,13 +4,15 @@ First working slice of the Telangana water atlas.
 
 ## Run locally
 
-From this directory:
+For the full local implementation, including the owner-route API:
 
 ```bash
-python -m http.server 8767 --bind 127.0.0.1 --directory apps/web
+python server.py
 ```
 
-Open `http://127.0.0.1:8767/index.html`.
+Open `http://127.0.0.1:8767/`. Set `WATERMAP_OWNER_TOKEN` in the environment to enable owner editing.
+
+The public GitHub Pages deployment is static. It includes the atlas and read-only public routes; the owner editor remains disabled there because GitHub Pages cannot run `server.py` or store route edits.
 
 ## Included in v0.1
 
@@ -30,7 +32,7 @@ The bundled snapshots are the starting inventory, not a live telemetry feed. Nat
 
 - Repository: https://github.com/akhilparimi97/telangana-watermap
 - Collaboration landing page: https://akhilparimi97.github.io/telangana-watermap/
-- Live interactive map: https://akhilparimi97.github.io/telangana-watermap/map/
+- Live interactive map: https://akhilparimi97.github.io/telangana-watermap/
 - Editable collaboration board: https://akhilparimi97.github.io/telangana-watermap/COLLABORATION-BOARD.html
 - Contributing guide: https://akhilparimi97.github.io/CONTRIBUTING.md
 - Data model: https://akhilparimi97.github.io/telangana-watermap/DATA-MODEL.html

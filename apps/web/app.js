@@ -1,145 +1,308 @@
-const ICAD = 'data/';
-const TGRAC = 'data/';
-const TELANGANA = [17.85, 79.2];
-const DEFAULT_ZOOM = 7;
-const map = L.map('map', { zoomControl: false, preferCanvas: true, maxZoom: 18, maxBounds: [[15.2, 76.6], [20.5, 82.0]], maxBoundsViscosity: .8 }).setView(TELANGANA, DEFAULT_ZOOM);
-const placeLabelLayer = L.layerGroup().addTo(map);
-const PLACE_LABELS = [
-  ['Hyderabad', 17.3850, 78.4867, 7], ['Warangal', 17.9689, 79.5941, 7], ['Nizamabad', 18.6725, 78.0941, 7], ['Karimnagar', 18.4386, 79.1288, 7], ['Khammam', 17.2473, 80.1514, 7], ['Nalgonda', 17.0575, 79.2684, 7], ['Mahbubnagar', 16.7488, 77.9855, 7], ['Adilabad', 19.6641, 78.5320, 7],
-  ['Sangareddy', 17.6196, 78.0821, 9], ['Siddipet', 18.1018, 78.8520, 9], ['Mancherial', 18.8756, 79.4591, 9], ['Suryapet', 17.1405, 79.6200, 9], ['Bhadrachalam', 17.6688, 80.8936, 9], ['Vikarabad', 17.3380, 77.9040, 9], ['Gadwal', 16.2350, 77.7956, 9], ['Miryalaguda', 16.8722, 79.5625, 9]
+const DATA = 'data/';
+const ASSET_BASE = new URL('.', document.baseURI).href;
+const TELANGANA = { center: [79.2, 17.85], zoom: 7, bounds: [[76.7, 15.4], [81.8, 20.1]] };
+const SOURCE_CATEGORIES = ['Government source', 'Satellite-derived', 'DEM-inferred', 'Public/reference source'];
+const EMPTY_FC = { type: 'FeatureCollection', features: [] };
+const state = { datasets: {}, index: [], manifests: {}, enabled: {}, ownerToken: null, plotting: false, dragIndex: null, justDragged: false, routeCoordinates: [], ownerRoutes: [], seasonal: null };
+
+const map = new maplibregl.Map({
+  container: 'map',
+  center: TELANGANA.center,
+  zoom: TELANGANA.zoom,
+  minZoom: 6,
+  maxZoom: 17,
+  maxBounds: TELANGANA.bounds,
+  style: {
+    version: 8,
+    glyphs: `${ASSET_BASE}vendor/fonts/{fontstack}/{range}.pbf`,
+    sources: {},
+    layers: [{ id: 'background-base', type: 'background', paint: { 'background-color': '#071517' } }]
+  }
+});
+map.addControl(new maplibregl.NavigationControl({ showCompass: true }), 'bottom-right');
+map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
+window.__mapErrors = [];
+map.on('error', event => {
+  const message = event?.error?.message || String(event?.error || 'Unknown map error');
+  window.__mapErrors.push(message);
+  document.querySelector('#load-message').textContent = `Map error: ${message}`;
+});
+
+const layerDefinitions = [
+  { key: 'boundary', label: 'Telangana boundary', color: '#ffffff', default: true, ids: ['boundary-line'] },
+  { key: 'rivers', label: 'Major rivers', color: '#4cb8ea', default: true, ids: ['rivers-line'] },
+  { key: 'streams', label: 'Streams / drainage', color: '#81cfe7', default: true, ids: ['streams-line'] },
+  { key: 'reservoirs', label: 'Government reservoirs', color: '#22bbb8', default: true, ids: ['reservoir-fill', 'reservoir-line'] },
+  { key: 'projects', label: 'Irrigation projects', color: '#efb454', default: true, ids: ['project-points'] },
+  { key: 'gravity', label: 'Natural gravity flow', color: '#33a8ed', default: true, ids: ['gravity-flow', 'gravity-flow-dots'] },
+  { key: 'lift', label: 'Lift projects', color: '#ef5151', default: true, ids: ['lift-projects', 'documented-lift-routes', 'documented-lift-endpoints', 'documented-lift-dots', 'owner-routes'] },
+  { key: 'candidates', label: 'Modelled/reference water bodies', color: '#ff7558', default: true, ids: ['candidate-points', 'osm-name-candidates', 'osm-name-candidate-labels'] },
+  { key: 'seasonal', label: 'Selected satellite extent', color: '#6ce4ff', default: true, ids: ['seasonal-water-fill', 'seasonal-water-line'] },
+  { key: 'waterbodies', label: 'Lakes / tanks / ponds', color: '#62cdd1', default: true, ids: ['waterbodies-main', 'waterbodies-micro', 'waterbody-labels'] },
+  { key: 'canals', label: 'Canals / distribution', color: '#e9aa45', default: true, ids: ['canals-line'] }
 ];
-const DISTRICT_LABELS = [
-  ['Adilabad', 19.664, 78.532], ['Bhadradri Kothagudem', 17.55, 80.62], ['Hanumakonda', 18.00, 79.59], ['Hyderabad', 17.385, 78.487], ['Jagtial', 18.79, 78.91], ['Jangaon', 17.72, 79.15], ['Jayashankar Bhupalpally', 18.44, 79.86], ['Jogulamba Gadwal', 16.235, 77.796], ['Kamareddy', 18.32, 78.34], ['Karimnagar', 18.439, 79.129], ['Khammam', 17.247, 80.151], ['Komaram Bheem Asifabad', 19.36, 79.29], ['Mahabubabad', 17.60, 80.01], ['Mahbubnagar', 16.749, 77.985], ['Mancherial', 18.876, 79.459], ['Medak', 18.05, 78.26], ['Medchal-Malkajgiri', 17.62, 78.48], ['Mulugu', 18.19, 80.35], ['Nagarkurnool', 16.48, 78.32], ['Nalgonda', 17.058, 79.268], ['Narayanpet', 16.75, 77.50], ['Nirmal', 19.10, 78.34], ['Nizamabad', 18.673, 78.094], ['Peddapalli', 18.61, 79.38], ['Rajanna Sircilla', 18.39, 78.81], ['Rangareddy', 17.32, 78.20], ['Sangareddy', 17.62, 78.08], ['Siddipet', 18.102, 78.852], ['Suryapet', 17.14, 79.62], ['Vikarabad', 17.338, 77.904], ['Wanaparthy', 16.36, 78.06], ['Warangal', 17.969, 79.594], ['Yadadri Bhuvanagiri', 17.52, 78.89]
+layerDefinitions.forEach(item => { state.enabled[item.key] = item.default; });
+
+const guidedSteps = [
+  { title: 'Terrain', zoom: 7, copy: 'Terrain and elevation shape Telangana’s natural drainage toward the Godavari and Krishna systems.', show: ['boundary', 'rivers', 'gravity'] },
+  { title: 'Drainage', zoom: 7.7, copy: 'Blue lines are mapped rivers and streams. Moving blue dots indicate direction along mapped drainage, interpreted with DEM context—not measured discharge.', show: ['boundary', 'rivers', 'streams', 'gravity'] },
+  { title: 'Collection', zoom: 8.4, copy: 'Reservoirs, lakes and tanks collect monsoon and river water. Detailed water bodies appear as you zoom in.', show: ['boundary', 'rivers', 'reservoirs', 'waterbodies', 'candidates', 'seasonal'] },
+  { title: 'Lifting', zoom: 8.4, copy: 'Red project markers identify lift schemes. A route appears only when an owner-edited or documented connection exists.', show: ['boundary', 'rivers', 'projects', 'lift'] },
+  { title: 'Storage', zoom: 8.8, copy: 'Storage and balancing reservoirs connect natural drainage to engineered transfer systems.', show: ['boundary', 'reservoirs', 'projects', 'candidates'] },
+  { title: 'Distribution', zoom: 10, copy: 'Amber canal lines reveal engineered distribution at regional and local zoom levels.', show: ['boundary', 'reservoirs', 'projects', 'canals'] }
 ];
-L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-const imagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxNativeZoom: 18, maxZoom: 18, keepBuffer: 6, updateWhenZooming: false, updateWhenIdle: true, attribution: '© Esri, Maxar, Earthstar Geographics' });
-const streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxNativeZoom: 18, maxZoom: 18, keepBuffer: 6, updateWhenZooming: false, updateWhenIdle: true, attribution: '© OpenStreetMap contributors' });
-const terrain = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxNativeZoom: 17, maxZoom: 18, keepBuffer: 6, updateWhenZooming: false, updateWhenIdle: true, attribution: '© OpenStreetMap contributors, SRTM · OpenTopoMap' });
-imagery.addTo(map);
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js?v=1').catch(() => {});
-function tileXY(lat, lon, zoom) { const scale = 2 ** zoom; const x = Math.floor((lon + 180) / 360 * scale); const latRad = lat * Math.PI / 180; const y = Math.floor((1 - Math.asinh(Math.tan(latRad)) / Math.PI) / 2 * scale); return [x, y]; }
-async function prewarmImagery() { const urls = []; for (const zoom of [7]) { const [x0, y1] = tileXY(15.8, 77.2, zoom), [x1, y0] = tileXY(19.95, 81.3, zoom); for (let x = x0; x <= x1; x++) for (let y = y0; y <= y1; y++) urls.push(`https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${zoom}/${y}/${x}`); } let index = 0; async function worker() { while (index < urls.length) { const url = urls[index++]; try { await fetch(url, { mode: 'no-cors', cache: 'no-store' }); } catch (_) {} } } await Promise.all(Array.from({ length: 4 }, worker)); }
-setTimeout(() => { if (navigator.serviceWorker?.controller) prewarmImagery(); }, 1500);
+function esc(value) { return String(value ?? '—').replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[character])); }
+function first(properties, keys) { for (const key of keys) if (properties?.[key] !== undefined && properties[key] !== null && String(properties[key]).trim()) return properties[key]; return null; }
+function titleFor(feature, kind = '') { const p = feature.properties || {}; const keys = kind === 'projects' ? ['Dam_Name', 'lift_metadata_name', 'Project', 'OLD_DAM_NA', 'Name'] : ['name', 'Name', 'res', 'TYPE', 'Stream_Nm', 'rivname', 'L_NAME']; return first(p, keys) || `${kind || 'Water'} feature`; }
+function fetchJson(url) { return fetch(url).then(response => { if (!response.ok) throw new Error(`${response.status} ${url}`); return response.json(); }); }
+function featureCenter(feature) { const geometry = feature.geometry || {}; if (geometry.type === 'Point') return geometry.coordinates; const flat = geometry.coordinates?.flat(4).filter(value => typeof value === 'number') || []; if (flat.length < 2) return TELANGANA.center; let lon = 0, lat = 0, count = 0; for (let i = 0; i < flat.length - 1; i += 2) { lon += flat[i]; lat += flat[i + 1]; count++; } return count ? [lon / count, lat / count] : TELANGANA.center; }
+function elevationAt(grid, lon, lat) { const row = Math.max(0, Math.min(grid.rows - 1, Math.round((lat - grid.latitudes[0]) / (grid.latitudes.at(-1) - grid.latitudes[0]) * (grid.rows - 1)))); const col = Math.max(0, Math.min(grid.cols - 1, Math.round((lon - grid.longitudes[0]) / (grid.longitudes.at(-1) - grid.longitudes[0]) * (grid.cols - 1)))); return Math.round(grid.elevations[row * grid.cols + col]); }
+function isLift(feature) { const p = feature.properties || {}; return p.is_lift === true || String(p.is_lift).toLowerCase() === 'true' || String(p.project_subtype || '').toLowerCase().includes('lift') || /\bLIS\b/i.test(String(p.Project || '')); }
+function geometryPaths(feature) { const geometry = feature.geometry || {}; return geometry.type === 'LineString' ? [geometry.coordinates] : geometry.type === 'MultiLineString' ? geometry.coordinates : []; }
 
-const layers = {};
-let managementRenderer = null;
-const featureIndex = [];
-let lineFlowFeatures = [];
-let flowDots = [];
-let flowAnimationFrame = null;
-let flowGrid = null;
-let barrageFeatures = [];
-let terrainPolygons = [];
-let terrainOverlay = null;
-const palette = { reservoirs: '#19a6a5', projects: '#f1b85b', rivers: '#71c5e0', streams: '#b4e0e3' };
-const layerMeta = {
-  boundary: { label: 'Telangana boundary', swatch: '#ffffff', source: 'TGRAC · State Boundary', type: 'boundary' },
-  reservoirs: { label: 'Reservoirs', swatch: palette.reservoirs, source: 'TGRAC · Reservoirs (57)', type: 'reservoir' },
-  projects: { label: 'ICAD projects', swatch: palette.projects, source: 'ICAD · major / medium / lift projects (81)', type: 'project' },
-  rivers: { label: 'Named rivers', swatch: palette.rivers, source: 'ICAD · named rivers (23)', type: 'river' },
-  streams: { label: 'Streams', swatch: palette.streams, source: 'ICAD · streams (443)', type: 'stream' },
-  canals: { label: 'Canals', swatch: '#d99b45', source: 'TGRAC · HMDA/ORR canal network snapshot (9,000)', type: 'canal' },
-  lakes: { label: 'Lakes / ponds / tanks', swatch: '#5eb9bf', source: 'TGRAC · lakes, ponds and tanks (36,580)', type: 'lake' },
-  gravityFlow: { label: 'Gravity-flow interpretation', swatch: '#1889c9', source: 'Derived from DEM elevation gradients', type: 'flow' },
-  liftFlows: { label: 'Lift-project flows', swatch: '#df3e3e', source: 'ICAD projects + OpenStreetMap barrage/weir structures + DEM elevation context', type: 'lift' },
-  projectElevations: { label: 'Project elevations (hover)', swatch: '#f1b85b', source: 'DEM elevation context for ICAD project points', type: 'projectElevation' },
-  candidates: { label: 'Known reservoir candidates', swatch: '#ff6b4a', source: 'Cross-checked public references; verify official geometry', type: 'candidate' }
-};
-const lazyUrls = { canals: `${ICAD}hmda-canals.geojson`, lakes: `${ICAD}lakes-ponds-tanks-lite.geojson` };
-
-function esc(value) { return String(value ?? '—').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;' }[c])); }
-function props(feature) { return feature.properties || {}; }
-function first(p, keys) { for (const key of keys) if (p[key] !== undefined && p[key] !== null && String(p[key]).trim() !== '') return p[key]; return null; }
-function titleFor(feature, kind) {
-  const p = props(feature);
-  const keys = { projects: ['Dam_Name', 'lift_metadata_name', 'Project', 'OLD_DAM_NA', 'Name'], reservoirs: ['Name', 'name', 'res', 'TYPE'], rivers: ['name', 'Name', 'rivname'], streams: ['Stream_Nm', 'rivname', 'name'], canals: ['canal_name', 'canl_dsply', 'project_nm', 'parent_can'], lakes: ['name', 'Name', 'lake_name', 'L_NAME'] };
-  return first(p, keys[kind] || ['name', 'Name', 'rivname']) || `${layerMeta[kind]?.label || 'Water feature'} feature`;
+function addSourceLayer(sourceId, data, layers) { map.addSource(sourceId, { type: 'geojson', data }); layers.forEach(layer => map.addLayer({ ...layer, source: sourceId })); }
+function installBasemaps() {
+  map.addSource('satellite', { type: 'raster', tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'], tileSize: 256, attribution: '© Esri, Maxar, Earthstar Geographics' });
+  map.addSource('street', { type: 'raster', tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'], tileSize: 256, attribution: '© OpenStreetMap contributors' });
+  map.addLayer({ id: 'satellite-basemap', type: 'raster', source: 'satellite' });
+  map.addLayer({ id: 'street-basemap', type: 'raster', source: 'street', layout: { visibility: 'none' } });
 }
-function renderPlaceLabels() { placeLabelLayer.clearLayers(); const zoom = map.getZoom(); const values = flowGrid?.elevations || []; const min = values.length ? Math.min(...values) : 0; const max = values.length ? Math.max(...values) : 1; DISTRICT_LABELS.forEach(([name, lat, lon]) => { if (zoom < 7) return; L.marker([lat, lon], { interactive: false, icon: L.divIcon({ className: 'district-label', html: `<span>${esc(name)}</span>`, iconSize: null }) }).addTo(placeLabelLayer); }); PLACE_LABELS.filter(([, , , minZoom]) => zoom >= minZoom).forEach(([name, lat, lon]) => { const elevation = flowGrid ? elevationAt(flowGrid, lat, lon) : null; const color = elevation === null ? '#0b1d24' : elevationColor(elevation, min, max); const text = elevation === null ? '#d9eeee' : (elevation > min + (max - min) * .58 ? '#102c32' : '#f5ffff'); const badge = elevation === null ? '' : ` style="background:${color};color:${text}"`; L.marker([lat, lon], { interactive: false, icon: L.divIcon({ className: 'place-label', html: `<span${badge}>${esc(name)}</span>`, iconSize: null }) }).addTo(placeLabelLayer); }); }
-function addToIndex(feature, kind) { featureIndex.push({ feature, kind, title: titleFor(feature, kind), search: JSON.stringify(props(feature)).toLowerCase() }); }
-function styleFor(kind) { return kind === 'boundary' ? { color: '#ffffff', weight: 3, fill: false, opacity: .95, interactive: false } : kind === 'reservoirs' ? { color: '#0b777c', weight: 1.2, fillColor: palette.reservoirs, fillOpacity: .6 } : kind === 'rivers' ? { color: '#4ca5c5', weight: 2.4, opacity: .9, fillColor: palette.rivers, fillOpacity: .22 } : kind === 'streams' ? { color: '#84cbd1', weight: 1.1, opacity: .82 } : kind === 'canals' ? { color: '#e0a449', weight: 1.05, opacity: .65 } : kind === 'lakes' ? { color: '#3d9ba1', weight: .7, fillColor: '#5eb9bf', fillOpacity: .35 } : { color: '#d48d29', weight: 1.2, fillColor: palette.projects, fillOpacity: .6 } }
-function pointToLayer(kind) { return (_, latlng) => L.circleMarker(latlng, { radius: kind === 'projects' ? 7 : 5, color: '#fff', weight: 1.5, fillColor: palette[kind], fillOpacity: .95 }); }
-function bindFeature(feature, layer, kind) { if (kind === 'boundary') return; const name = titleFor(feature, kind); addToIndex(feature, kind); layer.bindTooltip(esc(name), { direction: 'top', sticky: true }); layer.on('click', event => { L.DomEvent.stopPropagation(event); openDrawer(feature, kind); }); }
-function geoJsonLayer(data, kind) { return L.geoJSON(data, { style: () => styleFor(kind), pointToLayer: pointToLayer(kind), onEachFeature: (f, l) => bindFeature(f, l, kind) }); }
-
-async function fetchJson(url) { const response = await fetch(url); if (!response.ok) throw new Error(`${response.status} ${url}`); return response.json(); }
-async function loadGeoJson(kind, url, visible = true) { const data = await fetchJson(url); const layer = geoJsonLayer(data, kind); layers[kind] = layer; if (visible) layer.addTo(map); if (['rivers', 'streams', 'canals'].includes(kind)) { (data.features || []).forEach(feature => { feature.__flowKind = kind; }); lineFlowFeatures = lineFlowFeatures.concat(data.features || []); if (layers.gravityFlow) rebuildGravityFlow(); } setStatus(); document.getElementById('load-message').textContent = `${featureIndex.length.toLocaleString('en-IN')} water features indexed`; return data.features?.length || 0; }
-async function loadReservoirs() { return loadGeoJson('reservoirs', `${TGRAC}reservoirs.geojson`); }
-function setStatus() { document.getElementById('stat-features').textContent = featureIndex.length.toLocaleString('en-IN'); document.getElementById('stat-status').textContent = Object.keys(layers).length ? 'ready' : 'loading'; }
-function layerRow(kind) { const meta = layerMeta[kind]; const defaultOn = !['canals', 'lakes', 'topography'].includes(kind); const row = document.createElement('label'); row.className = 'layer-row'; row.innerHTML = `<input type="checkbox" ${defaultOn ? 'checked' : ''} data-layer="${kind}"><span class="layer-swatch" style="background:${meta.swatch}"></span><span>${meta.label}</span>`; row.querySelector('input').addEventListener('change', async e => { if (e.target.checked && !layers[kind] && lazyUrls[kind]) { e.target.disabled = true; await loadGeoJson(kind, lazyUrls[kind], true); e.target.disabled = false; } else if (e.target.checked) layers[kind]?.addTo(map); else if (layers[kind]) map.removeLayer(layers[kind]); applyScaleVisibility(); }); return row; }
-function isMajorFeature(feature, kind) { const p = props(feature); if (kind === 'reservoirs') return ['major', 'large'].includes(String(first(p, ['Category', 'category', 'R_Type']) || '').toLowerCase()) || Number(p.Shape_Area || 0) > .001; if (kind === 'projects') return String(first(p, ['Category', 'category']) || '').toLowerCase() === 'major'; return true; }
-function applyScaleVisibility() { const zoom = map.getZoom(); ['reservoirs', 'projects', 'rivers', 'streams', 'canals', 'lakes', 'topography'].forEach(kind => { const group = layers[kind]; if (!group || !map.hasLayer(group)) return; group.eachLayer(layer => { const feature = layer.feature; let visible = true; if (kind === 'reservoirs' || kind === 'projects') visible = zoom >= 9 || isMajorFeature(feature, kind); else if (kind === 'streams' || kind === 'lakes') visible = zoom >= 9; else if (kind === 'canals') visible = zoom >= 10; else if (kind === 'topography') visible = zoom >= 8; if (visible) map.addLayer(layer); else map.removeLayer(layer); }); }); }
-function initLayerList() { const list = document.getElementById('layer-list'); Object.keys(layerMeta).forEach(k => list.appendChild(layerRow(k))); }
-function openDrawer(feature, kind) { const p = props(feature); const name = titleFor(feature, kind); const source = layerMeta[kind].source; const details = kind === 'projects' ? [['Category', first(p, ['Category', 'project_subtype'])], ['Storage', first(p, ['storage_tmc', 'storage_tmc_value']) ? `${first(p, ['storage_tmc', 'storage_tmc_value'])} TMC` : null], ['Status', first(p, ['Status'])], ['FRL', first(p, ['frl_m', 'frl']) ? `${first(p, ['frl_m', 'frl'])} m` : null]] : [['Type', first(p, ['TYPE', 'R_Type', 'river_type'])], ['District / basin', first(p, ['belongs', 'Descr_1'])], ['Area', first(p, ['Shape_Area'])], ['Source ID', first(p, ['Id', 'OBJECTID', 'fid'])]]; document.getElementById('drawer-content').innerHTML = `<div class="drawer-kicker">${esc(layerMeta[kind].label)} · official source</div><h2 class="drawer-title">${esc(name)}</h2><div class="detail-grid">${details.map(([k,v]) => `<div class="detail"><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div><div class="provenance"><strong>Source & data quality</strong><br>${esc(source)}<br>Geometry loaded from the public Telangana government service. Attribute completeness varies by source record.</div>`; document.getElementById('feature-drawer').classList.add('show'); }
-function search(term) { const box = document.getElementById('search-results'); if (!term) { box.classList.remove('show'); return; } const q = term.toLowerCase(); const matches = featureIndex.filter(x => x.title.toLowerCase().includes(q) || x.search.includes(q)).slice(0, 8); box.innerHTML = matches.length ? matches.map((x,i) => `<div class="result" data-index="${featureIndex.indexOf(x)}"><strong>${esc(x.title)}</strong><small>${esc(layerMeta[x.kind].label)} · ${esc(layerMeta[x.kind].source)}</small></div>`).join('') : '<div class="result">No loaded feature found.</div>'; box.classList.add('show'); box.querySelectorAll('[data-index]').forEach(el => el.addEventListener('click', () => { const x = featureIndex[Number(el.dataset.index)]; const bounds = L.geoJSON(x.feature).getBounds(); if (bounds.isValid()) map.fitBounds(bounds.pad(.8)); openDrawer(x.feature, x.kind); box.classList.remove('show'); })); }
-
-function elevationAt(grid, lat, lon) { let r=Math.round((lat-grid.latitudes[0])/(grid.latitudes[grid.rows-1]-grid.latitudes[0])*(grid.rows-1)); let c=Math.round((lon-grid.longitudes[0])/(grid.longitudes[grid.cols-1]-grid.longitudes[0])*(grid.cols-1)); r=Math.max(0,Math.min(grid.rows-1,r)); c=Math.max(0,Math.min(grid.cols-1,c)); return Math.round(grid.elevations[r*grid.cols+c]); }
-function isLiftProject(feature) { const p=props(feature); return p.is_lift===true || String(p.is_lift).toLowerCase()==='true' || String(p.project_subtype||'').toLowerCase().includes('lift') || String(p.Project||'').toLowerCase().includes('lis'); }
-function geometryPaths(feature) { const geometry = feature.geometry || {}; if (geometry.type === 'LineString') return [geometry.coordinates]; if (geometry.type === 'MultiLineString') return geometry.coordinates; return []; }
-function rebuildGravityFlow() { const gravity = layers.gravityFlow || L.layerGroup(); gravity.clearLayers(); flowDots = []; const zoom = map.getZoom(); const baseFeatures = lineFlowFeatures.filter(feature => feature.__flowKind === 'rivers' || (feature.__flowKind === 'streams' && zoom >= 9)); const canalFeatures = lineFlowFeatures.filter(feature => feature.__flowKind === 'canals' && zoom >= 10).slice(0, 1200); const paths = baseFeatures.concat(canalFeatures).flatMap(geometryPaths).filter(path => path.length > 1); const maxAnimatedPaths = zoom < 9 ? 240 : zoom < 11 ? 500 : 900; const stride = Math.max(1, Math.ceil(paths.length / maxAnimatedPaths)); const animatedPaths = paths.filter((_, index) => index % stride === 0).slice(0, maxAnimatedPaths); animatedPaths.forEach((rawPath, pathIndex) => { let path = rawPath; if (flowGrid && path.length > 1) { const startElevation = elevationAt(flowGrid, path[0][1], path[0][0]); const endElevation = elevationAt(flowGrid, path[path.length - 1][1], path[path.length - 1][0]); if (startElevation < endElevation) path = path.slice().reverse(); } const dotCount = path.length > 12 ? 2 : 1; for (let i = 0; i < dotCount; i++) { const marker = L.circleMarker(path[0].slice().reverse(), { renderer: managementRenderer, radius: 3.5, color: '#1889c9', weight: 0, opacity: 0, fillColor: '#1889c9', fillOpacity: .98, className: 'gravity-flow-dot' }).addTo(gravity); flowDots.push({ marker, path, phase: (pathIndex * .137 + i / dotCount) % 1 }); } }); layers.gravityFlow = gravity; const input = document.querySelector('input[data-layer="gravityFlow"]'); if (!input || input.checked) gravity.addTo(map); if (!flowAnimationFrame) animateGravityFlow(); }
-function nearestWaterPoint(project) { const [lon, lat] = project; let nearestBarrage = null; barrageFeatures.filter(x => x.name && x.name !== 'Unnamed barrage/weir').forEach(structure => { const dx = (structure.lon - lon) * Math.cos(lat * Math.PI / 180), dy = structure.lat - lat, distance = dx * dx + dy * dy; if (!nearestBarrage || distance < nearestBarrage.distance) nearestBarrage = { coordinate: [structure.lat, structure.lon], distance, name: structure.name, sourceType: 'mapped barrage/weir' }; }); if (nearestBarrage && nearestBarrage.distance < .35 * .35) return nearestBarrage; let nearest = null; lineFlowFeatures.forEach(feature => { geometryPaths(feature).forEach(path => path.forEach(coord => { const dx = (coord[0] - lon) * Math.cos(lat * Math.PI / 180), dy = coord[1] - lat, distance = dx * dx + dy * dy; if (!nearest || distance < nearest.distance) nearest = { coordinate: [coord[1], coord[0]], distance, name: titleFor(feature, feature.__flowKind || 'rivers'), sourceType: 'mapped water line' }; })); }); return nearest; }
-function addLiftTransferLines(lifts, feature, projectName, projectPoint) { const source = nearestWaterPoint(projectPoint); if (!source) return; const [projectLon, projectLat] = projectPoint; const destination = [projectLat, projectLon]; const path = [source.coordinate, [(source.coordinate[0] + projectLat) / 2, (source.coordinate[1] + projectLon) / 2], destination]; L.circleMarker(source.coordinate, { radius: 6, color: '#df3e3e', weight: 0, opacity: 0, fillColor: '#df3e3e', fillOpacity: 1 }).bindTooltip(`Intake: ${esc(source.name)}`, { sticky: true }).addTo(lifts); L.circleMarker(destination, { radius: 7, color: '#fff', weight: 1.5, fillColor: '#f1b85b', fillOpacity: 1 }).bindTooltip(`Lift destination: ${esc(projectName)}`, { sticky: true }).addTo(lifts); L.polyline(path, { color: '#df3e3e', weight: 3, opacity: .9, dashArray: '9 8', lineCap: 'round', lineJoin: 'round' }).bindTooltip(`Inferred lift transfer: ${esc(source.name)} → ${esc(projectName)}`, { sticky: true }).bindPopup(`<strong>Lift transfer</strong><br><span class="popup-metric">Intake:</span> ${esc(source.name)}<br><span class="popup-metric">Destination:</span> ${esc(projectName)}<br><span class="popup-note">Red dashed corridor is an interpretation from the nearest mapped water line to the lift-project point. The gold endpoint is the inferred receiving/project area; it is not a surveyed pipeline route.</span>`).addTo(lifts); }
-function pointAlong(path, progress) { const lengths = [0]; let total = 0; for (let i = 1; i < path.length; i++) { total += Math.hypot(path[i][0] - path[i - 1][0], path[i][1] - path[i - 1][1]); lengths.push(total); } if (!total) return [path[0][1], path[0][0]]; const target = ((progress % 1) + 1) % 1 * total; for (let i = 1; i < lengths.length; i++) if (target <= lengths[i]) { const t = (target - lengths[i - 1]) / (lengths[i] - lengths[i - 1] || 1); return [path[i - 1][1] + (path[i][1] - path[i - 1][1]) * t, path[i - 1][0] + (path[i][0] - path[i - 1][0]) * t]; } return [path[path.length - 1][1], path[path.length - 1][0]]; }
-function animateGravityFlow(now = performance.now()) { flowDots.forEach(dot => dot.marker.setLatLng(pointAlong(dot.path, dot.phase + now * .000012))); flowAnimationFrame = requestAnimationFrame(animateGravityFlow); }
-function buildContours(grid) { const group = L.layerGroup(); const min = Math.floor(Math.min(...grid.elevations) / 100) * 100, max = Math.ceil(Math.max(...grid.elevations) / 100) * 100; for (let level = min + 100; level < max; level += 100) for (let r = 0; r < grid.rows - 1; r++) for (let c = 0; c < grid.cols - 1; c++) { const corners = [{ lat: grid.latitudes[r], lon: grid.longitudes[c], z: grid.elevations[r * grid.cols + c] }, { lat: grid.latitudes[r], lon: grid.longitudes[c + 1], z: grid.elevations[r * grid.cols + c + 1] }, { lat: grid.latitudes[r + 1], lon: grid.longitudes[c + 1], z: grid.elevations[(r + 1) * grid.cols + c + 1] }, { lat: grid.latitudes[r + 1], lon: grid.longitudes[c], z: grid.elevations[(r + 1) * grid.cols + c] }]; const points = []; [[0, 1], [1, 2], [2, 3], [3, 0]].forEach(([a, b]) => { const p = corners[a], q = corners[b]; if ((p.z < level && q.z >= level) || (q.z < level && p.z >= level)) { const t = (level - p.z) / (q.z - p.z); points.push([p.lat + (q.lat - p.lat) * t, p.lon + (q.lon - p.lon) * t]); } }); if (points.length === 2) L.polyline(points, { color: '#d7c3a4', weight: level % 500 === 0 ? 1.5 : .8, opacity: .62, interactive: false, className: 'contour-line' }).addTo(group); } return group; }
-function buildManagementOverlay(grid) {
-  const gravity=L.layerGroup(), lifts=L.layerGroup(), projectElevations=L.layerGroup(), flowRenderer=L.svg({padding:.5}); flowRenderer.addTo(map); managementRenderer=flowRenderer; flowGrid=grid; layers.gravityFlow=gravity; layers.topography=buildContours(grid); rebuildGravityFlow();
-  if(false) for(let r=0;r<grid.rows;r+=2) for(let c=0;c<grid.cols;c+=2) { const lat=grid.latitudes[r],lon=grid.longitudes[c],z=grid.elevations[r*grid.cols+c]; let best=null; for(const [dr,dc] of [[-1,0],[1,0],[0,-1],[0,1],[-1,-1],[-1,1],[1,-1],[1,1]]){const rr=r+dr*2,cc=c+dc*2;if(rr>=0&&rr<grid.rows&&cc>=0&&cc<grid.cols){const nz=grid.elevations[rr*grid.cols+cc];if(nz<z && (!best||nz<best.z))best={lat:grid.latitudes[rr],lon:grid.longitudes[cc],z:nz};}} if(best){L.polyline([[lat,lon],[best.lat,best.lon]],{renderer:flowRenderer,color:'#1889c9',weight:2.5,opacity:.78, className:'gravity-flow-line'}).addTo(gravity);} L.circleMarker([lat,lon],{renderer:flowRenderer,radius:4.5,color:'#fff',weight:1,fillColor:'#1889c9',fillOpacity:.95,className:'gravity-flow-dot'}).bindTooltip(`DEM elevation ≈ ${z} m · inferred downhill direction`).addTo(gravity); }
-  featureIndex.filter(x=>x.kind==='projects' && isLiftProject(x.feature)).forEach(x=>{const p=props(x.feature),g=x.feature.geometry?.coordinates;if(!g)return;const z=elevationAt(grid,g[1],g[0]);L.circleMarker([g[1],g[0]],{renderer:managementRenderer,radius:7,color:'#fff',weight:1.5,fillColor:'#df3e3e',fillOpacity:1,className:'lift-flow-dot'}).bindTooltip(`${esc(x.title)} · DEM elevation ≈ ${z} m · lift transfer`,{direction:'top',sticky:true}).bindPopup(`<strong>${esc(x.title)}</strong><br><span class="popup-metric">DEM elevation ≈ ${z} m</span><br><span class="popup-note">Red marker = lift-project interpretation. This does not indicate live pump status.</span>`).addTo(lifts); addLiftTransferLines(lifts, x.feature, x.title, g);});
-  featureIndex.filter(x=>x.kind==='projects').forEach(x=>{const g=x.feature.geometry?.coordinates;if(!g)return;const z=elevationAt(grid,g[1],g[0]);L.circleMarker([g[1],g[0]],{renderer:managementRenderer,radius:4,color:'#fff',weight:1,fillColor:'#f1b85b',fillOpacity:.95}).bindTooltip(`${esc(x.title)} · DEM elevation ≈ ${z} m`,{direction:'top',sticky:true}).addTo(projectElevations);});
-  layers.gravityFlow=gravity; layers.liftFlows=lifts; layers.projectElevations=projectElevations; const gravityInput=document.querySelector('input[data-layer="gravityFlow"]'), liftInput=document.querySelector('input[data-layer="liftFlows"]'), elevationInput=document.querySelector('input[data-layer="projectElevations"]'); if(!gravityInput||gravityInput.checked) gravity.addTo(map); if(!liftInput||liftInput.checked) lifts.addTo(map); if(!elevationInput||elevationInput.checked) projectElevations.addTo(map); setStatus(); applyScaleVisibility();
+function installVectorLayers() {
+  map.addSource('waterbodies-vector', { type: 'vector', tiles: [`${ASSET_BASE}data/vector/waterbodies/{z}/{x}/{y}.pbf`], minzoom: 9, maxzoom: 13, bounds: [77.281232461, 15.915302417, 81.27222348, 19.913111884], attribution: 'Geometry © TGRAC · Names © OpenStreetMap contributors (ODbL)' });
+  map.addLayer({ id: 'waterbodies-main', type: 'fill', source: 'waterbodies-vector', 'source-layer': 'waterbodies', minzoom: 9, filter: ['>=', ['get', 'area_ha'], 1], paint: { 'fill-color': '#58c8cd', 'fill-opacity': .42, 'fill-outline-color': '#8df0ed' } });
+  map.addLayer({ id: 'waterbodies-micro', type: 'fill', source: 'waterbodies-vector', 'source-layer': 'waterbodies', minzoom: 13, filter: ['<', ['get', 'area_ha'], 1], paint: { 'fill-color': '#58c8cd', 'fill-opacity': .48, 'fill-outline-color': '#8df0ed' } });
+  map.addLayer({ id: 'waterbody-labels', type: 'symbol', source: 'waterbodies-vector', 'source-layer': 'waterbodies', minzoom: 10, filter: ['!=', ['get', 'name'], 'Unnamed water body'], layout: { 'text-field': ['get', 'name'], 'text-font': ['Noto Sans Regular'], 'text-size': ['interpolate', ['linear'], ['zoom'], 10, 10, 14, 14], 'text-variable-anchor': ['top', 'bottom', 'left', 'right'], 'text-radial-offset': .5, 'text-allow-overlap': false }, paint: { 'text-color': '#e8ffff', 'text-halo-color': '#0a292d', 'text-halo-width': 1.5 } });
+  map.addSource('canals-vector', { type: 'vector', tiles: [`${ASSET_BASE}data/vector/canals/{z}/{x}/{y}.pbf`], minzoom: 10, maxzoom: 13, bounds: [77.514264526, 15.959720047, 79.935290297, 19.49888083], attribution: 'TGRAC HMDA distribution layer' });
+  map.addLayer({ id: 'canals-line', type: 'line', source: 'canals-vector', 'source-layer': 'canals', minzoom: 10, paint: { 'line-color': '#e9aa45', 'line-width': ['interpolate', ['linear'], ['zoom'], 10, 1.1, 14, 3], 'line-opacity': .8 } });
 }
-async function loadCandidateReservoirs() { const data=await fetchJson('data/known-reservoir-candidates.geojson?v=1'), group=L.layerGroup(); data.features.forEach(f=>{const p=props(f),[lon,lat]=f.geometry.coordinates;const marker=L.circleMarker([lat,lon],{renderer:managementRenderer,radius:8,color:'#fff',weight:2,fillColor:'#ff6b4a',fillOpacity:.95}).bindTooltip(`${esc(p.name)} · candidate overlay`,{direction:'top',sticky:true}).bindPopup(`<strong>${esc(p.name)}</strong><br><span class="popup-metric">DEM elevation ≈ ${esc(p.dem_elevation_m)} m</span><br><span class="popup-note">${esc(p.source)}. Candidate point only; official reservoir geometry is not yet reconciled.</span>`); marker.addTo(group);}); layers.candidates=group; const input=document.querySelector('input[data-layer="candidates"]'); if(!input||input.checked)group.addTo(map); setStatus(); }
-
-async function loadBarrages() { barrageFeatures = await fetchJson('data/osm-barrages.json'); return barrageFeatures.length; }
-
-function elevationColor(value, min, max) { const t = (value - min) / Math.max(1, max - min); return `hsl(${165 - t * 105}, ${48 + t * 18}%, ${72 - t * 30}%)`; }
-function buildElevationTerrain(grid) { const canvas = document.createElement('canvas'); canvas.width = grid.cols; canvas.height = grid.rows; const ctx = canvas.getContext('2d'); const vals = grid.elevations; const min = Math.min(...vals); const max = Math.max(...vals); const image = ctx.createImageData(grid.cols, grid.rows); for (let r = 0; r < grid.rows; r++) for (let c = 0; c < grid.cols; c++) { const i = r * grid.cols + c; const color = elevationColor(vals[i], min, max); const match = color.match(/hsl\(([-\d.]+),\s*([\d.]+)%,\s*([\d.]+)%\)/); const rgb = hslToRgb(Number(match[1]) / 360, Number(match[2]) / 100, Number(match[3]) / 100); image.data[i * 4] = rgb[0]; image.data[i * 4 + 1] = rgb[1]; image.data[i * 4 + 2] = rgb[2]; image.data[i * 4 + 3] = 235; } ctx.putImageData(image, 0, 0); return L.imageOverlay(canvas.toDataURL('image/png'), [[grid.latitudes[0], grid.longitudes[0]], [grid.latitudes[grid.rows - 1], grid.longitudes[grid.cols - 1]]], { opacity: .9, interactive: false, attribution: '© Telangana DEM · elevation-colored terrain' }); }
-function hslToRgb(h, s, l) { const a = s * Math.min(l, 1 - l); const f = n => { const k = (n + h * 12) % 12; return l - a * Math.max(-1, Math.min(k - 3, Math.min(9 - k, 1))); }; return [Math.round(255 * f(0)), Math.round(255 * f(8)), Math.round(255 * f(4))]; }
-function drawTerrain(grid) {
-  const canvas = document.getElementById('terrain-canvas'); const ctx = canvas.getContext('2d'); const w = canvas.width; const h = canvas.height; ctx.clearRect(0,0,w,h); ctx.fillStyle='#d7efe3'; ctx.fillRect(0,0,w,h); const vals = grid.elevations; const min = Math.min(...vals), max = Math.max(...vals); const cols = grid.cols, rows = grid.rows; const sx = Math.min(34, (w - 100) / (cols + rows)); const sy = sx * .48; const sz = 0.18; const ox = w / 2, oy = 64;
-  const pt = (r,c) => [ox + (c-r)*sx, oy + (c+r)*sy - (vals[r*cols+c]-min)*sz];
-  for (let r=rows-2;r>=0;r--) for (let c=0;c<cols-1;c++) { const a=pt(r,c), b=pt(r,c+1), d=pt(r+1,c), e=pt(r+1,c+1); ctx.beginPath(); ctx.moveTo(...a); ctx.lineTo(...b); ctx.lineTo(...e); ctx.lineTo(...d); ctx.closePath(); ctx.fillStyle=elevationColor((vals[r*cols+c]+vals[r*cols+c+1]+vals[(r+1)*cols+c]+vals[(r+1)*cols+c+1])/4,min,max); ctx.fill(); ctx.strokeStyle='rgba(255,255,255,.14)'; ctx.stroke(); }
-  // Directional downhill arrows: local gradient on the sampled terrain.
-  ctx.strokeStyle='#187dc0'; ctx.fillStyle='#187dc0'; ctx.lineWidth=2.4;
-  for(let r=1;r<rows-1;r+=2) for(let c=1;c<cols-1;c+=2){ const z=vals[r*cols+c]; const gx=vals[r*cols+c+1]-vals[r*cols+c-1], gy=vals[(r+1)*cols+c]-vals[(r-1)*cols+c]; const mag=Math.hypot(gx,gy)||1; const a=pt(r,c), b=pt(Math.max(0,Math.min(rows-1,r+gy/mag*1.3)),Math.max(0,Math.min(cols-1,c+gx/mag*1.3))); ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...b);ctx.stroke(); const ang=Math.atan2(b[1]-a[1],b[0]-a[0]);ctx.beginPath();ctx.moveTo(...b);ctx.lineTo(b[0]-7*Math.cos(ang-.5),b[1]-7*Math.sin(ang-.5));ctx.lineTo(b[0]-7*Math.cos(ang+.5),b[1]-7*Math.sin(ang+.5));ctx.closePath();ctx.fill(); }
-  // Lift projects: plotted approximately from their ICAD coordinates, with an upward amber transfer arrow.
-  const lifts=featureIndex.filter(x=>x.kind==='projects' && String(first(props(x.feature),['is_lift','lift_metadata_name','Project'])).toLowerCase().includes('true') || (x.kind==='projects' && JSON.stringify(props(x.feature)).toLowerCase().includes('lift'))).slice(0,25);
-  lifts.forEach((x,i)=>{ const p=props(x.feature); const lat=Number(first(p,['Lat','lat'])), lon=Number(first(p,['Long','lon'])); if(!Number.isFinite(lat)||!Number.isFinite(lon))return; const r=Math.round((grid.latitudes[grid.rows-1]-lat)/(grid.latitudes[grid.rows-1]-grid.latitudes[0])*(rows-1)); const c=Math.round((lon-grid.longitudes[0])/(grid.longitudes[grid.cols-1]-grid.longitudes[0])*(cols-1)); if(r<0||r>=rows||c<0||c>=cols)return; const a=pt(r,c);ctx.fillStyle='#efaa3c';ctx.beginPath();ctx.arc(a[0],a[1],5,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#efaa3c';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(a[0],a[1]-26);ctx.stroke();ctx.fillStyle='#efaa3c';ctx.beginPath();ctx.moveTo(a[0],a[1]-30);ctx.lineTo(a[0]-5,a[1]-21);ctx.lineTo(a[0]+5,a[1]-21);ctx.closePath();ctx.fill(); });
-  ctx.fillStyle='#16484d';ctx.font='600 13px system-ui';ctx.fillText(`Elevation ${Math.round(min)}–${Math.round(max)} m · blue = downhill gradient · amber = lift transfer`,24,h-22);
+function normalizeCoreData(boundary, reservoirs, projects, rivers, streams, candidates, osmNameCandidates, waterbodyNames, grid, gravity, documentedLifts) {
+  boundary.features.forEach(f => Object.assign(f.properties ||= {}, { source_category: 'Government source', source_name: 'TGRAC State Boundary' }));
+  reservoirs.features.forEach(f => Object.assign(f.properties ||= {}, { source_category: 'Government source', source_name: 'TGRAC Reservoirs', feature_class: 'Reservoir' }));
+  projects.features.forEach(f => { const coordinate = f.geometry.coordinates; Object.assign(f.properties ||= {}, { source_category: 'Government source', source_name: 'Telangana Irrigation & CAD', feature_class: isLift(f) ? 'Lift project' : 'Irrigation project', dem_elevation_m: elevationAt(grid, coordinate[0], coordinate[1]) }); });
+  rivers.features.forEach(f => Object.assign(f.properties ||= {}, { source_category: 'Government source', source_name: 'Telangana Irrigation & CAD', feature_class: 'River' }));
+  streams.features.forEach(f => Object.assign(f.properties ||= {}, { source_category: 'Government source', source_name: 'Telangana Irrigation & CAD', feature_class: 'Stream' }));
+  candidates.features.forEach(f => Object.assign(f.properties ||= {}, { source_category: 'Public/reference source', source_name: f.properties.source || 'Public reference', feature_class: f.properties.feature_class || 'Reservoir modelled from imagery/reference' }));
+  return { boundary, reservoirs, projects, rivers, streams, candidates, osmNameCandidates, waterbodyNames, grid, gravity, documentedLifts };
 }
-async function openFlowView(){ const modal=document.getElementById('flow-modal'); modal.classList.add('show'); modal.setAttribute('aria-hidden','false'); try{const grid=await fetchJson('data/elevation-grid.json?v=2'); drawTerrain(grid); document.getElementById('flow-source').innerHTML=`Elevation source: ${esc(grid.provider)}. Grid: ${grid.rows}×${grid.cols}; terrain is visually exaggerated. Flow arrows are DEM-gradient interpretation, not measured discharge.`;}catch(e){document.getElementById('flow-source').textContent='Elevation grid unavailable.';} }
 
-initLayerList();
-document.getElementById('search').addEventListener('input', e => search(e.target.value));
-const sidebar = document.querySelector('.sidebar');
-const toggleSidebar = document.getElementById('toggle-sidebar');
-const reopenSidebar = document.getElementById('reopen-sidebar');
-function setSidebarOpen(open) { sidebar.classList.toggle('collapsed', !open); toggleSidebar.setAttribute('aria-expanded', String(open)); reopenSidebar.hidden = open; setTimeout(() => map.invalidateSize(), 180); }
-toggleSidebar.addEventListener('click', () => setSidebarOpen(false));
-reopenSidebar.addEventListener('click', () => setSidebarOpen(true));
-document.getElementById('close-drawer').addEventListener('click', () => document.getElementById('feature-drawer').classList.remove('show'));
-document.getElementById('reset-view').addEventListener('click', () => map.setView(TELANGANA, DEFAULT_ZOOM));
-map.on('zoomend', () => { renderPlaceLabels(); applyScaleVisibility(); rebuildGravityFlow(); });
-renderPlaceLabels();
-map.on('click', () => document.getElementById('feature-drawer').classList.remove('show'));
-// Custom basemap buttons replace the default Leaflet control.layers UI.
-const basemapButtons = document.querySelectorAll('[data-basemap]');
-basemapButtons.forEach(button => button.addEventListener('click', () => { const selected = button.dataset.basemap; [imagery, streets, terrain].forEach(layer => { if (map.hasLayer(layer)) map.removeLayer(layer); }); ({ imagery, streets, terrain }[selected] || imagery).addTo(map); basemapButtons.forEach(item => { const active = item === button; item.classList.toggle('active', active); item.setAttribute('aria-pressed', String(active)); }); }));
+function buildFlowData(gravity) {
+  const lineFeatures = gravity.features;
+  const dots = [];
+  lineFeatures.slice(0, 220).forEach((feature, index) => geometryPaths(feature).forEach(path => { if (path.length > 1) dots.push({ path, phase: (index * .173) % 1 }); }));
+  state.flowDots = dots.slice(0, 260);
+  return { type: 'FeatureCollection', features: lineFeatures };
+}
+function buildLiftData(routes) {
+  state.liftDots = routes.features.map((feature, index) => ({ path: feature.geometry.coordinates, phase: (index * .217) % 1 }));
+  const endpointFeatures = routes.features.flatMap(feature => {
+    const coordinates = feature.geometry.coordinates;
+    return [
+      { type: 'Feature', properties: { ...feature.properties, endpoint_role: 'intake / origin', name: feature.properties.from_name }, geometry: { type: 'Point', coordinates: coordinates[0] } },
+      { type: 'Feature', properties: { ...feature.properties, endpoint_role: 'destination', name: feature.properties.to_name }, geometry: { type: 'Point', coordinates: coordinates.at(-1) } }
+    ];
+  });
+  return { endpoints: { type: 'FeatureCollection', features: endpointFeatures } };
+}
+function pointAlong(path, progress) { const target = ((progress % 1) + 1) % 1; const position = target * (path.length - 1); const index = Math.min(path.length - 2, Math.floor(position)); const amount = position - index; return [path[index][0] + (path[index + 1][0] - path[index][0]) * amount, path[index][1] + (path[index + 1][1] - path[index][1]) * amount]; }
+function animateFlow(time = 0) {
+  const gravity = map.getSource('gravity-dots');
+  if (gravity && state.enabled.gravity) gravity.setData({ type: 'FeatureCollection', features: state.flowDots.map((dot, index) => ({ type: 'Feature', properties: { index }, geometry: { type: 'Point', coordinates: pointAlong(dot.path, dot.phase + time * .000025) } })) });
+  const lift = map.getSource('documented-lift-dots-source');
+  if (lift && state.enabled.lift) lift.setData({ type: 'FeatureCollection', features: (state.liftDots || []).map((dot, index) => ({ type: 'Feature', properties: { index }, geometry: { type: 'Point', coordinates: pointAlong(dot.path, dot.phase + time * .00006) } })) });
+  requestAnimationFrame(animateFlow);
+}
 
-(async () => {
-  const requests = [
-    ['boundary', loadGeoJson('boundary', `${ICAD}state-boundary.geojson`)],
-    ['reservoirs', loadReservoirs()],
-    ['projects', loadGeoJson('projects', `${ICAD}maj_med.geojson`)],
-    ['rivers', loadGeoJson('rivers', `${ICAD}home-map-rivers.geojson`)],
-    ['streams', loadGeoJson('streams', `${ICAD}home-map-streams.geojson`)]
-  ];
-  const results = await Promise.allSettled(requests.map(([, promise]) => promise));
-  const failed = results.filter(r => r.status === 'rejected');
-  setStatus();
-  document.getElementById('load-message').textContent = failed.length ? `${failed.length} layer(s) unavailable · ${featureIndex.length} indexed` : `${featureIndex.length.toLocaleString('en-IN')} water features indexed`;
-  // Keep the deterministic Telangana camera; fitting mixed source extents can zoom out to the whole region.
-  try { const grid = await fetchJson('data/elevation-grid.json?v=2'); await loadBarrages(); buildManagementOverlay(grid); await loadCandidateReservoirs(); setTimeout(() => { map.setView(TELANGANA, DEFAULT_ZOOM); map.invalidateSize(); }, 80); document.getElementById('load-message').textContent = `${featureIndex.length.toLocaleString('en-IN')} water features · flow overlays ready`; } catch (error) { console.warn('Management overlays unavailable', error); document.getElementById('load-message').textContent = `Overlay error: ${error.message}`; }
-})();
+function addCoreLayers(data) {
+  addSourceLayer('boundary', data.boundary, [{ id: 'boundary-line', type: 'line', paint: { 'line-color': '#ffffff', 'line-width': 2.2, 'line-opacity': .9 } }]);
+  addSourceLayer('rivers', data.rivers, [{ id: 'rivers-line', type: 'line', minzoom: 6, paint: { 'line-color': '#33a8ed', 'line-width': ['interpolate', ['linear'], ['zoom'], 6, 1.5, 11, 4], 'line-opacity': .9 } }]);
+  addSourceLayer('streams', data.streams, [{ id: 'streams-line', type: 'line', minzoom: 8.5, paint: { 'line-color': '#7dcce6', 'line-width': 1.1, 'line-opacity': .65 } }]);
+  addSourceLayer('reservoirs', data.reservoirs, [
+    { id: 'reservoir-fill', type: 'fill', minzoom: 6, paint: { 'fill-color': '#27bfc0', 'fill-opacity': ['interpolate', ['linear'], ['zoom'], 6, .28, 10, .56] } },
+    { id: 'reservoir-line', type: 'line', paint: { 'line-color': '#8ff9f6', 'line-width': 1.1 } }
+  ]);
+  addSourceLayer('projects', data.projects, [
+    { id: 'project-points', type: 'circle', minzoom: 6.5, filter: ['!', ['==', ['get', 'feature_class'], 'Lift project']], paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 3.5, 11, 7], 'circle-color': '#efb454', 'circle-stroke-color': '#fff', 'circle-stroke-width': 1 } },
+    { id: 'lift-projects', type: 'circle', minzoom: 6.5, filter: ['==', ['get', 'feature_class'], 'Lift project'], paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 4, 11, 8], 'circle-color': '#ef5151', 'circle-stroke-color': '#fff', 'circle-stroke-width': 1.2 } }
+  ]);
+  addSourceLayer('candidates', data.candidates, [{ id: 'candidate-points', type: 'circle', minzoom: 7.5, paint: { 'circle-radius': 6, 'circle-color': '#ff7558', 'circle-stroke-color': '#fff', 'circle-stroke-width': 1.3 } }]);
+  addSourceLayer('osm-name-candidates-source', data.osmNameCandidates, [
+    { id: 'osm-name-candidates', type: 'circle', minzoom: 10, paint: { 'circle-radius': 5, 'circle-color': '#ff7558', 'circle-stroke-color': '#fff', 'circle-stroke-width': 1.2 } },
+    { id: 'osm-name-candidate-labels', type: 'symbol', minzoom: 11, layout: { 'text-field': ['get', 'name'], 'text-font': ['Noto Sans Regular'], 'text-size': 11, 'text-offset': [0, 1], 'text-anchor': 'top', 'text-allow-overlap': false }, paint: { 'text-color': '#ffd4ca', 'text-halo-color': '#2b1512', 'text-halo-width': 1.3 } }
+  ]);
+  addSourceLayer('seasonal-water-source', EMPTY_FC, [
+    { id: 'seasonal-water-fill', type: 'fill', minzoom: 8, paint: { 'fill-color': '#39cde8', 'fill-opacity': .58 } },
+    { id: 'seasonal-water-line', type: 'line', minzoom: 8, paint: { 'line-color': '#c5f8ff', 'line-width': 2 } }
+  ]);
+  const gravityLines = buildFlowData(data.gravity);
+  addSourceLayer('gravity-lines', gravityLines, [{ id: 'gravity-flow', type: 'line', minzoom: 6.5, paint: { 'line-color': '#168ed1', 'line-width': 1, 'line-opacity': .28, 'line-dasharray': [2, 3] } }]);
+  addSourceLayer('gravity-dots', EMPTY_FC, [{ id: 'gravity-flow-dots', type: 'circle', minzoom: 6.5, paint: { 'circle-radius': 3, 'circle-color': '#39baff', 'circle-opacity': .95, 'circle-blur': .12 } }]);
+  const liftData = buildLiftData(data.documentedLifts);
+  addSourceLayer('documented-lifts-source', data.documentedLifts, [{ id: 'documented-lift-routes', type: 'line', minzoom: 7, paint: { 'line-color': '#ef5151', 'line-width': 3, 'line-opacity': .92, 'line-dasharray': [2, 1.3] } }]);
+  addSourceLayer('documented-lift-endpoints-source', liftData.endpoints, [{ id: 'documented-lift-endpoints', type: 'circle', minzoom: 7, paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 7, 4, 11, 7], 'circle-color': '#ef5151', 'circle-stroke-color': '#ffffff', 'circle-stroke-width': 1.5 } }]);
+  addSourceLayer('documented-lift-dots-source', EMPTY_FC, [{ id: 'documented-lift-dots', type: 'circle', minzoom: 7, paint: { 'circle-radius': 3.2, 'circle-color': '#ff8c8c', 'circle-opacity': .98 } }]);
+  addSourceLayer('owner-routes-source', EMPTY_FC, [{ id: 'owner-routes', type: 'line', minzoom: 7, paint: { 'line-color': '#ef5151', 'line-width': 3.2, 'line-dasharray': [2, 2], 'line-opacity': .92 } }]);
+  addSourceLayer('route-draft', EMPTY_FC, [{ id: 'route-draft-line', type: 'line', paint: { 'line-color': '#ff8b8b', 'line-width': 3, 'line-dasharray': [1, 1] } }, { id: 'route-draft-points', type: 'circle', paint: { 'circle-color': '#fff', 'circle-stroke-color': '#ef5151', 'circle-stroke-width': 2, 'circle-radius': 5 } }]);
+  animateFlow();
+}
+
+function buildIndex(data) { ['reservoirs', 'projects', 'rivers', 'streams', 'candidates', 'osmNameCandidates', 'waterbodyNames'].forEach(kind => data[kind].features.forEach(feature => state.index.push({ feature, kind, title: titleFor(feature, kind), search: JSON.stringify(feature.properties || {}).toLowerCase() }))); }
+function renderLayerControls() { const container = document.getElementById('layer-list'); layerDefinitions.forEach(definition => { const label = document.createElement('label'); label.className = 'layer-row'; label.innerHTML = `<input type="checkbox" data-layer="${definition.key}" ${definition.default ? 'checked' : ''}><i class="swatch" style="background:${definition.color}"></i><span>${definition.label}</span>`; label.querySelector('input').addEventListener('change', event => { state.enabled[definition.key] = event.target.checked; updateLayerVisibility(definition); }); container.appendChild(label); }); }
+function updateLayerVisibility(definition) { definition.ids.forEach(id => { if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', state.enabled[definition.key] ? 'visible' : 'none'); }); }
+
+function setStatus(message) { document.getElementById('load-message').textContent = message; }
+function updateZoomBand() { const zoom = map.getZoom(); document.getElementById('zoom-band').textContent = zoom < 8 ? 'State view' : zoom < 9.5 ? 'Regional view' : zoom < 12 ? 'District view' : 'Local view'; }
+function safeUrl(value) { try { const url = new URL(String(value)); return ['https:', 'http:'].includes(url.protocol) ? url.href : null; } catch { return null; } }
+function numericMetric(value, suffix = '', maximumFractionDigits = 2) { if (value === null || value === undefined) return null; if (typeof value === 'boolean') return null; if (typeof value === 'string' && value.trim() === '') return null; if (typeof value !== 'number' && typeof value !== 'string') return null; const number = Number(value); return Number.isFinite(number) ? `${number.toLocaleString('en-IN', { maximumFractionDigits })}${suffix}` : null; }
+function openDetail(feature, kind) {
+  const p = feature.properties || {};
+  const sourceCategory = first(p, ['source_category']) || (kind === 'gravity' ? 'DEM-inferred' : null);
+  const sourceName = first(p, ['source_name', 'source', 'source_dataset']);
+  const area = numericMetric(p.area_ha, ' ha');
+  const directElevation = numericMetric(p.dem_elevation_m, ' m');
+  const startElevation = numericMetric(p.start_elevation_m);
+  const endElevation = numericMetric(p.end_elevation_m, ' m');
+  const elevation = directElevation || (startElevation && endElevation ? `${startElevation} → ${endElevation}` : null);
+  const observedMaximum = numericMetric(p.percent_of_observed_maximum, '%', 1);
+  const metrics = [['Class', first(p, ['feature_class', 'TYPE', 'Category', 'project_subtype'])], ['Area', area], ['Elevation', elevation], ['Seasonality', first(p, ['seasonality', 'permanence'])], ['Confidence', first(p, ['classification_confidence', 'direction_confidence', 'confidence'])], ['Observed maximum', observedMaximum], ['AOI valid coverage', numericMetric(p.aoi_valid_coverage_percent, '%', 2)], ['AOI cloud / shadow', numericMetric(p.aoi_cloud_shadow_percent, '%', 2)], ['Observed at', first(p, ['observed_at'])], ['Version', p.version]];
+  const visibleMetrics = metrics.filter(([, value]) => value !== null && value !== undefined && String(value).trim() !== '');
+  const evidence = safeUrl(first(p, ['evidence_url', 'source_url']));
+  const limitation = first(p, ['limitation', 'classification_method', 'flow_direction_basis', 'method']) || (sourceCategory === 'DEM-inferred' ? 'Terrain interpretation, not measured discharge.' : null);
+  const sourceParts = [];
+  if (sourceName) sourceParts.push(`<strong>Source: ${esc(sourceName)}</strong>`);
+  if (p.name_source) sourceParts.push(`Name source: ${esc(p.name_source)}${p.name_source_license ? ` (${esc(p.name_source_license)})` : ''}`);
+  if (p.source_license) sourceParts.push(`Licence: ${esc(p.source_license)}`);
+  const nameEvidence = safeUrl(p.name_source_url);
+  if (nameEvidence) sourceParts.push(`<a href="${esc(nameEvidence)}" target="_blank" rel="noopener noreferrer">View name evidence ↗</a>`);
+  if (p.source_date) sourceParts.push(`Source date: ${esc(p.source_date)}`);
+  if (evidence) sourceParts.push(`<a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">View source evidence ↗</a>`);
+  if (limitation) sourceParts.push(esc(limitation));
+  if (observedMaximum) sourceParts.push('Water extent is not storage volume.');
+  const kickerHtml = sourceCategory ? `<div class="detail-kicker">${esc(sourceCategory)}</div>` : '';
+  const metricsHtml = visibleMetrics.length ? `<div class="detail-grid">${visibleMetrics.map(([key, value]) => `<div class="metric"><span>${esc(key)}</span><strong>${esc(value)}</strong></div>`).join('')}</div>` : '';
+  const sourceHtml = sourceParts.length ? `<div class="source-line">${sourceParts.join('<br>')}</div>` : '';
+  document.getElementById('detail-content').innerHTML = `${kickerHtml}<h2>${esc(titleFor(feature, kind))}</h2>${metricsHtml}${sourceHtml}`;
+  document.getElementById('detail-card').hidden = false;
+}
+function interactiveLayerIds() { return ['reservoir-fill', 'project-points', 'lift-projects', 'candidate-points', 'osm-name-candidates', 'rivers-line', 'streams-line', 'gravity-flow', 'documented-lift-routes', 'documented-lift-endpoints', 'owner-routes', 'seasonal-water-fill', 'waterbody-labels', 'waterbodies-main', 'waterbodies-micro', 'canals-line'].filter(id => map.getLayer(id)); }
+
+function renderStory() { const container = document.getElementById('story-steps'); guidedSteps.forEach((step, index) => { const button = document.createElement('button'); button.className = 'story-step'; button.textContent = `${index + 1}. ${step.title}`; button.addEventListener('click', () => { document.querySelectorAll('.story-step').forEach(item => item.classList.remove('active')); button.classList.add('active'); document.getElementById('story-copy').textContent = step.copy; layerDefinitions.forEach(def => { state.enabled[def.key] = step.show.includes(def.key); const checkbox = document.querySelector(`[data-layer="${def.key}"]`); if (checkbox) checkbox.checked = state.enabled[def.key]; updateLayerVisibility(def); }); map.flyTo({ center: TELANGANA.center, zoom: step.zoom, duration: 1300 }); }); container.appendChild(button); }); }
+function search(term) { const container = document.getElementById('search-results'); if (!term.trim()) { container.classList.remove('show'); return; } const query = term.toLowerCase(); const results = state.index.filter(item => item.title.toLowerCase().includes(query) || item.search.includes(query)).slice(0, 9); container.innerHTML = results.length ? results.map((item, index) => `<button class="result" data-result="${index}"><strong>${esc(item.title)}</strong><small>${esc(item.feature.properties?.source_name || item.kind)}</small></button>`).join('') : '<div class="result">No indexed feature found.</div>'; container.classList.add('show'); container.querySelectorAll('[data-result]').forEach(button => button.addEventListener('click', () => { const item = results[Number(button.dataset.result)]; map.flyTo({ center: featureCenter(item.feature), zoom: 11, duration: 900 }); openDetail(item.feature, item.kind); container.classList.remove('show'); })); }
+
+function updateSeasonalStatus() {
+  const year = Number(document.getElementById('time-year').value), month = Number(document.getElementById('time-month').value);
+  const monthName = new Date(2000, month - 1).toLocaleString('en', { month: 'long' });
+  document.getElementById('year-output').value = year;
+  document.getElementById('month-output').value = monthName.slice(0, 3);
+  const found = state.seasonal?.observations?.filter(item => item.year === year && item.month === month) || [];
+  const features = found.map(observation => { const { geometry, ...properties } = observation; return { type: 'Feature', properties: { ...properties, feature_class: 'Observed satellite water extent' }, geometry }; });
+  map.getSource('seasonal-water-source')?.setData({ type: 'FeatureCollection', features });
+  if (!found.length) {
+    document.getElementById('observation-status').textContent = `No curated observation for ${monthName} ${year}. Missing data is not interpolated.`;
+    return;
+  }
+  const observation = found[0];
+  const comparison = observation.comparison_year_count >= 2 && observation.monthly_mean_area_ha !== undefined
+    ? `monthly mean ${Number(observation.monthly_mean_area_ha).toLocaleString('en-IN')} ha (${observation.comparison_year_count} usable years)`
+    : `acquired ${new Date(observation.observed_at).toLocaleDateString('en-IN')} · historical monthly comparison unavailable`;
+  document.getElementById('observation-status').textContent = `${observation.name}: ${Number(observation.area_ha).toLocaleString('en-IN')} ha · ${observation.percent_of_observed_maximum}% of observed maximum · ${comparison} · AOI valid coverage ${observation.aoi_valid_coverage_percent}%.`;
+}
+
+async function loadOwnerRoutes() {
+  try {
+    const payload = await fetchJson('/api/routes');
+    state.editingEnabled = payload.editing_enabled;
+    state.ownerRoutes = payload.routes;
+    const features = payload.routes.map(route => ({ type: 'Feature', properties: { ...route, source_category: 'Owner-edited', source_name: route.source || 'Owner route editor' }, geometry: { type: 'LineString', coordinates: route.coordinates } }));
+    map.getSource('owner-routes-source')?.setData({ type: 'FeatureCollection', features });
+    const select = document.getElementById('route-select');
+    select.replaceChildren(new Option('New route…', ''), ...payload.routes.map(route => new Option(`${route.project_id} · v${route.version}`, route.project_id)));
+  } catch { state.editingEnabled = false; }
+}
+async function ownerRequest(url, options = {}) {
+  const response = await fetch(url, { ...options, headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${state.ownerToken}`, ...(options.headers || {}) } });
+  let result; try { result = await response.json(); } catch { result = { error: `HTTP ${response.status}` }; }
+  if (!response.ok) throw new Error(result.error || `HTTP ${response.status}`);
+  return result;
+}
+function loadSelectedRoute() {
+  const projectId = document.getElementById('route-select').value;
+  const route = state.ownerRoutes.find(item => item.project_id === projectId);
+  if (!route) return;
+  document.getElementById('project-id').value = route.project_id;
+  document.getElementById('edit-note').value = route.note || '';
+  state.routeCoordinates = route.coordinates.map(point => [...point]);
+  state.plotting = true;
+  updateDraft();
+  map.fitBounds(state.routeCoordinates.reduce((bounds, point) => bounds.extend(point), new maplibregl.LngLatBounds(state.routeCoordinates[0], state.routeCoordinates[0])), { padding: 90, maxZoom: 12 });
+}
+async function showRouteHistory() {
+  const projectId = document.getElementById('route-select').value || document.getElementById('project-id').value.trim();
+  if (!projectId) return alert('Select or enter a project ID.');
+  try {
+    const payload = await ownerRequest(`/api/routes/${encodeURIComponent(projectId)}/history`);
+    const container = document.getElementById('history-list');
+    container.replaceChildren(...payload.history.slice().reverse().map(record => { const row = document.createElement('div'); row.className = 'history-row'; const label = document.createElement('span'); label.textContent = `v${record.version} · ${record.edited_at}`; const button = document.createElement('button'); button.textContent = 'Revert'; button.addEventListener('click', () => revertRoute(projectId, record.version)); row.append(label, button); return row; }));
+  } catch (error) { alert(error.message); }
+}
+async function revertRoute(projectId, version) {
+  if (!confirm(`Create a new version of ${projectId} from version ${version}?`)) return;
+  try { await ownerRequest(`/api/routes/${encodeURIComponent(projectId)}/revert`, { method: 'POST', body: JSON.stringify({ version }) }); await loadOwnerRoutes(); await showRouteHistory(); } catch (error) { alert(error.message); }
+}
+function updateDraft() { const features = state.routeCoordinates.length ? [{ type: 'Feature', properties: { role: 'route' }, geometry: { type: 'LineString', coordinates: state.routeCoordinates } }, ...state.routeCoordinates.map((coordinates, index) => ({ type: 'Feature', properties: { index, role: index === 0 ? 'intake' : index === state.routeCoordinates.length - 1 ? 'destination' : 'vertex' }, geometry: { type: 'Point', coordinates } }))] : []; map.getSource('route-draft')?.setData({ type: 'FeatureCollection', features }); document.getElementById('save-route').disabled = state.routeCoordinates.length < 2; }
+function cancelRoute() { state.plotting = false; state.routeCoordinates = []; updateDraft(); map.getCanvas().style.cursor = ''; }
+async function saveRoute() {
+  const projectId = document.getElementById('project-id').value.trim();
+  if (!projectId || state.routeCoordinates.length < 2) return alert('Project ID and at least two map points are required.');
+  try {
+    const result = await ownerRequest('/api/routes', { method: 'POST', body: JSON.stringify({ project_id: projectId, coordinates: state.routeCoordinates, note: document.getElementById('edit-note').value.trim(), source: 'Owner route editor' }) });
+    cancelRoute(); await loadOwnerRoutes(); alert(`Saved ${projectId} version ${result.version}`);
+  } catch (error) { alert(error.message); }
+}
+
+map.on('load', async () => {
+  try {
+    installBasemaps();
+    installVectorLayers();
+    const [boundary, reservoirs, projects, rivers, streams, candidates, osmNameCandidates, waterbodyNames, grid, gravity, documentedLifts, seasonal, waterManifest, canalManifest] = await Promise.all([
+      fetchJson(`${DATA}state-boundary.geojson`), fetchJson(`${DATA}reservoirs.geojson`), fetchJson(`${DATA}maj_med.geojson`), fetchJson(`${DATA}home-map-rivers.geojson`), fetchJson(`${DATA}home-map-streams.geojson`), fetchJson(`${DATA}known-reservoir-candidates.geojson`), fetchJson(`${DATA}osm-named-waterbody-candidates.geojson`), fetchJson(`${DATA}waterbody-name-index.geojson`), fetchJson(`${DATA}elevation-grid.json`), fetchJson(`${DATA}gravity-flow.geojson`), fetchJson(`${DATA}documented-lift-routes.geojson`), fetchJson(`${DATA}seasonal-observations.json`), fetchJson(`${DATA}vector/waterbodies/manifest.json`), fetchJson(`${DATA}vector/canals/manifest.json`)
+    ]);
+    state.manifests = { waterbodies: waterManifest, canals: canalManifest };
+    state.seasonal = seasonal;
+    document.getElementById('coverage-note').textContent = seasonal.coverage_note;
+    const normalized = normalizeCoreData(boundary, reservoirs, projects, rivers, streams, candidates, osmNameCandidates, waterbodyNames, grid, gravity, documentedLifts);
+    state.datasets = normalized; buildIndex(normalized); addCoreLayers(normalized);
+    await loadOwnerRoutes(); updateSeasonalStatus(); updateZoomBand();
+    setStatus(`${state.index.length.toLocaleString('en-IN')} indexed · ${state.manifests.waterbodies.source_feature_count.toLocaleString('en-IN')} detailed water bodies available`);
+  } catch (error) { setStatus(`Atlas load error: ${error.message}`); console.error(error); }
+});
+map.on('moveend', updateZoomBand);
+map.on('click', event => { if (state.justDragged) { state.justDragged = false; return; } if (state.plotting) { state.routeCoordinates.push([Number(event.lngLat.lng.toFixed(6)), Number(event.lngLat.lat.toFixed(6))]); updateDraft(); return; } const features = map.queryRenderedFeatures(event.point, { layers: interactiveLayerIds() }); if (features[0]) { const layerId = features[0].layer.id; const kind = layerId.includes('project') ? 'projects' : layerId === 'gravity-flow' ? 'gravity' : layerId === 'canals-line' ? 'canals' : 'waterbody'; openDetail(features[0], kind); } });
+map.on('mousedown', 'route-draft-points', event => { if (!state.plotting || !event.features?.length) return; event.preventDefault(); state.dragIndex = Number(event.features[0].properties.index); map.dragPan.disable(); map.getCanvas().style.cursor = 'grabbing'; });
+map.on('mousemove', event => { if (state.dragIndex === null) return; state.routeCoordinates[state.dragIndex] = [Number(event.lngLat.lng.toFixed(6)), Number(event.lngLat.lat.toFixed(6))]; state.justDragged = true; updateDraft(); });
+map.on('mouseup', () => { if (state.dragIndex === null) return; state.dragIndex = null; map.dragPan.enable(); map.getCanvas().style.cursor = 'crosshair'; });
+map.on('mouseenter', () => { if (!state.plotting) map.getCanvas().style.cursor = 'crosshair'; });
+
+renderLayerControls(); renderStory();
+document.getElementById('menu-toggle').addEventListener('click', () => document.getElementById('sidebar').classList.toggle('closed'));
+document.getElementById('reset-view').addEventListener('click', () => map.flyTo({ center: TELANGANA.center, zoom: TELANGANA.zoom }));
+document.getElementById('close-detail').addEventListener('click', () => { document.getElementById('detail-card').hidden = true; });
+document.getElementById('search').addEventListener('input', event => search(event.target.value));
+['time-year', 'time-month'].forEach(id => document.getElementById(id).addEventListener('input', updateSeasonalStatus));
+document.querySelectorAll('[data-basemap]').forEach(button => button.addEventListener('click', () => { const satellite = button.dataset.basemap === 'satellite'; map.setLayoutProperty('satellite-basemap', 'visibility', satellite ? 'visible' : 'none'); map.setLayoutProperty('street-basemap', 'visibility', satellite ? 'none' : 'visible'); document.querySelectorAll('[data-basemap]').forEach(item => item.classList.toggle('active', item === button)); }));
+document.getElementById('owner-login').addEventListener('click', async () => {
+  if (!state.editingEnabled) return alert('Owner editing is disabled. Start server.py with WATERMAP_OWNER_TOKEN configured.');
+  const token = prompt('Owner token'); if (!token) return;
+  state.ownerToken = token;
+  try {
+    await ownerRequest('/api/owner/session');
+    document.getElementById('owner-tools').hidden = false;
+    document.getElementById('owner-login').textContent = 'Owner editor unlocked for this browser session';
+  } catch (error) { state.ownerToken = null; document.getElementById('owner-tools').hidden = true; alert(error.message); }
+});
+document.getElementById('load-route').addEventListener('click', loadSelectedRoute);
+document.getElementById('route-history').addEventListener('click', showRouteHistory);
+document.getElementById('undo-point').addEventListener('click', () => { state.routeCoordinates.pop(); updateDraft(); });
+document.getElementById('start-route').addEventListener('click', () => { state.plotting = true; state.routeCoordinates = []; updateDraft(); map.getCanvas().style.cursor = 'crosshair'; });
+document.getElementById('cancel-route').addEventListener('click', cancelRoute);
+document.getElementById('save-route').addEventListener('click', saveRoute);

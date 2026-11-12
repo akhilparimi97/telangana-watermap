@@ -1,0 +1,17 @@
+{
+  "format": "Mapbox Vector Tile",
+  "source_layer": "waterbodies",
+  "minimum_zoom": 9,
+  "maximum_zoom": 13,
+  "bounds": [
+    77.28123246100006,
+    15.915302417000078,
+    81.27222348000004,
+    19.913111884000045
+  ],
+  "source_feature_count": 36576,
+  "named_feature_count": 301,
+  "written_tile_count": 11996,
+  "encoded_feature_instances": 166882,
+  "bytes": 18903913
+}

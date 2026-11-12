@@ -1,0 +1,130 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "Documented Kaleshwaram transfer relationships",
+    "geometry_note": "Straight conceptual connections between documented nodes; not surveyed pipe/canal alignments.",
+    "operational_note": "Stable educational infrastructure relationships only; not current pump, gate, or barrage operating status.",
+    "atlas_snapshot_date": "2026-11-11"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "klip-link1-medigadda-annaram",
+        "name": "Medigadda to Annaram lift",
+        "from_name": "Laxmi (Medigadda) Barrage",
+        "to_name": "Saraswati (Annaram) Barrage",
+        "feature_class": "Documented lift transfer",
+        "source_category": "Government source",
+        "source_name": "Government of India environmental-clearance project document",
+        "source_url": "https://environmentclearance.nic.in/writereaddata/Online/TOR/23_Dec_2016_1451044133X6XM4CDAnnexure5-ProposedToR.pdf",
+        "source_date": "2016-12-23",
+        "geometry_status": "conceptual straight connection; endpoints from ICAD project records",
+        "confidence": "documented relationship; approximate geometry"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[80.07890945, 18.71527517], [79.82432418, 18.76335308]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "klip-link1-annaram-sundilla",
+        "name": "Annaram to Sundilla lift",
+        "from_name": "Saraswati (Annaram) Barrage",
+        "to_name": "Parvathi (Sundilla) Barrage",
+        "feature_class": "Documented lift transfer",
+        "source_category": "Government source",
+        "source_name": "Government of India environmental-clearance project document",
+        "source_url": "https://environmentclearance.nic.in/writereaddata/Online/TOR/23_Dec_2016_1451044133X6XM4CDAnnexure5-ProposedToR.pdf",
+        "source_date": "2016-12-23",
+        "geometry_status": "conceptual straight connection; endpoints from ICAD project records",
+        "confidence": "documented relationship; approximate geometry"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[79.82432418, 18.76335308], [79.61163581, 18.73643736]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "klip-link1-sundilla-yellampally",
+        "name": "Sundilla to Sripada Yellampally lift",
+        "from_name": "Parvathi (Sundilla) Barrage",
+        "to_name": "Sripada Yellampally Project",
+        "feature_class": "Documented lift transfer",
+        "source_category": "Government source",
+        "source_name": "Government of India environmental-clearance project document",
+        "source_url": "https://environmentclearance.nic.in/writereaddata/Online/TOR/23_Dec_2016_1451044133X6XM4CDAnnexure5-ProposedToR.pdf",
+        "source_date": "2016-12-23",
+        "geometry_status": "conceptual straight connection; endpoints from ICAD project records",
+        "confidence": "documented relationship; approximate geometry"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[79.61163581, 18.73643736], [79.37137109, 18.84390576]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "klip-link2-yellampally-mid-manair",
+        "name": "Sripada Yellampally to Mid Manair",
+        "from_name": "Sripada Yellampally Project",
+        "to_name": "Mid Manair Reservoir",
+        "feature_class": "Documented multi-stage transfer",
+        "source_category": "Government source",
+        "source_name": "Government of India environmental-clearance project document",
+        "source_url": "https://environmentclearance.nic.in/writereaddata/Online/TOR/23_Dec_2016_1451044133X6XM4CDAnnexure5-ProposedToR.pdf",
+        "source_date": "2016-12-23",
+        "geometry_status": "conceptual straight connection; the documented system includes lifts, tunnels and canals",
+        "confidence": "documented relationship; approximate geometry"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[79.37137109, 18.84390576], [78.96111, 18.39278]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "klip-link3-mid-manair-upper-manair",
+        "name": "Mid Manair to Upper Manair via Link III",
+        "from_name": "Mid Manair Reservoir",
+        "to_name": "Upper Manair Reservoir",
+        "feature_class": "Documented multi-stage transfer",
+        "source_category": "Government source",
+        "source_name": "Government of India environmental-clearance project document",
+        "source_url": "https://environmentclearance.nic.in/writereaddata/Online/TOR/23_Dec_2016_1451044133X6XM4CDAnnexure5-ProposedToR.pdf",
+        "source_date": "2016-12-23",
+        "geometry_status": "conceptual straight connection; Link III includes Malkapet storage and engineered conveyance not traced here",
+        "confidence": "documented relationship; approximate geometry"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[78.96111, 18.39278], [78.53965991, 18.27244909]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "klip-link4-mid-manair-mallanna-sagar",
+        "name": "Mid Manair to Mallanna Sagar transfer",
+        "from_name": "Mid Manair Reservoir",
+        "to_name": "Sri Komaravelli Mallanna Sagar",
+        "feature_class": "Documented multi-stage transfer",
+        "source_category": "Government source",
+        "source_name": "Comptroller and Auditor General of India, Kaleshwaram Performance Audit",
+        "source_url": "https://cag.gov.in/uploads/download_audit_report/2024/07_Chapter-IV_Planning-for-Kaleshwaram-Project-065cdab562898a9.68735858.pdf",
+        "source_date": "2024",
+        "geometry_status": "conceptual straight connection; documented conveyor system has multiple lifts and intermediate Ranganayak Sagar",
+        "confidence": "documented relationship; approximate geometry"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[78.96111, 18.39278], [78.74718, 17.96395]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "klip-mallanna-kondapochamma",
+        "name": "Mallanna Sagar to Kondapochamma Sagar high-level transfer",
+        "from_name": "Sri Komaravelli Mallanna Sagar",
+        "to_name": "Kondapochamma Sagar",
+        "feature_class": "Documented project relationship",
+        "source_category": "Government source",
+        "source_name": "Comptroller and Auditor General of India, Kaleshwaram Performance Audit introduction",
+        "source_url": "https://cag.gov.in/uploads/download_audit_report/2024/04_Chapter-I_Introduction-065cdab561dca65.95697792.pdf",
+        "source_date": "2024",
+        "geometry_status": "conceptual straight connection; not a surveyed alignment",
+        "confidence": "system relationship documented; approximate geometry"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[78.74718, 17.96395], [78.6855, 17.7444]]}
+    }
+  ]
+}
