@@ -5,3 +5,7 @@ __pycache__/
 node_modules/
 runtime/*
 __pycache__/
+# Superseded local previews and interim chunk exports; Pages uses data/vector/.
+apps/web-legacy/
+apps/web/data/canal-tiles/
+apps/web/data/waterbody-tiles/
