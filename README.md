@@ -29,14 +29,7 @@ The public GitHub Pages deployment is static. It includes the atlas and read-onl
 The bundled snapshots are the starting inventory, not a live telemetry feed. Natural-flow arrows are derived from sampled DEM gradients and do not represent measured discharge; lift markers show project records, not operating status. For production scale, move the large lake/canal layers to vector tiles or PMTiles and add versioned ingestion/reconciliation.
 
 ## Public links
-
-- Repository: https://github.com/akhilparimi97/telangana-watermap
-- Collaboration landing page: https://akhilparimi97.github.io/telangana-watermap/
 - Live interactive map: https://akhilparimi97.github.io/telangana-watermap/
-- Editable collaboration board: https://akhilparimi97.github.io/telangana-watermap/COLLABORATION-BOARD.html
-- Contributing guide: https://akhilparimi97.github.io/CONTRIBUTING.md
-- Data model: https://akhilparimi97.github.io/telangana-watermap/DATA-MODEL.html
-- Technical handoff: https://akhilparimi97.github.io/telangana-watermap/PROJECT-HANDOFF.html
 
 
 The editable collaboration plan is in `docs/COLLABORATION-BOARD.md`. Use it to review waterbody locations, determine likely lift intakes, identify outflow/destination points, and record evidence and confidence. See `CONTRIBUTING.md` for review rules and `docs/DATA-MODEL.md` for proposed editable fields. The `docs/` folder is also a GitHub Pages landing page for inviting collaborators.
